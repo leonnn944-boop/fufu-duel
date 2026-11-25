@@ -1,0 +1,328 @@
+/* A printed town almanac. Readable type, a warm paper face and inks keyed to the deck. */
+body.playing .game-shell #world-stage > #card-focus {
+  --print-ink: #193f42;
+  --print-paper: #fffae9;
+  --print-edge: #41655d;
+  --print-trim: #b77c3e;
+}
+body.playing .game-shell #world-stage > #card-focus .focus-card-frame > :is(.action-card, .crafted-career-card),
+body.playing .game-shell #world-stage > #card-focus :is(.focus-invest-grid,.focus-draw-card) {
+  color: var(--print-ink) !important;
+  background: linear-gradient(135deg,#fffdf1,#fff4d9) !important;
+  border: 2px solid var(--print-edge) !important;
+  border-radius: 17px !important;
+  box-shadow: 0 3px 0 #1b4444, 0 8px 22px #102d3566 !important;
+  opacity: 1 !important;
+}
+body.playing .game-shell #world-stage > #card-focus .focus-card-frame > :is(.action-card,.crafted-career-card) > h3,
+body.playing .game-shell #world-stage > #card-focus .action-card .market-card-heading h3,
+body.playing .game-shell #world-stage > #card-focus .focus-invest-heading,
+body.playing .game-shell #world-stage > #card-focus .focus-draw-card > strong {
+  color: var(--print-ink) !important;
+  text-shadow: none !important;
+  font-weight: 900;
+  letter-spacing: .015em;
+}
+body.playing .game-shell #world-stage > #card-focus .focus-card-frame > .action-card > small,
+body.playing .game-shell #world-stage > #card-focus .focus-draw-card > .focus-progress {
+  justify-self: start;
+  align-self: flex-start;
+  width: fit-content;
+  padding: 1px 9px;
+  border-radius: 2px 7px 7px 2px;
+  background: #275e5d;
+  color: #fff1c8 !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+  font-weight: 800;
+}
+body.playing .game-shell #world-stage > #card-focus .focus-card-frame > .action-card > p,
+body.playing .game-shell #world-stage > #card-focus .focus-draw-card > span {
+  color: #3a5853 !important;
+}
+body.playing .game-shell #world-stage > #card-focus :is(.deck-back,.income-card-back,.focus-back-card,.draw-flight,.asset-draw-stack .card-back) {
+  --stock-back: url(../assets/market-deck/back-career.svg);
+  background: transparent var(--stock-back) center / 100% 100% no-repeat !important;
+  color: transparent !important;
+  text-shadow: none !important;
+  border: none !important;
+  border-radius: 8px !important;
+  box-shadow: 1px 2px 5px #163f4266 !important;
+}
+body.playing .game-shell #world-stage > #card-focus :is(.focus-back-card.general,.general .draw-flight,.asset-draw-stack .card-back) { --stock-back: url(../assets/market-deck/back-general.svg); }
+body.playing .game-shell #world-stage > #card-focus :is(.focus-back-card.lucky,.lucky .draw-flight,.income-card-back) { --stock-back: url(../assets/market-deck/back-lucky.svg); }
+body.playing .game-shell #world-stage > #card-focus .focus-card-frame .card-original-button {
+  color: #315551 !important;
+  border: 1px solid #a9b7a0;
+  background: #fffaf0 !important;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment {
+  display: grid !important;
+  grid-template: "category category" auto "title title" auto "art metrics" auto "facts facts" auto "buttons buttons" auto / minmax(0,.94fr) minmax(0,1.06fr);
+  align-content: start;
+  align-items: center;
+  justify-items: stretch;
+  padding: 13px !important;
+  gap: 6px 9px !important;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment > small { grid-area: category; }
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment > h3 { grid-area: title; margin: 0 !important; font-size: clamp(18px,4.8vw,23px) !important; line-height: 1.25 !important; text-align: start; }
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment > .investment-facts { grid-area: facts; }
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment > .offer-actions { grid-area: buttons; }
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment > .card-illustration {
+  grid-area: art;
+  display: block !important;
+  position: relative !important;
+  inset: auto !important;
+  align-self: stretch !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 97px !important;
+  max-height: none !important;
+  box-sizing: border-box;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 1px solid #8aa298 !important;
+  border-radius: 10px !important;
+  background: #b6d0c7 !important;
+  box-shadow: none !important;
+  overflow: hidden;
+  aspect-ratio: auto;
+}
+body.playing .game-shell #world-stage > #card-focus :is(.investment,.focus-invest-choice) .card-illustration .delivery-art[data-delivery-key^="town-invest-"] {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  border-radius: inherit;
+  margin: 0;
+}
+body.playing .game-shell #world-stage > #card-focus .delivery-art[data-delivery-key^="town-invest-"] > img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .offer-metrics {
+  grid-area: metrics;
+  display: flex !important;
+  position: static !important;
+  flex-direction: column;
+  justify-content: center;
+  width: auto !important;
+  gap: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .offer-metric {
+  display: flex !important;
+  align-items: baseline;
+  justify-content: space-between !important;
+  flex-wrap: wrap;
+  min-height: 24px !important;
+  padding: 3px 1px !important;
+  gap: 2px 6px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  border-bottom: 1px dashed #a9b8a1 !important;
+  background: transparent !important;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .offer-metric:first-child {
+  display: grid !important;
+  justify-content: start !important;
+  padding-top: 0 !important;
+  padding-bottom: 5px !important;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .offer-metric small {
+  color: #486058 !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .offer-metric strong {
+  color: #102444 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  font-variant-numeric: tabular-nums;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .offer-metric:first-child strong { font-size: clamp(18px,4.7vw,24px) !important; line-height: 1.15 !important; }
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .investment-facts {
+  background: transparent !important; border: none !important; padding: 0 !important;
+}
+body.playing .game-shell #world-stage > #card-focus .investment-fact {
+  background: #edf3fc !important; border: 1px solid #d2e1f4 !important; color: #1a3866 !important;
+}
+body.playing .game-shell #world-stage > #card-focus .investment-fact-icon { background: #d6e6fb !important; color: #16407a !important; }
+body.playing .game-shell #world-stage > #card-focus .focus-invest-grid .focus-invest-choice { background:#f5f9ff !important; color: #102444 !important; border: 1.5px solid #aac2e2 !important; box-shadow: 0 2px #19386633 !important; }
+body.playing .game-shell #world-stage > #card-focus .focus-invest-choice :is(strong,small) { color: #14325e !important; }
+body.playing .game-shell #world-stage > #card-focus .focus-invest-choice .card-illustration {
+  width: min(100%,80px) !important;
+  position: relative !important;
+  height: 44px !important;
+  min-height: 38px !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+body.playing .game-shell #world-stage > #card-focus .focus-invest-choice:disabled { opacity: .65; }
+body.playing .game-shell #world-stage > #card-focus .hand-focus-card { --deck-ink:#1c4580; }
+body.playing .game-shell #world-stage > #card-focus .hand-focus-card.career { --deck-ink:#1a3c70; }
+body.playing .game-shell #world-stage > #card-focus .hand-focus-card.lucky { --deck-ink:#d96d12; }
+body.playing .game-shell #world-stage > #card-focus .hand-focus-card .fate-card-stamp {
+  background: var(--deck-ink) !important;
+  color: #fff9e8 !important;
+  border-radius: 6px !important;
+  padding: 3px 8px !important;
+}
+body.playing .game-shell #world-stage > #card-focus .fate-card-stamp small { color: #fff9e8 !important; }
+body.playing .game-shell #world-stage > #card-focus .fate-card-stamp .fate-seal { color: #ffe095 !important; }
+body.playing .game-shell #world-stage > #card-focus .hand-focus-card .fate-effect { border: 0 !important; border-left: 4px solid var(--deck-ink) !important; background: #ebe9cd !important; color: var(--print-ink) !important; border-radius: 4px 9px 9px 4px !important; }
+body.playing .game-shell #world-stage > #card-focus .hand-focus-card .choice-option { border: 1px solid #97ac95 !important; background: #fffcf0 !important; color: var(--print-ink) !important; }
+body.playing .game-shell #world-stage > #card-focus .hand-focus-card .choice-option:not(:disabled):hover { background: #f3e4b5 !important; }
+body.playing .game-shell #world-stage > #card-focus.readable-hand .card-hand-fan {
+  gap: 6px !important;
+  justify-content: safe center !important;
+  padding-inline: 3px !important;
+  overflow: auto hidden !important;
+  scrollbar-width: thin;
+  touch-action: pan-x;
+}
+body.playing .game-shell #world-stage > #card-focus.readable-hand .hand-peek[data-card-id] {
+  --stub-color:#317876;
+  flex-basis: 89px !important;
+  width: 89px !important;
+  max-width: 89px !important;
+  padding: 3px 5px !important;
+  box-sizing: border-box;
+  border: 1px solid #788f84 !important;
+  border-inline-start: 5px solid var(--stub-color) !important;
+  border-radius: 4px 8px 8px 4px !important;
+  background: #fff7dc !important;
+  color: #244845 !important;
+  box-shadow: 0 2px #29525050 !important;
+}
+body.playing .game-shell #world-stage > #card-focus .hand-peek[data-kind="career"] { --stub-color:#ae634c; }
+body.playing .game-shell #world-stage > #card-focus .hand-peek[data-kind="lucky"] { --stub-color:#638350; }
+body.playing .game-shell #world-stage > #card-focus .hand-peek[data-card-id].selected { outline: 2px solid #f7cd78; outline-offset: -3px; background: #234d4d !important; }
+body.playing .game-shell #world-stage > #card-focus .hand-peek[data-card-id].selected :is(.hand-title,.hand-kind,.hand-effect) { color: #fff7db !important; }
+body.playing .game-shell #world-stage > #card-focus .hand-peek[data-card-id] :is(.hand-title,.hand-kind,.hand-effect) { color: #354d46 !important; }
+body.playing .game-shell #world-stage > #card-focus .hand-peek[data-card-id]:focus-visible,
+body.playing .game-shell #world-stage > #card-focus button:focus-visible { outline: 3px solid #d96e3a !important; outline-offset: -3px; }
+body.playing .game-shell #world-stage > #card-focus :is(.offer-actions,.turn-panel-actions) .primary-button,
+body.playing .game-shell #world-stage > #card-focus .action-card > .primary-button { color: #233e34 !important; background: #f2bf69 !important; border: 1px solid #9f733f !important; }
+body.playing .game-shell #world-stage > #card-focus :is(.offer-actions,.turn-panel-actions) .secondary-button,
+body.playing .game-shell #world-stage > #card-focus .action-card > .secondary-button { color: #254b47 !important; background: #fff5d9 !important; border: 1px solid #91a496 !important; }
+@media (max-width: 370px) {
+  body.playing .game-shell #world-stage > #card-focus.offer-focus .investment { padding: 9px !important; gap: 5px 7px !important; }
+  body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .offer-metric:first-child strong { font-size: 17px !important; }
+}
+
+/* Keep the bottom of the printed card tied to the last action. */
+body.playing .game-shell #world-stage > #card-focus.offer-focus > .focus-card-frame,
+body.playing .game-shell #world-stage > #card-focus.offer-focus .focus-card-frame > .investment {
+  height: auto !important;
+  aspect-ratio: auto !important;
+  min-height: 0 !important;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .investment-facts {
+  display: grid !important;
+  gap: 0 !important;
+  margin-top: 3px !important;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .investment-fact {
+  display: grid !important;
+  grid-template-columns: 25px minmax(0,1fr);
+  gap: 8px !important;
+  align-items: center;
+  padding: 5px 0 !important;
+  border-bottom: 1px dashed #b3b99b !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .investment-fact-icon {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 8px;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .investment-fact-copy strong {
+  color: #274c45 !important;
+  font-weight: 750;
+  font-size: 14px !important;
+  line-height: 1.28 !important;
+}
+body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .investment-fact-copy small {
+  color: #51645e !important;
+  font-size: 12px !important;
+  line-height: 1.35 !important;
+}
+body.playing .game-shell #world-stage > #card-focus.readable-hand .hand-peek[data-kind="career"] { --stub-color:#ae634c; }
+body.playing .game-shell #world-stage > #card-focus.readable-hand .hand-peek[data-kind="lucky"] { --stub-color:#638350; }
+body.playing .game-shell #world-stage > #card-focus.readable-hand .hand-peek[data-card-id] :is(.hand-kind,.hand-effect) {
+  background: transparent !important;
+  border-radius: 0;
+}
+body.playing .game-shell #world-stage > #card-focus .fate-card-stamp .effect-badge {
+  background: #fff2cd !important;
+  color: #3e5344 !important;
+  border: 0 !important;
+}
+body.playing .game-shell #world-stage > #card-focus .focus-draw-card {
+  padding: 12px 16px !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+body.playing .game-shell #world-stage > #card-focus .focus-draw-card .focus-progress { margin: 0; }
+@media (min-height: 781px) {
+  body.playing .game-shell #world-stage > #card-focus.offer-focus .investment {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    overflow: auto !important;
+  }
+  body.playing .game-shell #world-stage > #card-focus.offer-focus .focus-card-frame > .investment {
+    max-height: calc(100dvh - max(150px, 27dvh) - 60px) !important;
+  }
+  body.playing .game-shell #world-stage > #card-focus.offer-focus .investment > * {
+    flex: 0 0 auto !important;
+  }
+  body.playing .game-shell #world-stage > #card-focus.offer-focus .investment > .card-illustration {
+    height: clamp(100px,17dvh,155px) !important;
+    min-height: 100px !important;
+    background: #bccfb6 !important;
+  }
+  body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .offer-metrics {
+    display: grid !important;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 0 8px !important;
+    height: auto !important;
+    min-height: max-content !important;
+    align-content: start !important;
+    width: 100% !important;
+    align-self: stretch !important;
+  }
+  body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .offer-metric:first-child {
+    grid-column: 1/-1;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between !important;
+    padding: 4px 0 !important;
+  }
+  body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .offer-metric:not(:first-child) {
+    align-items: start;
+    display: grid !important;
+    gap: 0 !important;
+    justify-content: start !important;
+  }
+  body.playing .game-shell #world-stage > #card-focus.offer-focus .investment .delivery-art[data-delivery-key^="town-invest-"] > img {
+    object-fit: cover;
+    background: #d0ddd2;
+  }
+}
+

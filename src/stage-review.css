@@ -1,0 +1,376 @@
+/* Readable hand: every drawn card remains selectable while one is enlarged. */
+#card-focus.readable-hand{left:12px!important;top:72px!important;bottom:12px;width:min(460px,calc(100% - 680px))!important;height:auto!important;max-height:none!important;transform:none!important;display:flex;flex-direction:column;align-items:center;gap:8px;overflow:visible!important}
+#card-focus.readable-hand>.focus-hand-count{position:static!important;transform:none!important;font-size:14px;line-height:20px;padding:3px 12px;background:#12354feb;border-radius:20px;color:#fff2ce}
+.card-hand-fan{display:flex;flex:none;justify-content:center;align-items:center;width:100%;height:128px;padding:8px 3px 12px;gap:5px;isolation:isolate}
+.hand-peek{flex:0 1 82px;min-width:0;height:112px;padding:7px 4px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:4px;border:2px solid #c7a45e;border-radius:10px;background:linear-gradient(150deg,#fff9e6,#e4cd9b);color:#193d54;box-shadow:0 4px 9px #0018;transform:translateY(calc(var(--hand-index)*var(--hand-index)*1px)) rotate(calc(var(--hand-index)*2deg));cursor:pointer}
+.hand-peek.selected{border:3px solid #ffcd5c;box-shadow:0 0 0 2px #fff8d4,0 4px 16px #ffb83955;transform:translateY(-4px);background:#fff1ba}
+.hand-peek small{font-size:11px;line-height:15px;white-space:nowrap;color:#6a5733}
+.hand-peek strong{font-size:13px;line-height:17px;overflow-wrap:anywhere;text-align:center}
+.hand-peek svg{width:30px;height:30px;flex:none;fill:none;stroke:#2e7180;stroke-width:3}
+#card-focus.readable-hand>.card-hand-stage{display:flex!important;justify-content:center;align-items:flex-start;flex:1;min-height:0;overflow:visible!important;width:100%}
+#card-focus.readable-hand .hand-focus-card{display:flex!important;flex-direction:column;gap:8px;width:360px!important;height:540px!important;min-height:0!important;max-height:none!important;aspect-ratio:2/3;padding:14px 16px!important;overflow:visible!important;animation:none!important;opacity:1!important;transform:none!important;backface-visibility:visible!important;background:linear-gradient(155deg,#fff9e8,#eee2c2)!important;color:#173d54;box-shadow:0 10px 30px #0019}
+#card-focus.readable-hand .hand-focus-card::after{display:none!important}
+#card-focus.readable-hand .fate-card-stamp{display:flex;align-items:center;gap:7px;height:22px;flex:none}
+#card-focus.readable-hand .fate-seal{position:static;width:22px;height:22px;line-height:22px;font-size:14px;text-align:center;flex:none}
+#card-focus.readable-hand .fate-card-stamp>small{font-size:13px;line-height:20px;color:#715226}
+#card-focus.readable-hand .hand-focus-card>.card-illustration{display:grid!important;float:none;width:68px!important;height:64px!important;min-height:64px!important;flex:0 0 64px;margin:0 auto!important;padding:5px!important;background:linear-gradient(135deg,#fff5cf,#c5e3df)!important;border-radius:16px;border:1px solid #cbaf6b}
+#card-focus.readable-hand .card-illustration svg{display:block!important;width:52px!important;height:52px!important;stroke:#2e7180;fill:none;stroke-width:3}
+#card-focus.readable-hand .card-illustration small{display:none!important}
+#card-focus.readable-hand .hand-focus-card h3{display:block!important;max-width:none;font-size:22px!important;line-height:1.3!important;text-align:center;margin:0!important;flex:none;overflow:visible!important}
+#card-focus.readable-hand .hand-focus-card>p{font-size:15px!important;line-height:1.45!important;max-height:none!important;overflow:visible!important;margin:0!important;border:0!important;flex:none}
+#card-focus.readable-hand .fate-state{font-size:13px;line-height:18px;flex:none;margin:0}
+#card-focus.readable-hand .card-full-text{display:none}
+#card-focus.readable-hand .choice-list{display:flex!important;flex-direction:column;gap:7px!important;margin:0!important;overflow:visible!important}
+#card-focus.readable-hand .choice-option{display:flex!important;flex-direction:column;align-items:flex-start;justify-content:center;gap:3px;width:100%;min-height:48px!important;height:auto!important;margin:0;padding:7px 10px!important;text-align:left!important;white-space:normal!important;overflow:visible!important;background:#fffaf0!important;color:#173d54!important;border:2px solid #caa96d;border-radius:10px}
+#card-focus.readable-hand .choice-option::before{display:none!important}
+#card-focus.readable-hand .choice-label{display:block!important;font-size:15px!important;line-height:1.35!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+#card-focus.readable-hand .choice-impact{display:block!important;font-size:14px!important;line-height:1.35!important;white-space:normal!important;margin:0!important;color:#6b542c}
+#card-focus.readable-hand .choice-impact.negative{color:#ae4136!important}
+#card-focus.readable-hand .choice-impact.positive{color:#19714b!important}
+#card-focus.readable-hand .card-impact{font-size:17px;line-height:1.45;text-align:center}
+#card-focus.readable-hand .fate-effect{margin-top:auto;padding:12px;border-radius:12px;background:#fff7e1;border:1px solid #c6a366}
+#card-focus.readable-hand .fate-effect strong{display:block;font-size:18px!important;line-height:1.5!important;margin:5px 0;color:#17485d}
+#card-focus.readable-hand .fate-effect.negative strong{color:#a73e37}
+#card-focus.readable-hand .fate-effect.positive strong{color:#1b6c4e}
+#card-focus.readable-hand .fate-effect small{font-size:14px;line-height:1.4;display:block}
+#card-focus.readable-hand>.primary-button{flex:none;width:min(360px,100%);min-height:44px;font-size:16px;margin:0}
+#card-focus.readable-hand .co-invest-card{gap:5px}
+#card-focus.readable-hand .co-invest-card>.card-illustration{display:none!important}
+#card-focus.readable-hand .choice-pair-group{padding:4px 6px;border:1px solid #c7ad76;border-radius:8px;background:#fff7df}
+#card-focus.readable-hand .choice-pair-heading{display:block;font-size:14px;line-height:20px;margin-bottom:3px}
+#card-focus.readable-hand .choice-pair-buttons{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+#card-focus.readable-hand .choice-pair-buttons .choice-option{align-items:center;min-height:44px!important;padding:5px!important}
+#card-focus.readable-hand .choice-pair-buttons .choice-impact{display:none!important}
+
+/* Clear stage typography, placed below the current top controls. */
+body.playing #world-stage #stage-timer{display:block;left:var(--scene-center-x,50%)!important;top:calc(var(--scene-safe-top,70px) + 10px)!important;transform:translateX(-50%)!important;padding:0!important;border:0!important;border-radius:0!important;background:none!important;box-shadow:none!important;color:#fff2c4;font-size:34px!important;line-height:1.2!important;text-shadow:0 2px 2px #092539,0 0 10px #092539,0 0 22px #092539;pointer-events:none}
+body.playing #world-stage #stage-timer[hidden]{display:none!important}
+body.playing #world-stage #dice-readout{left:var(--scene-center-x,50%)!important;top:calc(var(--scene-safe-top,70px) + 54px)!important;transform:translateX(-50%)!important;font-size:25px!important;line-height:1.2;padding:5px 12px;max-width:calc(100% - 24px);z-index:10;white-space:nowrap}
+body.playing:has(#card-focus.readable-hand) #world-stage #stage-timer{top:8px!important;font-size:28px!important}
+@media(max-width:800px) and (orientation:portrait){
+  body.playing:not(.finance-expanded):not(:has(#action-panel[data-phase="loanDecision"])) .play-panel{top:8px!important;height:85px!important;max-height:85px!important;padding:5px 7px!important;bottom:auto!important}
+  body.playing:not(.board-overview) .world-toolbar{top:100px!important;padding:3px!important;display:flex!important;gap:0!important;height:46px;min-height:46px;border-radius:12px}
+  body.playing:not(.board-overview) .world-toolbar .legend{display:none!important}
+  body.playing:not(.board-overview) .world-toolbar .world-buttons{display:flex;width:100%;gap:5px}
+  body.playing:not(.board-overview) .world-toolbar .quiet-button{flex:1;min-height:38px;padding:4px 5px!important;font-size:12px!important}
+  body.playing.finance-expanded .world-toolbar{top:calc(min(31dvh,290px) + 96px)!important}
+  body.playing:has(#card-focus:not([hidden])) .world-toolbar{display:none!important}
+  #card-focus.readable-hand{left:6px!important;right:6px!important;top:225px!important;bottom:8px!important;transform:none!important;width:auto!important;height:auto!important;max-height:none!important;gap:5px}
+  #card-focus.readable-hand>.focus-hand-count{font-size:13px;line-height:20px;padding:3px 8px}
+  .card-hand-fan{height:82px;gap:3px;padding:3px 2px 7px}
+  .hand-peek{flex-basis:62px;height:74px;padding:4px 3px;gap:2px;border-radius:8px}
+  .hand-peek small{font-size:10px;line-height:13px}
+  .hand-peek strong{font-size:12px;line-height:15px}
+  .hand-peek svg{height:16px;width:16px}
+  #card-focus.readable-hand .hand-focus-card{width:300px!important;height:450px!important;max-width:calc(100vw - 24px)!important;padding:12px!important;gap:5px}
+  #card-focus.readable-hand .hand-focus-card>.card-illustration{width:48px!important;height:42px!important;min-height:42px!important;flex-basis:42px}
+  #card-focus.readable-hand .card-illustration svg{width:34px!important;height:34px!important}
+  #card-focus.readable-hand .hand-focus-card h3{font-size:21px!important}
+  #card-focus.readable-hand .hand-focus-card>p{font-size:15px!important}
+  #card-focus.readable-hand .choice-option{min-height:48px!important}
+  body.playing:has(#card-focus.readable-hand) .play-panel{display:none!important}
+}
+body.playing #world-stage[data-motion] #stage-timer:not([hidden]){display:flex!important}
+body.playing:has(#card-focus:not([hidden])) #world-stage .pawn-label.active{display:block!important}
+/* First polished career-card sample: shared numerical structure, assistant art. */
+body.playing #card-focus.career-focus{width:320px!important;height:auto!important;max-height:none!important;bottom:auto!important;top:112px!important;gap:8px}
+#card-focus.career-focus>.focus-card-frame{flex:none;height:auto;overflow:visible}
+#card-focus .crafted-career-card{width:320px!important;height:480px!important;min-height:0!important;max-height:none!important;padding:14px!important;display:flex!important;flex-direction:column;gap:8px;overflow:hidden!important;float:none;border:2px solid #cba667;border-radius:20px;background:linear-gradient(135deg,#fff9e8,#f0e1ba)!important;box-shadow:inset 0 0 0 4px #fffdf0,0 8px 0 #806140,0 15px 30px #0017;color:#21425a}
+.career-card-heading{display:flex;flex-direction:column;gap:4px;flex:none;text-align:center}
+.career-card-heading small{display:block;font-size:13px!important;line-height:18px!important;color:#697d84!important;white-space:nowrap}
+.career-card-heading strong{font-size:27px!important;line-height:32px!important;letter-spacing:.1em;color:#1f4661}
+#card-focus .crafted-career-card .role-portrait{float:none!important;width:100%!important;height:164px!important;min-height:164px;margin:0!important;display:grid;place-items:center;border:0!important;border-radius:70px 70px 16px 16px;background:radial-gradient(ellipse at 50% 85%,#b0ced9 0,#e2ecdf 48%,#fff5dd 75%);overflow:hidden;box-shadow:inset 0 -2px 0 #d2b57a}
+.career-portrait-image{display:block;width:310px;height:310px;max-width:none;align-self:start;object-fit:contain;object-position:center top;transform:translateY(-8px);filter:drop-shadow(0 5px 5px #34576b2e)}
+.career-income-band{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;flex:none;min-height:56px;border:1px solid #c2ad6c;border-radius:11px;background:#fff8df}
+.career-income-band small{font-size:13px;color:#6d7155;line-height:18px}
+.career-income-band strong{font-size:23px;color:#1d6c6b;font-variant-numeric:tabular-nums;line-height:27px}
+#card-focus .crafted-career-card .role-card-stats{display:flex!important;flex-direction:column;gap:0;margin:0!important;padding:0!important;border:1px solid #d6c698;border-radius:11px;background:#faf5e5;flex:1}
+#card-focus .crafted-career-card .role-card-stats>span{display:flex;flex:1;align-items:center;justify-content:space-between;gap:12px;padding:7px 10px;min-height:32px;border:0;border-bottom:1px solid #ded1ab;border-radius:0;background:none}
+#card-focus .crafted-career-card .role-card-stats>span:last-child{border-bottom:0}
+#card-focus .crafted-career-card .role-card-stats small{font-size:14px!important;line-height:20px;color:#526674}
+#card-focus .crafted-career-card .role-card-stats b{font-size:17px!important;line-height:20px;font-variant-numeric:tabular-nums;color:#23485e}
+#card-focus.career-focus>.primary-button{width:100%;min-height:44px;margin:0;font-size:16px}
+@media(min-width:801px){
+  body.playing .topbar{height:76px;background:none;border:0;box-shadow:none;align-items:flex-start;padding-top:9px}
+  body.playing .brand{padding:4px 9px;border-radius:10px;background:#102b42df;max-width:270px}
+  body.playing .world-toolbar{left:auto!important;right:440px!important;width:max-content!important;max-width:calc(100% - 730px)!important;background:none!important;border:0!important;box-shadow:none;padding:0!important}
+  body.playing .world-toolbar .world-buttons{gap:5px}
+  body.playing .world-toolbar .quiet-button{font-size:12px!important;padding:7px 10px!important}
+  body.playing .world-toolbar .legend{display:flex!important;position:fixed;left:20px;top:59px;font-size:11px!important;line-height:16px;color:#e1edf0}
+  body.playing .live-player-head b{font-size:15px}
+  body.playing .live-player-head span{font-size:12px}
+  body.playing .live-values small{font-size:12px;line-height:16px}
+  body.playing .live-values strong{font-size:14px;line-height:20px;font-variant-numeric:tabular-nums}
+  body.playing #card-focus:not(.readable-hand){left:14px!important;top:150px!important;transform:none!important;width:360px!important;max-height:calc(100dvh - 170px)!important}
+}
+@media(max-width:800px) and (orientation:portrait){
+  body.playing.card-focus-active .play-panel{display:none!important}
+  body.playing #card-focus:not(.readable-hand){left:50%!important;top:240px!important;bottom:64px!important;transform:translateX(-50%)!important;width:min(340px,calc(100% - 20px))!important;height:auto!important;max-height:none!important}
+  body.playing #card-focus.loan-focus{bottom:12px!important}
+  body.playing #card-focus.career-focus{top:240px!important;bottom:auto!important;width:320px!important}
+  body.playing #card-focus .focus-loan{height:auto!important;max-height:none!important}
+  body.playing #card-focus:not(.readable-hand) .focus-card-frame>.action-card,body.playing #card-focus:not(.readable-hand) .focus-card-frame>.role-reveal-card{height:auto!important;max-height:100%!important;overflow:visible!important}
+}
+body.playing #card-focus.career-focus{width:320px!important;top:112px!important;bottom:auto!important}
+body.playing #card-focus.career-focus .focus-card-frame>.crafted-career-card{width:320px!important;height:480px!important;max-height:none!important;overflow:hidden!important}
+@media(max-width:800px) and (orientation:portrait){body.playing #card-focus.career-focus{top:240px!important}}
+
+/* The approved career sample supplies the common card frame and number rows. */
+.career-atlas-portrait{display:block;width:230px;height:345px;flex:none;background-image:url('/fufu-duel/assets/city/portraits/careers-v3.webp');background-size:300% 200%;background-repeat:no-repeat;align-self:start}
+#card-focus:not(.readable-hand):not(.career-focus) .focus-card-frame>.action-card{width:320px!important;min-height:390px!important;max-height:none!important;height:auto!important;padding:16px!important;display:flex!important;flex-direction:column;gap:12px;overflow:visible!important;background:linear-gradient(135deg,#fff9e8,#f0e1ba)!important;color:#21425a;border:2px solid #cba667;border-radius:20px;box-shadow:inset 0 0 0 4px #fffdf0,0 8px 0 #806140,0 15px 30px #0017}
+#card-focus:not(.readable-hand) .action-card>small{font-size:13px!important;line-height:18px!important;color:#6b715c}
+#card-focus:not(.readable-hand) .action-card h3{font-size:23px!important;line-height:1.35!important;margin:0!important;color:#21425a;white-space:normal}
+#card-focus:not(.readable-hand) .action-card p{font-size:14px!important;line-height:1.5!important;margin:0!important;color:#526674}
+#card-focus .decision-metrics,#card-focus .offer-metrics{display:flex!important;flex-direction:column;gap:0!important;background:#fff9e6;border:1px solid #d0bf93;border-radius:12px;overflow:hidden}
+#card-focus .decision-metrics>span,#card-focus .offer-metric{display:flex!important;align-items:center;justify-content:space-between;gap:10px;padding:8px 10px!important;border:0;border-bottom:1px solid #e0d2af;border-radius:0;background:none}
+#card-focus .decision-metrics small,#card-focus .offer-metric small{font-size:13px!important;line-height:20px!important;color:#526674}
+#card-focus .decision-metrics b,#card-focus .offer-metric strong{font-size:16px!important;line-height:20px!important;color:#21425a;font-variant-numeric:tabular-nums}
+#card-focus:not(.readable-hand) .action-card>.primary-button,#card-focus:not(.readable-hand) .action-card>.secondary-button{min-height:44px;font-size:16px!important;width:100%;flex:none;margin:0!important}
+#card-focus:not(.readable-hand) .action-card>.card-illustration{width:100%!important;height:100px!important;min-height:100px;margin:0!important;flex:none;float:none!important;border-radius:12px;background:linear-gradient(145deg,#adcfd3,#fff1ba)}
+#card-focus:not(.readable-hand) .card-illustration svg{height:70px!important;width:70px!important}
+#card-focus .focus-loan{background:linear-gradient(135deg,#fff9e8,#f0e1ba);border:2px solid #cba667;color:#21425a;padding:12px!important;gap:10px!important;overflow:visible!important}
+#card-focus .focus-loan>.loan-card{padding:0!important;background:none!important;border:0!important;box-shadow:none}
+#card-focus .focus-loan .loan-card h3{font-size:22px!important;line-height:28px!important}
+#card-focus .focus-loan .loan-card p{font-size:13px!important;line-height:19px!important}
+#card-focus .focus-loan .loan-metrics{display:flex!important;flex-direction:column;gap:0!important;border:1px solid #d0bf93;border-radius:10px;background:#fff9e6}
+#card-focus .focus-loan .loan-metrics>span{display:flex;align-items:center;justify-content:space-between;padding:5px 8px!important;border-bottom:1px solid #e0d2af;background:none}
+#card-focus .focus-loan .loan-metrics small{font-size:13px!important;line-height:19px!important;color:#526674}
+#card-focus .focus-loan .loan-metrics strong{font-size:16px!important;line-height:19px!important;color:#21425a}
+#card-focus .focus-loan .loan-mode-row .loan-mode-button{min-height:44px!important;font-size:14px!important;padding:5px!important}
+#card-focus .focus-loan .loan-entry{font-size:13px!important;line-height:19px!important}
+#card-focus .focus-loan .loan-entry input,#card-focus .focus-loan .loan-confirm{height:44px!important;min-height:44px!important;font-size:16px!important}
+#card-focus .focus-loan .loan-confirm-summary{font-size:13px!important;line-height:20px!important;color:#21425a}
+#card-focus .focus-invest-grid{height:auto!important;background:linear-gradient(135deg,#fff9e8,#f0e1ba);color:#21425a;border:2px solid #cba667}
+#card-focus .focus-invest-choice{min-height:94px!important;background:#fffaeb;color:#21425a;border:1px solid #ccb47a;border-radius:12px}
+#card-focus .focus-invest-choice strong{font-size:16px!important}
+#card-focus .focus-invest-choice small{font-size:13px!important}
+#card-focus .focus-sale-toggle{min-height:44px;font-size:14px!important}
+#card-focus .focus-invest-heading{color:#21425a!important;font-size:20px!important;line-height:28px!important}
+#card-focus .focus-invest-options[hidden],#card-focus .sale-actions[hidden]{display:none!important}
+#card-focus .sale-actions{display:flex;flex-direction:column;gap:12px;background:none;color:#21425a;padding:10px 0;max-height:340px;overflow-y:auto}
+#card-focus .sale-actions>strong{font-size:17px}
+#card-focus .sale-row{display:grid;grid-template-columns:1fr 72px;gap:10px;align-items:center;background:#fff9e8;border:1px solid #cbb781;padding:10px;border-radius:10px}
+#card-focus .sale-row span,#card-focus .sale-confirm span{font-size:14px!important;line-height:22px!important;color:#21425a}
+#card-focus .sale-confirm{display:flex;flex-direction:column;gap:10px;background:none;padding:5px}
+#card-focus .sale-actions button,#card-focus .focus-invest-grid>.secondary-button{min-height:44px;font-size:15px!important;width:100%;margin:0}
+body.final-awards .summary-place{flex:0 0 42px;min-height:42px}
+body.final-awards .summary-place strong,body.final-awards .summary-place b{font-size:14px!important}
+body.final-awards .award-controls,body.final-awards .main-action-tray[data-phase="summary"]>.primary-button{flex:0 0 44px!important;min-height:44px!important;height:44px!important;max-height:none!important}
+body.final-awards .award-controls .secondary-button{min-height:44px!important;height:44px!important;max-height:none!important;font-size:14px!important}
+@media(max-width:800px){body.final-awards .winner-spotlight{display:none!important}}
+@media(min-width:801px) and (max-height:800px){
+  #card-focus.readable-hand{top:78px!important}
+  #card-focus.readable-hand .card-hand-fan{height:76px;padding:3px}
+  #card-focus.readable-hand .hand-peek{height:72px}
+  #card-focus.readable-hand .hand-peek svg{width:18px;height:18px}
+  #card-focus.readable-hand .hand-focus-card{width:320px!important;height:450px!important;gap:5px;padding:12px!important}
+  #card-focus.readable-hand .hand-focus-card>.card-illustration{height:40px!important;min-height:40px!important;flex-basis:40px}
+  #card-focus.readable-hand .card-illustration svg{width:34px!important;height:34px!important}
+}
+.camera-help{position:absolute;left:16px;bottom:14px;z-index:5;display:flex;align-items:center;gap:8px;color:#f5f0dd;font-size:12px;background:#163247d9;padding:7px 10px;border-radius:12px}
+.camera-help button{border:1px solid #93b7bd;background:#21465a;color:white;min-height:36px;border-radius:8px;padding:5px 9px}
+body.playing .camera-help{display:none}
+@media(max-width:800px){.camera-help{left:8px;bottom:8px;max-width:calc(100% - 16px);font-size:11px}.camera-help .desktop-help{display:none}}
+@media(min-width:801px){.camera-help .mobile-help{display:none}}
+.topic-art{display:block;width:100%;height:100%;aspect-ratio:1;background-image:url('/fufu-duel/assets/city/cards/topics-v3.webp');background-size:400% 400%;background-repeat:no-repeat;border-radius:10px}
+#card-focus .card-illustration:has(.topic-art){display:flex!important;justify-content:center;align-items:center;padding:0!important;background:#fffaef!important;overflow:hidden}
+#card-focus .card-illustration:has(.topic-art)>svg,#card-focus .card-illustration:has(.topic-art)>small{display:none!important}
+#card-focus:not(.readable-hand) .topic-art{width:100px;height:100px;flex:none}
+.finance-shortcut{display:none}
+.camera-help{bottom:76px}
+#card-focus button{transform:none!important;transition:background-color .15s,border-color .15s!important}
+#card-focus .focus-card-frame{overflow:visible!important}
+body.playing #card-focus:not(.readable-hand):not(.career-focus){width:320px!important;height:auto!important;max-height:none!important;bottom:auto!important;top:112px!important}
+#card-focus:not(.readable-hand) .focus-card-frame{flex:none;height:auto}
+#card-focus .income-revealed:before{display:none!important}
+#card-focus .income-card.fixed:before{display:none!important}
+#card-focus .income-revealed{gap:8px!important}
+@media(max-width:800px) and (orientation:portrait){body.playing #card-focus:not(.readable-hand):not(.career-focus){top:240px!important}}
+@media(max-width:800px) and (orientation:portrait){body:not(.playing) .camera-help{top:130px;bottom:auto}}
+#card-focus .focus-loan .loan-entry>span{color:#526674!important}
+#card-focus .focus-loan .loan-confirm-summary{background:#fff8df!important;color:#21425a!important;border:1px solid #c8b578}
+@media(max-width:800px) and (orientation:portrait){body.playing.card-focus-active #world-stage #stage-timer{top:7px!important;font-size:28px!important}}
+#card-focus.readable-hand .co-invest-card .choice-pair-group{display:grid;grid-template-columns:minmax(0,1fr) 96px;gap:5px;align-items:center;min-height:56px;padding:5px 7px}
+#card-focus.readable-hand .co-invest-card .choice-pair-heading{margin:0;white-space:normal;font-size:14px;line-height:20px}
+#card-focus.readable-hand .co-invest-card .choice-pair-buttons{display:flex;gap:4px}
+#card-focus.readable-hand .co-invest-card .choice-pair-buttons .choice-option{flex:1;width:100%;min-width:0}
+#card-focus.readable-hand .hand-focus-card.resolved:not(.co-invest-card)>.card-illustration{width:150px!important;height:150px!important;min-height:150px!important;flex-basis:150px!important;margin:0 auto!important;border-radius:18px}
+#card-focus.readable-hand .hand-focus-card.resolved .fate-effect{margin-top:auto;padding:10px}
+#card-focus.readable-hand .hand-focus-card.resolved .fate-state{padding:3px 8px;min-height:24px;height:24px}
+#card-focus .focus-loan .loan-metrics{overflow:visible!important;flex:none;height:auto!important;min-height:155px}
+#card-focus .focus-loan .loan-metrics>span{min-height:31px;flex:none;border:0;border-bottom:1px solid #e0d2af;border-radius:0!important}
+#card-focus .focus-loan .loan-metrics>span:last-child{border-bottom:0;border-radius:0 0 10px 10px!important}
+#card-focus .focus-loan>.loan-flow{background:none!important;border:0!important;box-shadow:none!important;overflow:visible!important;padding:0!important}
+#card-focus .focus-loan .loan-confirm{box-shadow:0 4px 0 #b77e23;margin-bottom:4px}
+.loan-help{font-size:13px;line-height:19px;color:#526674;margin-top:6px}
+.loan-help summary{cursor:pointer;text-decoration:underline}
+.loan-help p{margin-top:6px!important}
+.hand-peek strong{word-break:normal;overflow-wrap:normal}
+.player-info-dialog{width:min(540px,calc(100vw - 24px));max-height:85dvh;padding:16px;border:2px solid #cba667;border-radius:18px;background:#18384e;color:#fff6db}
+.sale-amounts{display:grid;grid-template-columns:auto 1fr;gap:8px 12px;margin:4px 0;color:#21425a;font-size:15px;line-height:24px}
+.sale-amounts dt{margin:0;color:#526674}.sale-amounts dd{margin:0;text-align:right;font-size:18px;font-weight:800}
+#card-focus .sale-note{margin:0;font-size:14px!important;line-height:20px!important;white-space:nowrap;color:#526674}
+#card-focus .joint-invitation{gap:8px!important}
+#card-focus .joint-invitation>.card-illustration{width:100px!important;height:100px!important;min-height:100px!important;margin:0 auto}
+#card-focus .joint-invitation h3{font-size:22px!important;line-height:29px!important;margin:0!important}
+#card-focus .joint-invitation .decision-metrics span{min-height:38px!important;padding:7px 9px!important}
+.crowd-player-list{display:flex;flex-direction:column;gap:6px;max-height:260px;overflow-y:auto}
+.crowd-player-list button{min-height:44px;font-size:14px;white-space:normal}
+.crowd-names-dialog{width:min(460px,calc(100vw - 24px));padding:16px;border:2px solid #cba667;border-radius:18px;background:#fff8e6;color:#21425a}
+.crowd-names-dialog::backdrop{background:#06172899}
+.crowd-names-dialog p{font-size:14px}.crowd-dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.crowd-dialog-heading button{min-height:44px;font-size:14px;padding:8px 12px}
+.crowd-names-dialog .crowd-player-list{max-height:55dvh}
+.crowd-selection{width:max-content;position:absolute;z-index:6;left:var(--scene-center-x,50%);top:148px;transform:translateX(-50%);max-width:calc(100% - 24px);padding:8px 12px;background:#173e58;color:#fff6dd;border:2px solid #ffd87e;border-radius:12px;font-size:15px;line-height:22px;text-align:center;pointer-events:none}
+@media(max-width:800px){.crowd-selection{top:205px}}
+.list-pagination{display:flex;align-items:center;gap:8px;flex:0 0 44px!important;min-height:44px;color:inherit}
+.list-pagination button{flex:1;min-height:44px!important;height:44px!important;padding:6px!important;font-size:14px!important}
+.list-pagination .page-label{flex:none;min-width:48px;text-align:center;font-size:15px;font-weight:700;white-space:nowrap}
+.crowd-names-dialog .crowd-player-list{max-height:none;overflow:visible;margin-bottom:14px}
+.crowd-names-dialog .crowd-player-list button{flex:none}
+body.final-awards .main-action-tray[data-phase="summary"]{display:flex!important;flex-direction:column!important;height:auto!important;min-height:0!important;max-height:calc(100dvh - 110px)!important;overflow:visible!important;gap:8px!important}
+body.final-awards .main-action-tray[data-phase="summary"]>.summary-standings{flex:0 0 auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;gap:5px}
+body.final-awards .winner-spotlight,body.final-awards .district-label,body.final-awards .tile-label,body.final-awards .landmark-label{display:none!important}
+body.final-awards .summary-place{flex:none!important;height:auto;min-height:42px!important;margin:0}
+@media(max-width:800px){body.final-awards .main-action-tray[data-phase="summary"]{max-height:50dvh!important}}
+body.playing.final-awards .play-panel,body.playing.final-awards .world-toolbar,body.playing.final-awards .topbar,body.playing.final-awards .camera-help,body.playing.final-awards .crowd-selection{display:none!important}
+body.final-awards #award-banner{left:50%;top:24px;max-width:calc(100% - 32px)}
+@media(min-width:801px){body.final-awards .main-action-tray[data-phase="summary"]{left:auto!important;right:20px!important;width:330px!important;bottom:20px!important}}
+@media(max-width:800px){body.final-awards .main-action-tray[data-phase="summary"]{height:50dvh!important;max-height:50dvh!important}}
+.player-info-dialog::backdrop{background:#061728bb}
+.player-info-content{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+.player-info-content .live-player{width:100%;min-width:0}
+.player-info-content .live-values small{font-size:13px!important}
+.player-info-content .live-values strong{font-size:16px!important}
+.player-info-content .live-player-head b{font-size:17px!important}
+/* The information dialog keeps every player's finances readable during another turn. */
+body.playing #player-info-dialog .live-player{flex:none!important;height:auto!important;max-height:none!important;overflow:visible!important;box-sizing:border-box}
+body.playing #player-info-dialog .live-values{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px!important}
+body.playing #player-info-dialog .live-values>div{display:block!important;padding:6px!important}
+body.playing #player-info-dialog .live-values small,body.playing #player-info-dialog .live-values strong{line-height:1.4!important;white-space:normal!important;overflow:visible!important}
+body.playing #player-info-dialog .holding-list{display:grid!important;gap:6px!important}
+body.playing #player-info-dialog .live-values small{font-size:12px!important}
+body.playing #player-info-dialog .live-values strong{font-size:14px!important}
+body.playing #player-info-dialog .holding-list small,body.playing #player-info-dialog .holding-row,body.playing #player-info-dialog .holding-row b,body.playing #player-info-dialog .holding-formula{font-size:12px!important;line-height:1.5!important}
+#card-focus.partner-focus .choice-list{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+#card-focus.partner-focus .choice-list button{min-height:48px;font-size:13px;line-height:1.4;padding:6px;white-space:normal;color:#21425a;background:#fff9e8;border:1px solid #bca570;border-radius:9px}
+#card-focus .market-grid{display:grid!important;grid-template-columns:1fr 1fr;gap:6px}
+#card-focus .market-metric{padding:8px;background:#fff9e8;border:1px solid #d0bf93;border-radius:9px}
+#card-focus .market-metric small,#card-focus .market-metric em{font-size:13px!important;line-height:19px}
+#card-focus .market-metric strong{font-size:16px!important;line-height:22px}
+@media(max-width:800px) and (orientation:portrait){
+  body.playing.card-focus-active .topbar{display:flex!important;position:fixed;top:0;left:0;width:100%;height:42px!important;min-height:0;padding:0!important;background:none!important;border:0;box-shadow:none;z-index:20;pointer-events:none}
+  body.playing.card-focus-active .topbar .brand,body.playing.card-focus-active #room-badge,body.playing.card-focus-active #guide-button{display:none!important}
+  body.playing.card-focus-active .top-status{display:flex!important;position:absolute;inset:7px 8px auto;justify-content:space-between;width:auto;pointer-events:none}
+  body.playing.card-focus-active #round-badge{display:block;font-size:12px!important;padding:5px 7px!important;background:#14334c}
+  body.playing.card-focus-active .finance-shortcut{display:block;min-height:32px;padding:4px 9px;border:1px solid #9eac9e;border-radius:16px;font-size:12px;color:#fff2c4;background:#14334c;pointer-events:auto}
+}
+body.playing #camera-button{position:fixed!important;left:12px!important;right:auto!important;top:auto!important;bottom:max(12px,env(safe-area-inset-bottom))!important;min-width:108px;min-height:44px;padding:8px 14px!important;font-size:14px!important;z-index:30;background:#193e55;border:1px solid #e7be70;border-radius:12px;color:#fff0c9;box-shadow:0 5px 14px #0018}
+body:not(.playing) #camera-button,body.final-awards #camera-button{display:none!important}
+body.playing.board-overview #card-focus{display:none!important}
+body.playing.board-overview:has(#card-focus:not([hidden])) .world-toolbar{display:flex!important}
+@media(max-width:800px){body.playing.board-overview .world-stage:after{left:auto!important;right:12px!important;bottom:20px!important;transform:none!important;max-width:calc(100% - 148px);white-space:normal;text-align:center}}
+
+/* R98: explicit automatic-follow return belongs to overview, away from card decisions. */
+body.playing.board-overview #automatic-follow-button:not([hidden]){position:fixed;left:132px;bottom:max(12px,env(safe-area-inset-bottom));z-index:30;min-width:108px;min-height:44px;padding:8px 12px;border:1px solid #e7be70;border-radius:12px;color:#fff0c9;background:#193e55;font-size:14px;box-shadow:0 5px 14px #0018}
+@media(max-width:800px) and (orientation:portrait){body.playing.board-overview .world-stage:after{left:auto!important;right:12px!important;bottom:max(12px,env(safe-area-inset-bottom))!important;transform:none!important;box-sizing:border-box;max-width:calc(100% - 264px);white-space:normal;font-size:10px;padding:5px 8px;line-height:1.4}}
+
+/* R99: visible overview controls already describe the available actions. */
+body.playing.board-overview .world-stage:after{content:none!important;display:none!important}
+
+/* R106: retain the existing player-info entry during mobile roll, in the reserved top strip. */
+@media(max-width:800px) and (orientation:portrait){
+  body.playing:has(#action-panel[data-phase="roll"]) .topbar{display:flex!important;position:fixed;top:0;left:0;width:100%;height:42px!important;min-height:0;padding:0!important;background:none!important;border:0;box-shadow:none;z-index:20;pointer-events:none}
+  body.playing:has(#action-panel[data-phase="roll"]) .topbar .brand,body.playing:has(#action-panel[data-phase="roll"]) #room-badge,body.playing:has(#action-panel[data-phase="roll"]) #guide-button{display:none!important}
+  body.playing:has(#action-panel[data-phase="roll"]) .top-status{display:flex!important;position:absolute;inset:7px 8px auto;justify-content:space-between;width:auto;pointer-events:none}
+  body.playing:has(#action-panel[data-phase="roll"]) #round-badge{display:block;font-size:12px!important;padding:5px 7px!important;background:#14334c}
+  body.playing:has(#action-panel[data-phase="roll"]) .finance-shortcut{display:block;min-height:32px;padding:4px 9px;border:1px solid #9eac9e;border-radius:16px;font-size:12px;color:#fff2c4;background:#14334c;pointer-events:auto}
+}
+
+/* R106: full player identity must remain readable inside the all-player dialog. */
+body.playing #player-info-dialog .live-player-head{align-items:flex-start}
+body.playing #player-info-dialog .live-player-head b{max-width:none!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;overflow-wrap:anywhere}
+
+/* Keep the occupation readable alongside a complete long name. */
+body.playing #player-info-dialog .live-player-head{flex-direction:column;gap:4px}
+body.playing #player-info-dialog .live-player-head span{flex:none;max-width:100%;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+
+/* R107: only the player list scrolls; the native dialog clock and close header stay visible. */
+#player-info-dialog[open]{display:flex;flex-direction:column;overflow:hidden}
+#player-info-dialog>.dialog-countdown,#player-info-dialog>.guide-top{flex:0 0 auto}
+#player-info-dialog>.player-info-content{flex:1 1 auto;min-height:0;overflow:auto;overscroll-behavior:contain;scroll-padding:4px;padding:4px;margin-top:8px}
+
+/* R108: observer status occupies its own row below the readable hand, never floats over a card. */
+#card-focus.readable-hand>.hand-waiting-status{position:static;flex:none;width:min(100%,300px);min-height:0;margin:0;padding:7px 10px;border:1px solid #89b3bd;border-radius:12px;box-shadow:none;text-align:center}
+#card-focus.readable-hand>.hand-waiting-status::before,#card-focus.readable-hand>.hand-waiting-status>p{display:none}
+#card-focus.readable-hand>.hand-waiting-status>strong{display:block;font-size:14px;line-height:20px;white-space:normal;overflow-wrap:anywhere}
+
+/* Reserve the left mobile footer for the existing overview control. */
+@media(max-width:800px) and (orientation:portrait){#card-focus.readable-hand>.hand-waiting-status{width:calc(100% - 124px);align-self:flex-end}}
+
+/* R110: reachable room invitation and game tools without changing game state. */
+#action-panel .room-code-card #copy-invite{display:block;width:100%;min-height:44px;margin-top:12px;padding:9px;border:1px solid #e3bc71;border-radius:10px;background:#23475d;color:#fff0ba;text-align:center}
+#guide-dialog[open]{display:flex;flex-direction:column;overflow:hidden;max-height:calc(100dvh - 32px)}
+#guide-dialog>.guide-top,#guide-dialog>.dialog-countdown{flex:0 0 auto}
+#guide-dialog .guide-content{min-height:0;overflow:auto;overscroll-behavior:contain;padding:4px;margin-top:12px}
+#guide-dialog .guide-tools{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+#guide-dialog .guide-tools button{min-height:44px;font-size:14px;margin:0;padding:8px}
+#guide-dialog .guide-tool-status{grid-column:1/-1;margin:0;overflow-wrap:anywhere}
+#guide-dialog .guide-tool-status:empty{display:none}
+@media(max-width:800px) and (orientation:portrait){
+ body.playing.card-focus-active #guide-button,body.playing:has(#action-panel[data-phase="roll"]) #guide-button{display:block!important;position:fixed;top:4px;right:84px;width:44px;height:36px;min-height:36px;pointer-events:auto;font-size:18px;background:#14334c}
+}
+
+/* R110 follow-up: rule pages retain a visible character area and uncut tools. */
+#guide-dialog .guide-tools{flex:0 0 auto;margin:12px 4px 0}
+#guide-dialog .guide-content{flex:0 1 auto;max-height:190px;margin-top:8px}
+#guide-dialog .guide-content ol{margin:0;padding-left:22px}
+#guide-dialog .guide-content p{margin:6px 0}
+#guide-dialog .guide-content li{padding:6px 0;border:0}
+#guide-dialog .guide-pages{display:flex;flex:0 0 auto;align-items:center;justify-content:space-between;gap:8px;margin:10px 4px 0}
+#guide-dialog .guide-pages button{min-height:44px;min-width:88px;margin:0;padding:8px;font-size:14px}
+#guide-dialog .guide-page-position{font-size:13px;white-space:nowrap}
+@media(max-width:800px) and (orientation:portrait){
+ #guide-dialog[open]{position:fixed;top:var(--guide-top,244px);left:12px;right:12px;bottom:auto;width:calc(100% - 24px);height:auto;max-height:calc(100dvh - var(--guide-top,244px) - 12px);margin:0;padding:14px;border-radius:18px}
+ #guide-dialog::backdrop{background:rgba(3,16,34,.25)}
+ #guide-dialog>.guide-top{font-size:19px;min-height:36px}
+ #guide-dialog>.dialog-countdown{margin-bottom:8px;padding:6px}
+ #guide-dialog .guide-content{max-height:172px}
+}
+
+/* R110 desktop review: keep the central scene visible; break rules by meaning. */
+#guide-dialog::backdrop{background:rgba(3,16,34,.25)}
+#guide-dialog .guide-sentence{display:block;margin-top:5px;text-wrap:pretty}
+#guide-dialog .guide-content{max-height:212px}
+@media(min-width:801px){#guide-dialog[open]{position:fixed;left:20px;right:auto;top:90px;bottom:auto;margin:0;width:420px;padding:18px;max-height:calc(100dvh - 110px)}}
+
+/* R111: keep the same-cell selection list below the visible characters. */
+#crowd-names-dialog[open]{position:fixed;left:20px;right:auto;top:90px;bottom:auto;margin:0;width:370px;max-height:calc(100dvh - 110px);display:flex;flex-direction:column;overflow:hidden}
+#crowd-names-dialog::backdrop{background:rgba(3,16,34,.25)}
+#crowd-names-dialog>.dialog-countdown,#crowd-names-dialog>.crowd-dialog-heading,#crowd-names-dialog>.list-pagination{flex:0 0 auto}
+#crowd-names-dialog>p{margin:8px 0}
+#crowd-names-dialog .crowd-player-list{min-height:0;overflow-y:auto;margin-bottom:10px}
+#crowd-names-dialog .crowd-player-list button{min-height:44px;margin:0;padding:8px;line-height:20px}
+@media(max-width:800px){#crowd-names-dialog[open]{left:12px;right:12px;top:var(--crowd-safe-top,244px);width:calc(100% - 24px);max-height:calc(100dvh - var(--crowd-safe-top,244px) - 12px);padding:14px}#crowd-names-dialog>.dialog-countdown{margin-bottom:8px;padding:6px}}
+/* R115: keep external overview tools clear while confirming a holding sale. */
+body:has(#card-focus:not([hidden]) .holding-controls.confirming) #camera-button{display:none!important}
+/* R120: reserve the overview control's space in every shared mobile waiting footer. */
+@media(max-width:800px) and (orientation:portrait){
+ body.playing .main-action-tray:has(> .waiting-card:not(.roll-waiting)){left:132px!important;right:12px!important;bottom:max(12px,env(safe-area-inset-bottom))!important;width:auto!important;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important}
+ body.playing .main-action-tray>.waiting-card:not(.roll-waiting){min-width:0;width:100%;box-sizing:border-box}
+ body.playing .main-action-tray>.waiting-card:not(.roll-waiting) strong{white-space:normal;overflow-wrap:anywhere}
+}
+
+/* R124: the desktop result is fully readable from its first visible frame. */
+@media(min-width:801px){body.playing #world-stage #dice-readout{color:#102d45!important;background:#fff6dd!important;opacity:1!important;animation:none!important;text-shadow:none!important}}
+
+/* R125: the invitation has moved into card focus; only a footer remains here. */
+@media(max-width:800px) and (orientation:portrait){
+ body.playing .main-action-tray[data-phase="coInvest"]:has(> .waiting-card){display:flex!important;flex-direction:column!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+}
+
+/* R127: observers use the same lower card area as the recipient's actions. */
+body.playing #card-focus .joint-invitation>.invitation-waiting{flex:0 0 auto;min-height:92px;width:100%;margin-top:auto;padding:12px 10px;display:flex;flex-direction:column;justify-content:center;gap:8px;border-radius:12px;box-shadow:none}
+body.playing #card-focus .joint-invitation>.invitation-waiting::before{display:none}
+body.playing #card-focus .joint-invitation>.invitation-waiting strong{font-size:20px;line-height:26px;white-space:normal;overflow-wrap:anywhere}
+body.playing #card-focus .joint-invitation>.invitation-waiting p{display:block;margin:0;font-size:12px;line-height:18px;color:#d2e6ee}

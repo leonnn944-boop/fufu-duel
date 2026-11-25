@@ -1,0 +1,216 @@
+{
+  "scope": "R42 selected native PNG assets and 112/140/164px image-only inspection; not whole-build or gameplay validation.",
+  "passed": true,
+  "metrics": [
+    {
+      "key": "event-r42-free-gym-membership",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3035990397135417,
+      "bounds": {
+        "left": 99,
+        "top": 195,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r42-gym-membership-fee-increase",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3015429178873698,
+      "bounds": {
+        "left": 99,
+        "top": 201,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r42-home-cooking-savings",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.361541748046875,
+      "bounds": {
+        "left": 99,
+        "top": 164,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r42-cheaper-telecom-plan",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3328208923339844,
+      "bounds": {
+        "left": 99,
+        "top": 153,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r42-energy-saving-air-conditioner",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.44318389892578125,
+      "bounds": {
+        "left": 99,
+        "top": 89,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r42-car-breakdown-repair",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.2806803385416667,
+      "bounds": {
+        "left": 99,
+        "top": 139,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r42-streaming-subscription-cancelled",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.36199696858723956,
+      "bounds": {
+        "left": 99,
+        "top": 154,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r42-car-accident-compensation",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.30718739827473956,
+      "bounds": {
+        "left": 99,
+        "top": 120,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    }
+  ],
+  "hashMismatch": [],
+  "preservedFileCount": 100,
+  "preservedFilesUnchanged": true,
+  "exactIdCount": 8,
+  "manualReviewed": [
+    {
+      "id": "DA012",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "evidence": "evidence/r42-signal-refinement-1792999566331/DA012-before-after.png",
+      "result": "文件中央新增大紅叉取消續訂循環，播放鍵維持正常。"
+    },
+    {
+      "id": "DA058",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "evidence": "evidence/r42-signal-refinement-1792999566331/DA058-before-after.png",
+      "result": "兩車事故與文件保留，明顯鈔票、動態線及加粗向右付款箭頭表達賠償流出。"
+    }
+  ],
+  "mapping": [
+    {
+      "key": "event-r42-free-gym-membership",
+      "ids": [
+        "DA029"
+      ]
+    },
+    {
+      "key": "event-r42-gym-membership-fee-increase",
+      "ids": [
+        "DA036"
+      ]
+    },
+    {
+      "key": "event-r42-home-cooking-savings",
+      "ids": [
+        "DA011"
+      ]
+    },
+    {
+      "key": "event-r42-cheaper-telecom-plan",
+      "ids": [
+        "DA015"
+      ]
+    },
+    {
+      "key": "event-r42-energy-saving-air-conditioner",
+      "ids": [
+        "DA016"
+      ]
+    },
+    {
+      "key": "event-r42-car-breakdown-repair",
+      "ids": [
+        "DA057"
+      ]
+    },
+    {
+      "key": "event-r42-streaming-subscription-cancelled",
+      "ids": [
+        "DA012"
+      ]
+    },
+    {
+      "key": "event-r42-car-accident-compensation",
+      "ids": [
+        "DA058"
+      ]
+    }
+  ],
+  "priorSixReviewedEvidence": "evidence/r42-card-verify-1792999133331/report.json",
+  "other106Guard": "evidence/r42-signal-refinement-1792999566331/guard.json",
+  "other106FilesUnchanged": true,
+  "other106EntriesDeepEqual": true,
+  "prior100MetadataUnchanged": true,
+  "characterSourceUnchanged": true,
+  "host": {
+    "build": "R41-aa589bf3",
+    "careerHash": "3ff362b77316d97a171c1d566a32edcd8cb865d3a64257ee3ceae94ce88fd001"
+  },
+  "sourceHashes": {
+    "qa-r42-card-assets.mjs": "b35e224abf877e9d1603f6c50e8b8384739d171fa440b52e9c28387353192ae0",
+    "qa-r42-card-scenes.mjs": "8b676879622696e93d7a39f03547f27ac3cab8a9aa79bbd19de5f9200b8d6849",
+    "qa-r42-card-specs.mjs": "d73b383335ce2b208fcb5ba2d5a00d8dc48a4fee9e13d60ac7fccee5baca46bb",
+    "qa-r42-card-assets-verify.mjs": "78030a0ae5a3c3ab77bf6a376c6fcc2939afbc0b1bde87f8d367dddf0f1d8a95",
+    "qa-r42-signal-refinement-verify.mjs": "680057ade5d61d48280f23106807d9723df2bfb5832db220b6dd93d19d82c95b"
+  },
+  "limits": [
+    "本次僅補強 DA012／DA058 靜態 PNG；其餘 106 圖與 entry 保持深度相等。",
+    "已目視三種縮圖，未宣稱補強後主卡／手牌或選擇流程整合通過。",
+    "舊 R42-fb177702 快照與既有證據沒有被修改；公共 JS／CSS 留由根整合。"
+  ]
+}

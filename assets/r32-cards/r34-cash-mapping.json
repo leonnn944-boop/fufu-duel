@@ -1,0 +1,14 @@
+{
+  "generated": {
+    "JA008": "event-r34-cash-investment-received",
+    "JA009": "event-r34-cash-cooperation-received",
+    "JA022": "event-r34-cash-investment-refunded"
+  },
+  "reuse": {},
+  "generatedPresent": [
+    "event-r34-cash-investment-received",
+    "event-r34-cash-cooperation-received",
+    "event-r34-cash-investment-refunded"
+  ],
+  "scope": "exact IDs only; 3 new images/3 source IDs under explicit user ruling preserving cash effects. No main mapping changed."
+}

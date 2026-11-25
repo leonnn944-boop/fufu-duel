@@ -1,0 +1,394 @@
+{
+  "scope": "R36 selected native PNG assets and 112/140/164px image-only inspection; not whole-build or gameplay validation.",
+  "passed": true,
+  "metrics": [
+    {
+      "key": "event-r36-founder-unsold-products",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3864784240722656,
+      "bounds": {
+        "left": 99,
+        "top": 156,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r36-development-delayed-by-technical-difficulty",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3644256591796875,
+      "bounds": {
+        "left": 99,
+        "top": 131,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r36-marketing-budget-wasted",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.390289306640625,
+      "bounds": {
+        "left": 99,
+        "top": 148,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r36-negative-news-about-product-problems",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3664690653483073,
+      "bounds": {
+        "left": 99,
+        "top": 129,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r36-core-team-member-resigns",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.34896214803059894,
+      "bounds": {
+        "left": 99,
+        "top": 167,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r36-business-expansion-fails-funding-shrinks",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.39982350667317706,
+      "bounds": {
+        "left": 99,
+        "top": 124,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r36-private-clinic-management-loss",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.4015795389811198,
+      "bounds": {
+        "left": 99,
+        "top": 107,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r36-new-manager-lowers-sales-performance-rating",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3741645812988281,
+      "bounds": {
+        "left": 99,
+        "top": 182,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r36-competitor-undercuts-prices",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3493232727050781,
+      "bounds": {
+        "left": 99,
+        "top": 183,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r36-sales-department-marginalized-by-reorganization",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.40259424845377606,
+      "bounds": {
+        "left": 99,
+        "top": 137,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r36-supervisor-disapproves-assistant-performance",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.37502797444661456,
+      "bounds": {
+        "left": 99,
+        "top": 168,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r36-office-factions-marginalize-assistant",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.32901255289713544,
+      "bounds": {
+        "left": 99,
+        "top": 219,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    }
+  ],
+  "hashMismatch": [],
+  "preservedFileCount": 71,
+  "preservedFilesUnchanged": true,
+  "exactIdCount": 12,
+  "manualReviewed": [
+    {
+      "key": "event-r36-founder-unsold-products",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    },
+    {
+      "key": "event-r36-development-delayed-by-technical-difficulty",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    },
+    {
+      "key": "event-r36-marketing-budget-wasted",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    },
+    {
+      "key": "event-r36-negative-news-about-product-problems",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    },
+    {
+      "key": "event-r36-core-team-member-resigns",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    },
+    {
+      "key": "event-r36-business-expansion-fails-funding-shrinks",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    },
+    {
+      "key": "event-r36-private-clinic-management-loss",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    },
+    {
+      "key": "event-r36-new-manager-lowers-sales-performance-rating",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    },
+    {
+      "key": "event-r36-competitor-undercuts-prices",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    },
+    {
+      "key": "event-r36-sales-department-marginalized-by-reorganization",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    },
+    {
+      "key": "event-r36-supervisor-disapproves-assistant-performance",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    },
+    {
+      "key": "event-r36-office-factions-marginalize-assistant",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "事件主體、方向與職業辨識目視完成；無固定金額或永久效果標記。"
+    }
+  ],
+  "mapping": [
+    {
+      "key": "event-r36-founder-unsold-products",
+      "ids": [
+        "JA021"
+      ]
+    },
+    {
+      "key": "event-r36-development-delayed-by-technical-difficulty",
+      "ids": [
+        "JA023"
+      ]
+    },
+    {
+      "key": "event-r36-marketing-budget-wasted",
+      "ids": [
+        "JA025"
+      ]
+    },
+    {
+      "key": "event-r36-negative-news-about-product-problems",
+      "ids": [
+        "JA033"
+      ]
+    },
+    {
+      "key": "event-r36-core-team-member-resigns",
+      "ids": [
+        "JA036"
+      ]
+    },
+    {
+      "key": "event-r36-business-expansion-fails-funding-shrinks",
+      "ids": [
+        "JC033"
+      ]
+    },
+    {
+      "key": "event-r36-private-clinic-management-loss",
+      "ids": [
+        "JD040"
+      ]
+    },
+    {
+      "key": "event-r36-new-manager-lowers-sales-performance-rating",
+      "ids": [
+        "JE021"
+      ]
+    },
+    {
+      "key": "event-r36-competitor-undercuts-prices",
+      "ids": [
+        "JE026"
+      ]
+    },
+    {
+      "key": "event-r36-sales-department-marginalized-by-reorganization",
+      "ids": [
+        "JE037"
+      ]
+    },
+    {
+      "key": "event-r36-supervisor-disapproves-assistant-performance",
+      "ids": [
+        "JF021"
+      ]
+    },
+    {
+      "key": "event-r36-office-factions-marginalize-assistant",
+      "ids": [
+        "JF038"
+      ]
+    }
+  ],
+  "reviewedSheets": [
+    "evidence/r36-card-verify-1792991162014/small-frame-1.png",
+    "evidence/r36-card-verify-1792991188274/small-frame-2.png",
+    "evidence/r36-card-verify-1792991188274/small-frame-3.png",
+    "evidence/r36-card-verify-1792991188274/small-frame-4.png"
+  ],
+  "finalSheets": [
+    "evidence/r36-card-verify-1792991188274/small-frame-1.png",
+    "evidence/r36-card-verify-1792991188274/small-frame-2.png",
+    "evidence/r36-card-verify-1792991188274/small-frame-3.png",
+    "evidence/r36-card-verify-1792991188274/small-frame-4.png"
+  ],
+  "characterSourceHash": "3ff362b77316d97a171c1d566a32edcd8cb865d3a64257ee3ceae94ce88fd001",
+  "characterSourceUnchanged": true,
+  "protectedPriorScriptsUnchanged": true,
+  "sourceHashes": {
+    "qa-r36-card-assets.mjs": "5e005a015056e73fa64257f659883c0a6bc9b1f6c64b201c02684800e34480dd",
+    "qa-r36-card-scenes.mjs": "ea093114eb21cd50f6f8936586817bcb80306aba667d21e5597f088953c4759f",
+    "qa-r36-card-specs.mjs": "a640a971ad9ea7e2b5f1a061e68dfb46265bf3086861eec52168fa786fe8960a",
+    "qa-r36-card-assets-verify.mjs": "137ea611fb89fcf6895574213812ff84b6b00bd534a369185b073183773c26c9",
+    "public/cards-snapshot.mjs": "52e11336844d790e6e28557cc6b0e824e898f9470723abe96303faca40a6bc45",
+    "public/src/card-impact.mjs": "433ff4adb135d401d02f0288eea9621e598709eb1f9402d0d8c6de168ed9e4f9",
+    "evidence/r36-proposal.json": "76758a49fca038390f30e4f7ed2c128d01b65e953f87d14521b2113344f2df08"
+  },
+  "assetBytes": 1130641,
+  "limits": [
+    "僅 12 張素材與 112/140/164 縮圖目視，不代表主卡／手牌整合或全遊戲驗證。",
+    "原 71 PNG、前批 R34/R35 腳本與角色來源保持相同雜湊，未改 public/src 或原始資料。",
+    "JA025 保留原文字支出增加／欄位負收入差異，只按現行 impactText 語意作圖，未自行裁定或修改規則。",
+    "JE021 新主管降評、JF021 主管不認可、JE037 正式重組、JF038 派系邊緣化各自獨立。",
+    "JA036 只畫核心成員離職與空位，不加入 JA035 另立公司的意思。"
+  ]
+}

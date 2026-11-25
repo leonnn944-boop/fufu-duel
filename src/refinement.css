@@ -1,0 +1,500 @@
+/* Readable paper cards. Final presentation layer; no game rules are defined here. */
+body.playing #card-focus .focus-card-frame>.action-card,
+body.playing #card-focus .focus-loan,
+body.playing #card-focus .focus-invest-grid{border:2px solid #4d75a8!important;border-radius:18px!important;box-shadow:0 8px 22px #05132959!important;background:linear-gradient(150deg,#ffffff,#eef4fb)!important}
+body.playing #card-focus.readable-hand .hand-focus-card{width:340px!important;max-width:calc(100vw - 28px)!important;padding:16px!important;gap:10px!important;height:450px!important;aspect-ratio:auto!important;overflow-y:auto!important;overflow-x:hidden!important;scrollbar-width:thin;scrollbar-color:#b9955c #f2e8cf;overscroll-behavior:contain;touch-action:pan-y}
+body.playing #card-focus.readable-hand .hand-focus-card>h3{font-size:22px!important;line-height:1.35!important;text-align:left!important;text-wrap:pretty;overflow-wrap:anywhere;margin:0!important;letter-spacing:.01em}
+body.playing #card-focus.readable-hand .fate-card-stamp{height:36px!important;min-height:36px!important;gap:8px!important}
+body.playing #card-focus.readable-hand .fate-card-stamp>small{font-size:14px!important;line-height:20px!important}
+body.playing #card-focus .effect-badge{font-size:13px!important;line-height:22px!important;padding:1px 7px!important}
+body.playing #card-focus .card-original-button{height:36px!important;min-height:36px!important;width:46px!important;min-width:46px!important;padding:4px!important;font-size:13px!important;border:1px solid #b9955c!important;border-radius:8px!important;box-shadow:none!important}
+body.playing #card-focus.readable-hand .hand-focus-card:not(.co-invest-card)>.card-illustration{width:132px!important;height:132px!important;min-height:132px!important;max-height:132px!important;flex:0 0 132px!important;margin:0 auto!important;padding:0!important;border:1px solid #d7c7a6!important;border-radius:12px!important;background:#f3eedf!important}
+body.playing #card-focus.readable-hand .hand-focus-card.two-choice-card:not(.resolved)>.card-illustration{width:90px!important;height:90px!important;min-height:90px!important;max-height:90px!important;flex-basis:90px!important}
+body.playing #card-focus.readable-hand .hand-focus-card>.card-illustration .topic-art{width:100%!important;height:100%!important;max-height:100%!important;border-radius:10px!important}
+body.playing #card-focus.readable-hand .hand-focus-card>p{font-size:15px!important;line-height:1.55!important;margin:0!important}
+body.playing #card-focus.readable-hand .fate-effect{margin-top:0!important;padding:10px 12px!important;border:1px solid #c6ac79!important;border-radius:10px!important;flex:none}
+body.playing #card-focus.readable-hand .fate-effect strong{font-size:19px!important;line-height:1.5!important;margin:4px 0 0!important;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+body.playing #card-focus.readable-hand .fate-state{margin-top:auto!important;min-height:24px!important;font-size:14px!important;line-height:22px!important;padding:2px 8px!important}
+body.playing #card-focus.readable-hand .choice-list{gap:8px!important;flex:none}
+body.playing #card-focus.readable-hand .choice-option{padding:9px 11px!important;min-height:48px!important;border-width:1px!important;border-radius:9px!important;box-shadow:0 2px 0 #bfa26c45!important}
+body.playing #card-focus.readable-hand .choice-label{font-size:16px!important;line-height:22px!important}
+body.playing #card-focus.readable-hand .choice-impact{font-size:15px!important;line-height:23px!important}
+body.playing #card-focus.readable-hand .card-hand-fan{height:72px!important;min-height:72px!important;padding:2px!important;gap:4px!important;justify-content:center}
+body.playing #card-focus.readable-hand .hand-peek,
+body.playing #card-focus.readable-hand .hand-peek[data-card-id]{flex:0 0 56px!important;width:56px!important;max-width:56px!important;height:66px!important;min-height:66px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;gap:2px!important;padding:4px 2px!important;border-radius:8px!important;box-shadow:0 2px 5px #09263830!important;transform:none!important}
+body.playing #card-focus.readable-hand .hand-peek.selected{outline:2px solid #ffe6a1;outline-offset:1px;border:2px solid #a97424!important}
+body.playing #card-focus.readable-hand .hand-peek .hand-event-art{display:none!important}
+body.playing #card-focus.readable-hand .hand-peek .hand-kind{font-size:12px!important;line-height:16px!important}
+body.playing #card-focus.readable-hand .hand-peek .hand-title{font-size:14px!important;line-height:18px!important}
+body.playing #card-focus.readable-hand .hand-peek .hand-effect{font-size:12px!important;line-height:16px!important}
+body.playing #card-focus.readable-hand>.focus-hand-count{font-size:14px!important;line-height:21px!important;padding:2px 10px!important}
+body.playing #card-focus.readable-hand .co-invest-card .choice-pair-heading{font-size:15px!important;line-height:23px!important}
+body.playing #card-focus .focus-card-frame>.action-card:not(.hand-focus-card){padding:16px!important;gap:10px!important}
+body.playing #card-focus .focus-card-frame>.action-card>p{font-size:15px!important;line-height:23px!important}
+body.playing #card-focus .investment .offer-metric{padding:7px 10px!important;min-height:36px!important}
+body.playing #card-focus .offer-metric small,
+body.playing #card-focus .decision-metrics small{font-size:14px!important;line-height:21px!important}
+body.playing #card-focus .offer-metric strong,
+body.playing #card-focus .decision-metrics b{font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+body.playing #card-focus .holding-name{font-size:16px!important;line-height:24px!important}
+body.playing #card-focus .sale-detail{padding:12px!important;gap:10px!important}
+body.playing button.primary-button,body.playing button.secondary-button,
+body.playing .quiet-button,body.playing #card-focus .focus-invest-choice{box-shadow:0 2px 0 #102e3f30!important;text-shadow:none!important;line-height:1.4}
+body.playing #world-stage #stage-timer .timer-value{text-shadow:none!important;-webkit-text-stroke:0!important;letter-spacing:0!important}
+body.playing #world-stage #stage-timer .timer-unit{font-size:12px!important;line-height:15px!important}
+.fate-original-dialog,.crowd-names-dialog{padding:16px!important;line-height:1.6}
+.fate-original-dialog>p{font-size:16px!important;line-height:1.65!important;margin:10px 0!important}
+.board-info-body{font-size:16px;line-height:25px;padding:4px 2px}
+.board-info-body p,.board-info-list li{font-size:15px;line-height:24px}
+body.playing .holding-list{gap:8px!important;padding:8px 0!important}
+body.playing .holding-row{gap:8px!important;padding:6px 0!important;line-height:1.5!important}
+body.playing .holding-row>span{font-size:14px!important;line-height:21px!important}
+body.playing .holding-price-pair small,body.playing .holding-price-pair b{font-size:13px!important;line-height:20px!important}
+body.playing .holding-formula{font-size:13px!important;line-height:20px!important;padding:6px!important;overflow-wrap:anywhere}
+@media(min-width:801px){body.playing .live-values>div{padding:6px 8px!important}body.playing .live-values small{font-size:14px!important;line-height:21px!important}}
+@media(max-width:800px) and (orientation:portrait){
+ body.playing #card-focus.readable-hand{gap:6px!important}
+ body.playing #card-focus.readable-hand .hand-focus-card{height:450px!important;max-height:calc(100dvh - 388px)!important;min-height:0!important}
+ body.playing #card-focus.readable-hand>.card-hand-stage{flex:none!important}
+}
+@media(prefers-reduced-motion:reduce){.flip-in,.income-drawing,.asset-drawing,.card-focus-active .action-card{animation:none!important;transition:none!important}}
+
+/* Normal-entry review: salary result content must include its Continue button inside the paper. */
+body.playing #card-focus .focus-card-frame>.action-card:not(.hand-focus-card){height:auto!important;min-height:480px!important;max-height:calc(100dvh - 145px)!important;overflow-y:auto!important;overflow-x:hidden!important;overscroll-behavior:contain;scrollbar-width:thin}
+body.playing #card-focus .focus-card-frame>.action-card:not(.hand-focus-card)>*{flex-shrink:0!important}
+@media(max-width:800px) and (orientation:portrait){body.playing #card-focus .focus-card-frame>.action-card:not(.hand-focus-card){max-height:calc(100dvh - 280px)!important}}
+body.playing #card-focus .investment>.card-illustration{height:132px!important;min-height:132px!important;flex:0 0 132px!important;box-shadow:none!important;border:1px solid #d7c7a6!important}
+body.playing #card-focus .investment>.card-illustration .topic-art{width:132px!important;height:132px!important}
+body.playing #card-focus .market-event-card>.card-illustration,body.playing #card-focus .income-card>.card-illustration{box-shadow:none!important}
+body.playing #card-focus .investment>h3{text-align:left!important}
+body.playing #card-focus:not(.readable-hand)>.primary-button{margin-top:8px!important}
+
+body.final-awards .award-controls{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:6px!important}body.final-awards .award-controls button{font-size:14px!important;min-height:44px!important;padding:6px!important}
+
+.focus-back-fan{position:relative}
+.draw-flight{position:absolute;left:50%;top:50%;width:44px;height:64px;pointer-events:none;border-radius:5px;border:2px solid #ffe2a2;background:repeating-linear-gradient(45deg,#2b626e 0 4px,#34727d 4px 7px);box-shadow:inset 0 0 0 3px #234958,0 3px 8px #08232d55;animation:r166-deal var(--flight-time) both}
+.draw-flight::after{content:'◆';position:absolute;inset:0;display:grid;place-items:center;color:#ffe2a2;font-size:22px}
+@keyframes r166-deal{0%,12%{transform:translate(-50%,-50%) rotate(-9deg) scale(.76);opacity:.1}32%{opacity:1}75%{transform:perspective(600px) translate(-50%,-110%) rotateY(-16deg) scale(1.12);opacity:1}100%{transform:perspective(600px) translate(-50%,-30%) rotateY(76deg) scale(1.35);opacity:.4}}
+@media(prefers-reduced-motion:reduce){.draw-flight{animation:none;display:none}}
+body.playing #card-focus .investment>h3{letter-spacing:.025em!important;line-height:1.35!important;margin-block:4px 8px!important}
+body.playing #card-focus .investment>.card-illustration{background:linear-gradient(100deg,#ece3cd,#fff6df 46%,#eee4d1)!important;border-radius:12px!important}
+body.playing #card-focus .investment button{box-shadow:0 2px 0 #1b344828!important;line-height:1.42}
+/* Keep the source pile visible while its top card travels. */
+body.playing #card-focus .focus-draw-card.drawing{animation:none!important}
+.showcase-label, .pawn-label {
+  font-weight: 750;
+  letter-spacing: .025em;
+  text-shadow: 0 1px 2px #10202b;
+}
+#card-focus :is(.hand-title, .holding-name, .choice-label, .investment h3), .fate-original-dialog h3 {
+  font-family: "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: .015em;
+}
+body.playing #card-focus .investment :is(p, li, small) {
+  font-size: max(14px, 1em);
+  line-height: 1.48;
+  font-weight: 550;
+}
+body.playing #card-focus .offer-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  flex: none;
+  padding-block: 8px 2px;
+}
+body.playing #card-focus .offer-actions button {
+  min-height: 44px !important;
+  margin: 0 !important;
+  font-weight: 750 !important;
+}
+/* Room entry uses one readable surface in either mode. */
+#lobby-panel .form-card:not([hidden]) {
+  display: block;
+  padding: 17px;
+  border: 1px solid #a4abb9;
+  border-radius: 17px;
+  background: linear-gradient(155deg, #20405a, #112c46 70%);
+  box-shadow: 0 10px 24px #05172b55;
+}
+#lobby-panel .form-card::before,
+#lobby-panel .form-card::after { content: none; }
+#lobby-panel .form-card label,
+#lobby-panel #player-count-label {
+  margin: 0 0 7px;
+  color: #f2f7fb;
+  font-size: 14px;
+  font-weight: 750;
+}
+#lobby-panel .form-card > input,
+#lobby-panel .join-line input {
+  display: block;
+  min-height: 44px;
+  font-size: 16px;
+  border: 1px solid #89a7bb;
+  border-radius: 9px;
+  background: #101f32;
+  color: #f4f7fb;
+  box-shadow: inset 0 1px 3px #02091350;
+}
+#lobby-panel input::placeholder { color: #b6c8d6; }
+#lobby-panel .lobby-party {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 12px;
+}
+#lobby-panel .lobby-party small {
+  display: block;
+  margin-top: 3px;
+  color: #bdcddc;
+  font-size: 12px;
+}
+#lobby-panel .party-picker {
+  gap: 6px;
+  border: 1px solid #7894ab;
+  border-radius: 12px;
+  background: #13253b;
+  padding: 3px;
+}
+#lobby-panel .party-picker button {
+  width: 44px;
+  height: 44px;
+  box-shadow: none;
+  color: #1e2b41;
+  background: #f1cd7b;
+}
+#lobby-panel .party-picker button:disabled { background: #9aadc0; }
+#lobby-panel .party-picker output { min-width: 47px; text-align: center; font-size: 15px; }
+#lobby-panel .seat-preview { margin: 7px 0 0; min-height: 18px; }
+#lobby-panel .seat-token {
+  width: 18px;
+  height: 18px;
+  transform: none;
+  box-shadow: none;
+  border: 1px solid #88a5b6;
+  background: #203b54;
+  color: #fbf7ed;
+  font-size: 10px;
+}
+#lobby-panel .primary-button {
+  margin: 12px 0 0;
+  min-height: 44px;
+  font-size: 15px;
+  letter-spacing: 0;
+}
+#lobby-panel .lobby-switch {
+  min-height: 44px;
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #f1e2bf;
+  border: 1px solid #8d836d;
+  background: #152c43;
+}
+#lobby-panel .join-card label[for="room-code-input"] { margin-top: 13px; }
+#lobby-panel.join-mode .join-line { display: flex; margin: 0; }
+#lobby-panel .join-line .primary-button {
+  justify-content: center;
+  flex: 0 0 auto;
+  width: auto;
+  margin: 0;
+  padding-inline: 18px;
+}
+#lobby-panel .lobby-resume:not([hidden]) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  margin-bottom: 10px;
+  padding-inline: 13px;
+  border-radius: 9px;
+  border: 1px solid #bc9861;
+  background: #322a21;
+  color: #fff0ce;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+#lobby-panel .lobby-resume:hover { background: #463826; }
+#lobby-panel :is(button, input, a):focus-visible {
+  outline: 3px solid #ffd68c;
+  outline-offset: 2px;
+}
+@media (max-width: 430px) {
+  #lobby-panel .form-card:not([hidden]) { padding: 13px; }
+}
+
+/* Shared control feedback keeps actions distinguishable over the moving board. */
+.game-shell {
+  --control-ring: #fff4ce;
+  --control-dark: #142c44;
+}
+.game-shell :is(button, [role="button"], .lobby-resume):focus-visible {
+  outline: 3px solid var(--control-ring) !important;
+  outline-offset: 3px;
+}
+body.playing .game-shell :is(button.primary-button, button.big-roll) {
+  color: #0d1a30 !important;
+  border-color: #ffb86b !important;
+  background: linear-gradient(177deg, #ffa447, #ec6e14) !important;
+  text-shadow: none !important;
+  box-shadow: inset 0 1px 0 #ffd8a8, 0 3px 0 #9e4308, 0 7px 14px #08162c55 !important;
+  font-weight: 800 !important;
+}
+body.playing .game-shell :is(.world-buttons, .award-controls, .offer-actions) > button.secondary-button,
+body.playing .game-shell .world-buttons > button.quiet-button {
+  color: #f0f5fa !important;
+  border-color: #7e9bad !important;
+  background: linear-gradient(160deg, #254661, var(--control-dark)) !important;
+  text-shadow: none !important;
+  box-shadow: inset 0 1px 0 #b6daeb38, 0 2px 0 #0d2036 !important;
+}
+.game-shell :is(button, .focus-draw-card[role="button"], .lobby-resume) {
+  transition: filter 120ms ease, translate 130ms ease, box-shadow 140ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .game-shell :is(button:enabled, .focus-draw-card[role="button"], .lobby-resume):hover {
+    filter: brightness(1.09) saturate(1.04);
+  }
+}
+.game-shell :is(button:enabled, .focus-draw-card[role="button"], .lobby-resume):active {
+  translate: 0 2px;
+  filter: brightness(.92);
+}
+body.playing .game-shell :is(button.primary-button, button.big-roll):disabled {
+  color: #c5d4dd !important;
+  background: #2a4051 !important;
+  border-color: #7e94a5 !important;
+  box-shadow: none !important;
+  opacity: .82;
+  cursor: default;
+}
+@media (prefers-reduced-motion: reduce) {
+  body.playing #world-stage #dice-readout,
+  body.final-awards .winner-spotlight {
+    animation: none !important;
+  }
+  .game-shell :is(button, .focus-draw-card[role="button"], .lobby-resume) {
+    transition: none !important;
+  }
+  .game-shell :is(button, .focus-draw-card[role="button"], .lobby-resume):active {
+    translate: none;
+  }
+}
+
+/* Financial values and card actions retain their reading order at small sizes. */
+body.playing .game-shell #card-focus .card-original-button {
+  min-height: 44px !important;
+  height: 44px !important;
+  min-width: 48px !important;
+}
+body.playing .game-shell :is(.offer-metrics, .decision-metrics, .summary-standings) {
+  font-variant-numeric: tabular-nums;
+}
+body.playing .game-shell #card-focus .market-event-card .market-grid {
+  flex: none !important;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: none !important;
+}
+body.playing .game-shell #card-focus .market-event-card .market-metric {
+  justify-content: flex-start;
+  padding: 7px 8px !important;
+}
+body.playing .game-shell #card-focus .market-metric :is(small, em, strong) {
+  font-size: 13px !important;
+  line-height: 1.35 !important;
+  white-space: normal !important;
+}
+body.playing .game-shell #card-focus .market-metric strong {
+  font-size: 15px !important;
+  font-variant-numeric: tabular-nums;
+}
+body.playing .game-shell .summary-wait { font-size: 13px !important; }
+
+/* Reserve space for the Continue action and for the persistent board button. */
+@media (max-width: 800px) and (orientation: portrait) {
+  body.playing #world-stage > #card-focus:has(> .focus-card-frame > :is(.action-card, .crafted-career-card)):not(.readable-hand) {
+    --compact-card-top: clamp(118px, 27dvh, 205px);
+    --compact-card-bottom: max(64px, calc(env(safe-area-inset-bottom) + 56px));
+    --compact-card-action: 0px;
+    top: var(--compact-card-top) !important;
+    bottom: auto !important;
+    width: min(348px, calc(100dvw - 22px)) !important;
+    gap: 6px !important;
+  }
+  body.playing #world-stage > #card-focus:has(> .focus-card-frame + :is(.primary-button, .offer-actions)):not(.readable-hand) {
+    --compact-card-action: 64px;
+  }
+  body.playing #world-stage > #card-focus > .offer-actions {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 6px 6px;
+    border: 1px solid #a98f65;
+    border-radius: 12px;
+    background: #202f43;
+    box-shadow: 0 4px 14px #0e243675;
+  }
+  body.playing #world-stage > #card-focus:not(.readable-hand) > .focus-card-frame > :is(.action-card, .crafted-career-card) {
+    box-sizing: border-box;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: calc(100dvh - var(--compact-card-top) - var(--compact-card-bottom) - var(--compact-card-action)) !important;
+    padding: 12px !important;
+    overflow: hidden auto !important;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+  body.playing #world-stage > #card-focus:not(.readable-hand) > .focus-card-frame > :is(.action-card, .crafted-career-card) > * {
+    flex-shrink: 0 !important;
+  }
+  body.playing #world-stage > #card-focus .investment > .card-illustration {
+    height: 92px !important;
+    min-height: 92px !important;
+    flex-basis: 92px !important;
+  }
+  body.playing #world-stage > #card-focus .investment > .card-illustration .topic-art {
+    width: 92px !important;
+    height: 92px !important;
+  }
+  body.playing #world-stage > #card-focus .crafted-career-card .role-portrait {
+    height: 116px !important;
+    min-height: 116px !important;
+  }
+}
+
+
+/* Short investment offers keep their decision buttons outside the reading area. */
+body.playing #world-stage > #card-focus.offer-focus .investment:focus-visible {
+  outline: 2px solid #d59d45;
+  outline-offset: -5px;
+}
+body.playing #card-focus.offer-focus .offer-reading-status {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #fff3d8;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 15px;
+  text-align: center;
+}
+body.playing #card-focus.offer-focus > .offer-reading-status {
+  width: fit-content;
+  margin-inline: auto;
+  padding: 3px 10px;
+  border-radius: 8px;
+  background: #202f43;
+}
+body.playing #card-focus.offer-focus .offer-actions:has(.offer-reading-status:not([hidden])) {
+  row-gap: 4px;
+}
+@media (max-width: 800px) and (orientation: portrait) {
+  body.playing #world-stage > #card-focus.offer-focus:has(.offer-reading-status:not([hidden])) {
+    --compact-card-action: 84px;
+  }
+}
+@media (max-height: 700px) and (orientation: landscape) {
+  body.playing #world-stage > #card-focus.offer-focus:not(.readable-hand) {
+    --offer-top: max(53px, calc(env(safe-area-inset-top) + 44px));
+    --offer-bottom: max(62px, calc(env(safe-area-inset-bottom) + 56px));
+    --offer-footer: 0px;
+    top: var(--offer-top) !important;
+    left: max(12px, env(safe-area-inset-left)) !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: min(340px, calc(100dvw - max(244px, 42dvw) - max(0px, env(safe-area-inset-left) - 12px))) !important;
+    z-index: 10;
+    height: auto !important;
+    max-height: none !important;
+    transform: none !important;
+    gap: 6px !important;
+  }
+  body.playing #world-stage > #card-focus.offer-focus:has(> .offer-actions) {
+    --offer-footer: 60px;
+  }
+  body.playing #world-stage > #card-focus.offer-focus:has(.offer-reading-status:not([hidden])) {
+    --offer-footer: 82px;
+  }
+  body.playing #world-stage > #card-focus.offer-focus > .focus-card-frame > .investment:not(.hand-focus-card) {
+    box-sizing: border-box;
+    display: grid !important;
+    grid-template:
+      "category category" max-content
+      "title title" max-content
+      "art metrics" max-content
+      "facts facts" max-content
+      / clamp(54px, 11dvw, 76px) minmax(0, 1fr);
+    align-content: start;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: calc(100dvh - var(--offer-top) - var(--offer-bottom) - var(--offer-footer)) !important;
+    padding: 8px !important;
+    gap: 4px 8px !important;
+    overflow: hidden auto !important;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    touch-action: pan-y;
+  }
+  body.playing #world-stage > #card-focus.offer-focus .investment > .investment-facts {
+    grid-area: facts;
+  }
+  body.playing #world-stage > #card-focus.offer-focus .investment > small {
+    grid-area: category;
+    font-size: 11px !important;
+    line-height: 15px !important;
+  }
+  body.playing #world-stage > #card-focus.offer-focus .investment > h3 {
+    grid-area: title;
+    margin: 0 !important;
+    font-size: 19px !important;
+    line-height: 25px !important;
+  }
+  body.playing #world-stage > #card-focus.offer-focus .investment > .card-illustration {
+    grid-area: art;
+    position: static !important;
+    order: initial !important;
+    align-self: start;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 1;
+    margin: 0 !important;
+  }
+  body.playing #world-stage > #card-focus.offer-focus .investment > .card-illustration .topic-art {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  body.playing #world-stage > #card-focus.offer-focus .investment .offer-metrics {
+    grid-area: metrics;
+    position: static !important;
+    min-width: 0;
+    width: auto !important;
+    margin: 0 !important;
+  }
+  body.playing #world-stage > #card-focus.offer-focus .investment .offer-metric {
+    gap: 4px;
+    min-height: 26px !important;
+    padding: 2px 5px !important;
+  }
+  body.playing #world-stage > #card-focus.offer-focus .investment .offer-metric small {
+    font-size: 12px !important;
+    line-height: 17px !important;
+  }
+  body.playing #world-stage > #card-focus.offer-focus .investment .offer-metric strong {
+    font-size: 14px !important;
+    line-height: 18px !important;
+  }
+  body.playing #world-stage > #card-focus.offer-focus > .offer-actions {
+    width: 100%;
+    padding: 5px 6px 6px;
+    border: 1px solid #a98f65;
+    border-radius: 12px;
+    background: #202f43;
+    box-shadow: 0 4px 14px #0e243675;
+  }
+}

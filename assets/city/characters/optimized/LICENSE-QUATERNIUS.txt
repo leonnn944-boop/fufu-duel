@@ -1,0 +1,9 @@
+Ultimate Modular Men and Ultimate Modular Women by Quaternius
+https://quaternius.com/packs/ultimatemodularcharacters.html
+https://quaternius.com/packs/ultimatemodularwomen.html
+
+License: CC0 1.0 Universal (CC0 1.0), Public Domain Dedication
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Six selected character models were converted from the authors' glTF files to
+GLB, retaining the meshes, materials, skeleton, Idle and Walk animations.

@@ -1,0 +1,513 @@
+{
+  "scope": "R37 selected native PNG assets and 112/140/164px image-only inspection; not whole-build or gameplay validation.",
+  "passed": true,
+  "metrics": [
+    {
+      "key": "event-r37-competitor-malicious-smear",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.41273752848307294,
+      "bounds": {
+        "left": 99,
+        "top": 156,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r37-freelance-service-demand-falls",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.39807764689127606,
+      "bounds": {
+        "left": 99,
+        "top": 121,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r37-freelance-demand-shifts-to-automation",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3842620849609375,
+      "bounds": {
+        "left": 99,
+        "top": 145,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r37-company-layoff-wave-engineer-income-reduced",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3574167887369792,
+      "bounds": {
+        "left": 99,
+        "top": 135,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r37-sales-product-demand-falls",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3782946268717448,
+      "bounds": {
+        "left": 99,
+        "top": 137,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r37-new-product-not-yet-accepted",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.36437098185221356,
+      "bounds": {
+        "left": 99,
+        "top": 185,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r37-existing-product-no-longer-fits-demand",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3651695251464844,
+      "bounds": {
+        "left": 99,
+        "top": 165,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r37-company-defeated-market-share-lost",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.40476735432942706,
+      "bounds": {
+        "left": 99,
+        "top": 127,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r37-asian-financial-crisis",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.42206446329752606,
+      "bounds": {
+        "left": 99,
+        "top": 94,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r37-european-debt-crisis",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.37474695841471356,
+      "bounds": {
+        "left": 99,
+        "top": 132,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r37-japan-asset-bubble",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.32019933064778644,
+      "bounds": {
+        "left": 99,
+        "top": 95,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r37-taiwan-strait-missile-crisis",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.36606725056966144,
+      "bounds": {
+        "left": 99,
+        "top": 190,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    }
+  ],
+  "hashMismatch": [],
+  "preservedFileCount": 83,
+  "preservedFilesUnchanged": true,
+  "exactIdCount": 12,
+  "manualReviewed": [
+    {
+      "key": "event-r37-competitor-malicious-smear",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    },
+    {
+      "key": "event-r37-freelance-service-demand-falls",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    },
+    {
+      "key": "event-r37-freelance-demand-shifts-to-automation",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    },
+    {
+      "key": "event-r37-company-layoff-wave-engineer-income-reduced",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    },
+    {
+      "key": "event-r37-sales-product-demand-falls",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    },
+    {
+      "key": "event-r37-new-product-not-yet-accepted",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    },
+    {
+      "key": "event-r37-existing-product-no-longer-fits-demand",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    },
+    {
+      "key": "event-r37-company-defeated-market-share-lost",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    },
+    {
+      "key": "event-r37-asian-financial-crisis",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    },
+    {
+      "key": "event-r37-european-debt-crisis",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    },
+    {
+      "key": "event-r37-japan-asset-bubble",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    },
+    {
+      "key": "event-r37-taiwan-strait-missile-crisis",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向及角色目視完成；市場圖僅事件景象，無全資產單向漲跌符號。"
+    }
+  ],
+  "mapping": [
+    {
+      "key": "event-r37-competitor-malicious-smear",
+      "ids": [
+        "JA037"
+      ]
+    },
+    {
+      "key": "event-r37-freelance-service-demand-falls",
+      "ids": [
+        "JB030"
+      ]
+    },
+    {
+      "key": "event-r37-freelance-demand-shifts-to-automation",
+      "ids": [
+        "JB040"
+      ]
+    },
+    {
+      "key": "event-r37-company-layoff-wave-engineer-income-reduced",
+      "ids": [
+        "JC038"
+      ]
+    },
+    {
+      "key": "event-r37-sales-product-demand-falls",
+      "ids": [
+        "JE027"
+      ]
+    },
+    {
+      "key": "event-r37-new-product-not-yet-accepted",
+      "ids": [
+        "JE034"
+      ]
+    },
+    {
+      "key": "event-r37-existing-product-no-longer-fits-demand",
+      "ids": [
+        "JE039"
+      ]
+    },
+    {
+      "key": "event-r37-company-defeated-market-share-lost",
+      "ids": [
+        "JF029"
+      ]
+    },
+    {
+      "key": "event-r37-asian-financial-crisis",
+      "ids": [
+        "M201"
+      ]
+    },
+    {
+      "key": "event-r37-european-debt-crisis",
+      "ids": [
+        "M402"
+      ]
+    },
+    {
+      "key": "event-r37-japan-asset-bubble",
+      "ids": [
+        "M101"
+      ]
+    },
+    {
+      "key": "event-r37-taiwan-strait-missile-crisis",
+      "ids": [
+        "M106"
+      ]
+    }
+  ],
+  "reviewedSheets": [
+    "evidence/r37-card-verify-1792992097256/small-frame-1.png",
+    "evidence/r37-card-verify-1792992120306/small-frame-2.png",
+    "evidence/r37-card-verify-1792992120306/small-frame-3.png",
+    "evidence/r37-card-verify-1792992120306/small-frame-4.png",
+    "evidence/r37-card-verify-1792992196393/small-frame-4.png"
+  ],
+  "finalSheets": [
+    "evidence/r37-card-verify-1792992196393/small-frame-1.png",
+    "evidence/r37-card-verify-1792992196393/small-frame-2.png",
+    "evidence/r37-card-verify-1792992196393/small-frame-3.png",
+    "evidence/r37-card-verify-1792992196393/small-frame-4.png"
+  ],
+  "characterSourceHash": "3ff362b77316d97a171c1d566a32edcd8cb865d3a64257ee3ceae94ce88fd001",
+  "characterSourceUnchanged": true,
+  "priorScriptsUnchangedFromReleasedR36": true,
+  "preReleaseChanges": [
+    {
+      "path": "qa-r36-copy.mjs",
+      "preparedHash": "9944342640f6ab33e0bddbdc1c8b6d7a23b66b038b571cf7c7231582cd2681f0",
+      "releasedHash": "e4e7e4642d349596f750822e5fc6347fe45c083295a9a2d71321129e0c6dd596",
+      "reason": "Parent completed R36 copy and money-line QA after preparation; final release explicitly delivered R36-78e34e09."
+    },
+    {
+      "path": "qa-r36-money-lines.mjs",
+      "preparedHash": "5b31a032c1715e00b19bc433ba24a6e3bc9402dcc5f370a3caf2f6a726da6403",
+      "releasedHash": "4ef6eb6203c59c918ab6bd75c82d939cdfc7d82fc342f2613280ec491c1d37dd",
+      "reason": "Parent completed R36 copy and money-line QA after preparation; final release explicitly delivered R36-78e34e09."
+    }
+  ],
+  "releaseBaseline": "evidence/r37-card-assets-release-baseline.json",
+  "sourceHashes": {
+    "qa-r37-card-assets.mjs": "176711c28a73b43a733a1fa2d50e115161188513c471378301744f473d919f8a",
+    "qa-r37-card-scenes.mjs": "edab3d7719bae1a5ca8b5fbacbc36e6ea2e51cbcd2732b2a66dd16750de6d767",
+    "qa-r37-card-specs.mjs": "6670da5cffefcfb2e80f39c23b90632620d127f9567da15f5ce6d1e52d7c5c8f",
+    "qa-r37-card-assets-verify.mjs": "4583dcc8bd63070ed6c4dd7752c452664de746324d4f76b88a816072518f8748",
+    "public/cards-snapshot.mjs": "52e11336844d790e6e28557cc6b0e824e898f9470723abe96303faca40a6bc45",
+    "public/market-data.mjs": "3ec379d67ebd91513364ff7d9d99625cdd4c4bf19333b4da260947260df889d1",
+    "public/src/card-impact.mjs": "433ff4adb135d401d02f0288eea9621e598709eb1f9402d0d8c6de168ed9e4f9",
+    "evidence/r37-proposal.json": "9dc9180314235fe1c6c4dd64225b584f0ac545ae16b84ff562977288a16ff3eb"
+  },
+  "marketSourceUnchanged": true,
+  "snapshotSourceUnchanged": true,
+  "marketExactEffects": [
+    {
+      "id": "M101",
+      "assetEffect": [
+        -0.25,
+        -0.3,
+        -0.2,
+        0.15,
+        0,
+        -0.1
+      ],
+      "yieldEffect": [
+        -0.15,
+        -0.18,
+        -0.12,
+        0.09,
+        0,
+        -0.06
+      ],
+      "positiveCategories": [
+        "貴金屬"
+      ],
+      "zeroCategories": [
+        "加密貨幣"
+      ]
+    },
+    {
+      "id": "M106",
+      "assetEffect": [
+        -0.2,
+        -0.1,
+        -0.2,
+        0.15,
+        0,
+        -0.15
+      ],
+      "yieldEffect": [
+        -0.12,
+        -0.06,
+        -0.12,
+        0.09,
+        0,
+        -0.09
+      ],
+      "positiveCategories": [
+        "貴金屬"
+      ],
+      "zeroCategories": [
+        "加密貨幣"
+      ]
+    },
+    {
+      "id": "M201",
+      "assetEffect": [
+        -0.3,
+        -0.25,
+        -0.3,
+        0.2,
+        0,
+        -0.2
+      ],
+      "yieldEffect": [
+        -0.18,
+        -0.15,
+        -0.18,
+        0.12,
+        0,
+        -0.12
+      ],
+      "positiveCategories": [
+        "貴金屬"
+      ],
+      "zeroCategories": [
+        "加密貨幣"
+      ]
+    },
+    {
+      "id": "M402",
+      "assetEffect": [
+        -0.25,
+        -0.15,
+        -0.25,
+        0.15,
+        -0.15,
+        -0.2
+      ],
+      "yieldEffect": [
+        -0.15,
+        -0.09,
+        -0.15,
+        0.09,
+        -0.09,
+        -0.12
+      ],
+      "positiveCategories": [
+        "貴金屬"
+      ],
+      "zeroCategories": []
+    }
+  ],
+  "marketVectorGuard": true,
+  "assetBytes": 930038,
+  "limits": [
+    "僅 12 張素材及 112/140/164 縮圖目視，不代表主卡／手牌、正常多人局或全套驗收。",
+    "舊 83 PNG 與角色不變；前批腳本依 parent 已交付 R36-78e34e09 放行基準保留，2 個準備期間已知 QA 變更另記，未覆蓋原 baseline。",
+    "4 市場各為獨立具體事件；6 類原始效果向量保留，沒有全體下跌暗示。",
+    "未改 public/src、規則或原始卡牌／市場快照。"
+  ]
+}

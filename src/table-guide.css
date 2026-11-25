@@ -1,0 +1,315 @@
+/* Deep-navy & bright-orange rulebook and first-game micro-hints. */
+#guide-dialog.table-guide[open] {
+  --guide-ink: #102444;
+  --guide-muted: #466082;
+  --guide-line: #c4d3e6;
+  position: fixed;
+  inset: 0;
+  width: min(568px, calc(100vw - 20px - env(safe-area-inset-left) - env(safe-area-inset-right)));
+  height: fit-content;
+  max-height: calc(100dvh - 28px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #3f6699;
+  border-radius: 17px;
+  background: #f7fafe;
+  box-shadow: 0 18px 56px #041024b8;
+  color: var(--guide-ink);
+  text-align: start;
+}
+#guide-dialog.table-guide::backdrop {background: #041024b0}
+.table-guide .field-guide-heading,
+.table-guide .field-guide-footer {display: flex; align-items: center; justify-content: space-between; flex: 0 0 auto}
+.table-guide .field-guide-heading {
+  background: linear-gradient(110deg, #0d1f3e, #1a3868);
+  padding: 8px 15px 8px 21px;
+  color: #ffffff;
+  border-bottom: 3px solid #ff8a2b;
+}
+.table-guide .field-guide-heading h2 {
+  margin: 0;
+  font-family: var(--game-display-font, "Zen Maru Gothic", "Huninn", sans-serif);
+  font-weight: 900;
+  font-size: clamp(19px, 3vw, 24px);
+  line-height: 1.25;
+  letter-spacing: .06em;
+}
+.table-guide button,
+.table-guide summary {font-family: inherit; touch-action: manipulation}
+.table-guide #guide-session {display: block; margin-top: 3px; color: #ffd4a3; font-size: 14px; line-height: 1.35}
+.table-guide button {cursor: pointer}
+.table-guide #guide-close {
+  flex: none; width: 42px; height: 42px; border: 1px solid #6b91c2; border-radius: 50%;
+  background: transparent; color: #ffffff; font-size: 25px; line-height: 1; padding: 0;
+}
+.table-guide :is(button, summary, [role="tabpanel"]):focus-visible {
+  outline: 3px solid #ff8a2b; outline-offset: -3px;
+}
+.table-guide #guide-close:focus-visible {outline-color: #ffaa52}
+.table-guide .field-guide-tabs {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); flex: 0 0 auto;
+  padding: 5px 14px 0; gap: 3px; border-bottom: 1px solid var(--guide-line); background: #e5eef8;
+}
+.table-guide .field-guide-tabs button {
+  border: 0; border-bottom: 3px solid transparent; padding: 6px 2px; min-height: 42px;
+  background: transparent; color: #466082; font-weight: 750; font-size: 15px;
+}
+.table-guide .field-guide-tabs [aria-selected="true"] {
+  background: #f7fafe; color: #0f2444; border-color: #ff8a2b; border-radius: 7px 7px 0 0;
+}
+.table-guide .field-guide-reader {
+  min-height: 0; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain;
+  scrollbar-gutter: stable; padding: 20px 22px 12px;
+}
+.table-guide [role="tabpanel"] {margin: 0; padding: 1px 2px 0}
+.table-guide [hidden] {display: none !important}
+.table-guide [role="tabpanel"] h3 {
+  color: var(--guide-ink); font-size: clamp(20px, 4vw, 26px); line-height: 1.3; margin: 0;
+}
+.table-guide .guide-quickstart {
+  list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px; margin: 10px 0 8px; padding: 0;
+}
+.table-guide .guide-quickstart li {
+  display: grid; gap: 2px; padding: 7px 9px; border-radius: 8px;
+  border: 1px solid #c6d5e8; background: #ebf2fa;
+}
+.table-guide .guide-quickstart strong {color: #102444; font-size: 14px; line-height: 1.3}
+.table-guide .guide-quickstart span {color: var(--guide-muted); font-size: 13px; line-height: 1.35}
+#guide-dialog.table-guide [role="tabpanel"] p {
+  color: var(--guide-ink); font-size: 16px; line-height: 1.65; margin: 8px 0;
+}
+.table-guide .guide-ledger {
+  display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 8px;
+  margin: 12px 0 10px; padding: 10px; border: 2px solid #2c548c; border-radius: 12px;
+  background: #fffcf5; box-shadow: 0 4px 0 #15315c26;
+}
+.table-guide .guide-slip {
+  min-width: 0; padding: 8px 6px; border-radius: 9px;
+  background: #edf3fc; border: 2px solid #c6d7ee; text-align: center;
+  transition: border-color .24s ease, background-color .24s ease, box-shadow .24s ease;
+}
+.table-guide .guide-slip.delta-good {
+  border-color: #18a558;
+  background: #e9fbf1;
+  box-shadow: 0 0 0 3px #18a55838;
+  animation: ledgerFlashGood .65s ease;
+}
+.table-guide .guide-slip.delta-bad {
+  border-color: #d94436;
+  background: #ffefed;
+  box-shadow: 0 0 0 3px #d9443638;
+  animation: ledgerFlashBad .65s ease;
+}
+@keyframes ledgerFlashGood {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 #18a55880; }
+  35% { transform: scale(1.05); box-shadow: 0 0 0 6px #18a55844; }
+  100% { transform: scale(1); box-shadow: 0 0 0 3px #18a55838; }
+}
+@keyframes ledgerFlashBad {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 #d9443680; }
+  35% { transform: scale(1.05); box-shadow: 0 0 0 6px #d9443644; }
+  100% { transform: scale(1); box-shadow: 0 0 0 3px #d9443638; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .table-guide .guide-slip.delta-good,
+  .table-guide .guide-slip.delta-bad { animation: none; }
+}
+.table-guide .guide-slip span, .table-guide .guide-art-card figcaption span {
+  display: block; color: var(--guide-muted); font-size: 13px; font-weight: 700; white-space: nowrap;
+}
+.table-guide .guide-slip b {
+  display: block; margin-top: 3px; color: #102444; font-weight: 850; font-variant-numeric: tabular-nums; font-size: 19px; line-height: 1.2; white-space: nowrap;
+}
+.table-guide .guide-total {
+  grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: center; padding: 8px 12px;
+  border-radius: 9px; background: linear-gradient(135deg, #fff1de, #ffe2be); border: 1px solid #f0953c; font-weight: 800; color: #102444;
+}
+.table-guide .guide-total b {
+  display: block; color: #c95206; font-weight: 900; font-variant-numeric: tabular-nums; font-size: 22px; line-height: 1.1;
+}
+.table-guide .guide-example {display:flex; align-items:center; flex-wrap: wrap; gap: 6px 12px; font-size: 14px}
+.table-guide #guide-example-loan, .table-guide .guide-detail summary {
+  min-height: 42px; padding: 8px 11px; border-radius: 7px;
+  color: #102444; background: #e8f0fa; border: 1px solid #a9c0de; font-size: 15px; font-weight: 750;
+}
+.table-guide #guide-example-loan[aria-pressed="true"] {background: #ff8a2b; border-color: #e26d10; color: #0e1e38}
+.table-guide .guide-example span {color: var(--guide-muted); flex: 1 1 130px; line-height: 1.5}
+.table-guide .guide-art-card {
+  display: flex; align-items: center; gap: 14px; margin: 10px 0; min-height: 92px; overflow: hidden;
+  border: 1px solid var(--guide-line); border-radius: 9px; background: #eaf1fa;
+}
+.table-guide .guide-art-card.market {background: #fff3e5; border-color: #f0be8a}
+.table-guide .guide-art-card img {display: block; object-fit: contain; flex: 0 0 106px; width: 106px; height: 102px; border-radius: 0}
+.table-guide .guide-art-card figcaption {min-width: 0; padding: 6px 6px 6px 0; line-height: 1.6}
+.table-guide .guide-art-card figcaption strong {color: var(--guide-ink); font-size: 19px}
+.table-guide .guide-art-card figcaption b {margin-inline-start: 6px}
+.table-guide .guide-detail {margin-top: 10px}
+.table-guide .guide-detail summary {cursor: pointer; width: fit-content}
+#guide-dialog.table-guide .guide-detail p {padding: 0 2px; color: var(--guide-muted); font-size: 15px}
+.table-guide .guide-route {
+  display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); padding: 9px 7px; margin: 10px 0;
+  background: #eaf1fa; border: 1px solid var(--guide-line); border-radius: 9px;
+}
+.table-guide .guide-route div {position: relative; display: grid; justify-items: center; gap: 6px; min-width: 0}
+.table-guide .guide-route div + div::before {content: '›'; position:absolute; left:-5px; top:4px; color:#54749c; font-size:23px}
+.table-guide .guide-route b {
+  display:grid; place-items:center; width:40px; height:40px; border-radius:7px;
+  border:1px solid #3c608f; background:#ffffff; color:#102444; font: 800 26px/1 Georgia,serif;
+}
+.table-guide .guide-route .guide-luck {border-radius:50%; background:#ff9a3c; color:#102444; border-color:#d96d12}
+.table-guide .guide-route .guide-fate {background:#142d54; color:#ffd6a3; transform:rotate(5deg)}
+.table-guide .guide-route span {font-weight:700; font-size:14px}
+.table-guide .field-guide-tools {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px;
+  padding-top: 8px; margin-top: 12px; border-top: 1px dashed var(--guide-line);
+}
+.table-guide .field-guide-tools button {
+  min-height: 40px; padding: 6px 7px; border: 0; background: transparent;
+  color: #183d70; font-size: 14px; font-weight: 750; text-decoration: underline; text-underline-offset: .22em;
+}
+.table-guide .guide-tool-message:empty {display: none}
+.table-guide .field-guide-footer {
+  gap: 6px; padding: 8px 16px; border-top: 1px solid var(--guide-line); background: #eaf1fa;
+}
+.table-guide .field-guide-footer button {
+  min-width: 88px; min-height: 44px; padding: 5px 10px;
+  border: 1px solid #96b0d1; border-radius: 8px; color: #102444; background: #ffffff;
+  font-size: 15px; font-weight: 750;
+}
+.table-guide .field-guide-footer button:disabled {opacity: .45; cursor: default}
+.table-guide #guide-next {background: linear-gradient(160deg, #ff9a3c, #e86b12); border-color: #d9630c; color: #0e1e38}
+.table-guide #guide-position {color: #3d5778; font-weight: 750; font-size: 14px; font-variant-numeric: tabular-nums}
+@media (max-width: 430px) {
+  .table-guide .field-guide-reader {padding: 13px 12px 8px; scrollbar-gutter: auto}
+  .table-guide .field-guide-heading {padding-inline: 14px}
+  .table-guide .field-guide-tabs {padding-inline: 8px}
+  .table-guide .field-guide-footer {padding-inline: 12px}
+}
+@media (max-height: 460px) {
+  #guide-dialog.table-guide[open] {max-height:calc(100dvh - 8px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
+  .table-guide .field-guide-heading, .table-guide .field-guide-footer {padding-block: 2px}
+  .table-guide .field-guide-tabs {padding-top: 0}
+  .table-guide .field-guide-reader {padding-block: 8px}
+}
+
+/* Lightweight, dismissible first-game stage micro-hint inside the world stage. */
+.onboarding-tip {
+  position: absolute;
+  top: 98px;
+  right: 454px;
+  bottom: auto;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  max-width: min(290px, calc(100% - 480px));
+  padding: 8px 10px;
+  border: 1px solid #ff9a3c;
+  border-radius: 12px;
+  background: #102444f2;
+  color: #f4f8ff;
+  box-shadow: 0 8px 22px #050f2266;
+  font-size: 13px;
+  line-height: 1.4;
+  pointer-events: auto;
+}
+.onboarding-tip[data-phase="revealGroup"] {
+  top: 208px;
+}
+.onboarding-tip[hidden] { display: none !important; }
+.onboarding-tip-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+.onboarding-tip-badge {
+  display: inline-block;
+  width: fit-content;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #ff8a2b;
+  color: #0d1a30;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+.onboarding-tip-copy {
+  margin: 0;
+  color: #edf4ff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.38;
+  overflow-wrap: anywhere;
+}
+.onboarding-tip-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: none;
+}
+.onboarding-tip-btn {
+  min-height: 28px;
+  padding: 3px 9px;
+  border-radius: 7px;
+  border: 1px solid #ff9a3c;
+  background: #ff8a2b;
+  color: #0d1a30;
+  font: 750 12px/1.2 inherit;
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.onboarding-tip-btn.muted {
+  background: #1a3560;
+  border-color: #4a73a8;
+  color: #d6e4f7;
+}
+.onboarding-tip-btn:focus-visible {
+  outline: 2px solid #ffb366;
+  outline-offset: 2px;
+}
+@media (max-width: 800px) and (orientation: portrait) {
+  .onboarding-tip,
+  .onboarding-tip[data-phase="roll"],
+  .onboarding-tip[data-phase="revealGroup"] {
+    top: calc(max(4px, env(safe-area-inset-top)) + 48px);
+    left: 8px;
+    right: 8px;
+    bottom: auto;
+    max-width: none;
+    padding: 6px 8px;
+    gap: 6px;
+    border-radius: 10px;
+  }
+  .onboarding-tip-body {
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+  }
+  .onboarding-tip-badge {
+    flex: none;
+  }
+  .onboarding-tip-copy {
+    font-size: 12px;
+    line-height: 1.32;
+  }
+  .onboarding-tip-actions {
+    flex-direction: row;
+    gap: 4px;
+  }
+  .onboarding-tip-btn {
+    min-height: 30px;
+    padding: 4px 7px;
+    font-size: 11px;
+  }
+}
+@media (max-height: 700px) and (orientation: landscape) {
+  .onboarding-tip {
+    display: none !important;
+  }
+}

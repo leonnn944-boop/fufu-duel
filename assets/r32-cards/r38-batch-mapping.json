@@ -1,0 +1,18 @@
+{
+  "generated": {
+    "M501": "event-r38-japan-earthquake-fukushima",
+    "M602": "event-r38-brexit-referendum",
+    "M606": "event-r38-us-china-trade-war",
+    "M706": "event-r38-covid-global-pandemic",
+    "M702": "event-r38-russia-ukraine-war"
+  },
+  "reuse": {},
+  "generatedPresent": [
+    "event-r38-japan-earthquake-fukushima",
+    "event-r38-brexit-referendum",
+    "event-r38-us-china-trade-war",
+    "event-r38-covid-global-pandemic",
+    "event-r38-russia-ukraine-war"
+  ],
+  "scope": "exact IDs only; only final parent-authorized R38 IDs. No main mapping changed."
+}

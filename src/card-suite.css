@@ -1,0 +1,284 @@
+/* R22: one portrait-card silhouette; amounts keep their source precision. */
+body.playing #card-focus .focus-card-frame>.action-card:not(.hand-focus-card){box-sizing:border-box!important;width:320px!important;height:480px!important;min-height:480px!important;max-height:none!important;display:flex!important;flex-direction:column!important;padding:14px!important;gap:8px!important;overflow:visible!important}
+body.playing #card-focus .focus-card-frame>.action-card:not(.hand-focus-card)>h3{font-size:23px!important;line-height:29px!important;margin:0!important}
+body.playing #card-focus .focus-card-frame>.action-card>p{font-size:14px!important;line-height:20px!important;margin:0!important}
+body.playing #card-focus .focus-card-frame>.action-card>.primary-button{margin-top:auto!important}
+body.playing #card-focus .income-card>.card-illustration{height:156px!important;min-height:156px!important;flex:0 0 156px;border-radius:18px}
+body.playing #card-focus .income-card>.card-illustration .topic-art{width:150px;height:150px}
+body.playing #card-focus .income-revealed>.card-illustration{height:80px!important;min-height:80px!important;flex-basis:80px}
+body.playing #card-focus .income-revealed>.card-illustration .topic-art{width:80px;height:80px}
+body.playing #card-focus .income-revealed .decision-metrics{margin:0!important;display:flex!important;flex-direction:column!important;gap:0!important;flex:none}
+body.playing #card-focus .income-revealed .decision-metrics>span{min-height:32px!important;height:32px!important;padding:5px 8px!important;border-radius:0!important;border-width:0 0 1px!important}
+body.playing #card-focus .income-revealed .decision-metrics small{font-size:13px!important}
+body.playing #card-focus .income-revealed .decision-metrics b{font-size:16px!important}
+body.playing #card-focus.readable-hand .card-hand-fan{height:82px!important;padding:3px!important;gap:5px!important}
+body.playing #card-focus.readable-hand .hand-peek{flex:0 0 48px!important;width:48px!important;max-width:48px!important;height:72px!important;min-height:72px!important;padding:3px 2px!important;gap:2px!important}
+body.playing #card-focus.readable-hand .hand-peek small{font-size:10px!important;line-height:12px!important}
+body.playing #card-focus.readable-hand .hand-peek strong{font-size:11px!important;line-height:13px!important}
+body.playing #card-focus.readable-hand .hand-peek .topic-art{width:24px;height:24px;border-radius:5px;flex:none}
+body.playing #card-focus.readable-hand .hand-focus-card{width:300px!important;height:450px!important;aspect-ratio:2/3!important;padding:12px!important;gap:5px!important}
+body.playing #card-focus.readable-hand .hand-focus-card:not(.resolved):not(.co-invest-card)>.card-illustration{width:82px!important;height:82px!important;min-height:82px!important;flex-basis:82px!important;margin:0 auto!important}
+body.playing #card-focus.readable-hand .fate-card-stamp{justify-content:space-between;gap:4px}
+body.playing #card-focus.readable-hand .fate-seal{display:none}
+.effect-badge{font-size:12px;line-height:20px;padding:0 6px;border:1px solid currentColor;border-radius:6px;font-weight:700;white-space:nowrap;color:#526674}
+.effect-badge.positive{color:#18714e}.effect-badge.negative{color:#a4423a}.effect-badge.mixed{color:#795d20}
+body.playing #card-focus .focus-invest-grid{box-sizing:border-box;width:320px!important;min-height:480px;padding:14px!important;display:flex!important;flex-direction:column;gap:10px}
+body.playing #card-focus .focus-invest-options{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important}
+body.playing #card-focus .focus-invest-choice{height:132px!important;min-height:132px!important;padding:6px 4px!important;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:1px solid #c6a56a;border-radius:12px;background:#fff8e7;box-shadow:0 4px 0 #ab9265}
+body.playing #card-focus .focus-invest-choice .card-illustration{width:66px!important;height:66px!important;min-height:66px!important;margin:0!important;border:0!important;box-shadow:none!important;flex:none}
+body.playing #card-focus .focus-invest-choice .topic-art{width:66px;height:66px}
+body.playing #card-focus .focus-invest-choice strong{font-size:15px;line-height:20px;white-space:nowrap}
+body.playing #card-focus .focus-invest-choice small{font-size:12px;line-height:17px}
+body.playing #card-focus .focus-invest-grid>.secondary-button{margin-top:auto!important}
+body.playing #card-focus .focus-invest-grid>.focus-sale-toggle{margin-top:auto!important}
+body.playing #card-focus .investment>.card-illustration{height:96px!important;min-height:96px!important;flex:0 0 96px}
+body.playing #card-focus .investment>.card-illustration .topic-art{width:96px;height:96px}
+body.playing #card-focus .investment .offer-metric{min-height:33px!important;padding:5px 8px!important}
+body.playing #card-focus .investment .offer-metrics{gap:4px!important;margin:0!important;flex:none}
+body.playing #card-focus .investment>button{min-height:44px!important;height:44px!important;flex:none}
+body.playing #card-focus .market-event-card>.card-illustration{height:76px!important;min-height:76px!important;flex-basis:76px}
+body.playing #card-focus .market-event-card>.card-illustration .topic-art{width:76px;height:76px}
+body.playing #card-focus .market-event-card .market-grid{margin-top:auto!important}
+body.playing #card-focus .focus-loan{box-sizing:border-box!important;min-height:480px!important;width:320px!important;padding:12px!important;gap:6px!important}
+body.playing #card-focus .focus-loan>.loan-card{position:relative;display:flex!important;flex-direction:column;gap:4px!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important;min-height:0!important}
+body.playing #card-focus .loan-card>small,#card-focus .loan-card>h3{padding-right:54px!important}
+body.playing #card-focus .loan-card>h3{font-size:21px!important;line-height:26px!important;margin:0!important}
+body.playing #card-focus .loan-card>.card-illustration{position:absolute;top:0;right:0;width:50px!important;height:50px!important;min-height:50px!important;border:0!important;box-shadow:none!important}
+body.playing #card-focus .loan-card>.card-illustration .topic-art{width:50px;height:50px}
+body.playing #card-focus .focus-loan .loan-metrics{display:grid!important;grid-template-columns:1fr 1fr!important;min-height:0!important;gap:4px!important;margin-top:8px!important}
+body.playing #card-focus .focus-loan .loan-metrics>span{display:flex!important;flex-direction:column!important;align-items:flex-start!important;min-height:46px!important;padding:4px 7px!important;background:#fff9e8;border:1px solid #d7c79f;border-radius:7px!important;gap:2px}
+body.playing #card-focus .focus-loan .loan-metrics>span:last-child{grid-column:1/-1;flex-direction:row!important;justify-content:space-between;min-height:25px!important;padding:3px 7px!important}
+body.playing #card-focus .focus-loan .loan-metrics small{font-size:12px!important;line-height:16px!important}
+body.playing #card-focus .focus-loan .loan-metrics strong{font-size:16px!important;line-height:18px!important}
+body.playing #card-focus .focus-loan>.loan-flow{display:flex!important;flex-direction:column!important;gap:6px!important;flex:1}
+body.playing #card-focus .focus-loan .loan-mode-row{gap:6px!important;margin:0!important}
+body.playing #card-focus .focus-loan .loan-mode-button{min-height:44px!important;font-size:14px!important;padding:5px!important}
+body.playing #card-focus .focus-loan .loan-entry{margin:0!important;gap:3px!important}
+body.playing #card-focus .focus-loan .loan-entry input{height:44px!important;min-height:44px!important;margin:0!important}
+body.playing #card-focus .focus-loan .loan-confirm-summary{font-size:13px!important;line-height:18px!important;padding:6px 8px!important;min-height:30px!important}
+body.playing #card-focus .focus-loan .loan-confirm{margin-top:auto!important;min-height:44px!important}
+.asset-drawing .focus-invest-options{visibility:hidden}
+.asset-draw-stack{position:absolute;inset:55px 14px 70px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;background:#fff5de;border-radius:14px;color:#21425a;pointer-events:none}
+.asset-draw-stack .card-back{width:140px;height:210px;border-radius:14px;border:5px double #e3be6c;background:repeating-linear-gradient(45deg,#183b55 0 10px,#21465f 10px 20px);display:grid;place-items:center;color:#ffe5a1;font-size:24px;box-shadow:8px 8px 0 #b49862,-8px -8px 0 #e0c38b;animation:assetDeal .85s ease-in-out infinite}
+@keyframes assetDeal{0%,100%{transform:rotate(-4deg) translateY(0)}50%{transform:rotate(5deg) translateY(-12px)}}
+@media(max-width:800px){body.final-awards .main-action-tray[data-phase="summary"]{height:auto!important}}
+@media(prefers-reduced-motion:reduce){.asset-draw-stack .card-back{animation:none}}
+
+body.playing #card-focus .focus-invest-grid{height:480px!important;min-height:480px!important;position:relative;justify-content:flex-start!important}
+body.playing #card-focus .focus-invest-options{flex:none!important;align-content:start!important;grid-template-rows:repeat(2,auto)!important}
+body.playing #card-focus .loan-card>.card-illustration{left:auto!important;right:0!important;transform:none!important;width:50px!important;height:50px!important}
+body.playing #card-focus .focus-invest-options[hidden]{display:none!important}
+body.playing #card-focus .income-revealed>.card-illustration{height:140px!important;min-height:140px!important;flex-basis:140px}
+body.playing #card-focus .income-revealed>.card-illustration .topic-art{width:140px;height:140px}
+body.playing #card-focus .investment::before,body.playing #card-focus .investment::after{display:none!important}
+
+body.playing #card-focus .loan-rule-button{position:absolute;top:0;right:0;width:50px;height:50px;min-height:50px;background:transparent;border:0;color:#153e58;font-size:15px;text-align:right;align-content:end;padding:0 2px 0 0;box-shadow:none;z-index:2}
+.career-dealing .deck-back{animation:careerDeal .85s ease-in-out infinite!important}
+@keyframes careerDeal{0%,100%{translate:0 0}50%{translate:12px -18px}}
+@media(prefers-reduced-motion:reduce){.career-dealing .deck-back{animation:none!important}}
+
+.investment-atlas{background-image:url('/fufu-duel/assets/city/cards/investments-r22.webp')!important}
+body.playing #card-focus.readable-hand .hand-focus-card.resolved:not(.co-invest-card)>.card-illustration{width:210px!important;height:210px!important;min-height:210px!important;flex-basis:210px!important;border:0!important;box-shadow:none!important}
+body.playing #card-focus.readable-hand .hand-focus-card.resolved .fate-effect{margin-top:4px!important;padding:8px 10px!important;width:100%;box-sizing:border-box}
+body.playing #card-focus.readable-hand .hand-focus-card.resolved .fate-state{margin-top:auto!important}
+body.playing #card-focus .focus-loan{height:auto!important;min-height:0!important}
+body.playing #card-focus .focus-loan .loan-mode-row{display:flex!important;flex-direction:column!important}
+body.playing #card-focus .focus-loan .loan-mode-button{width:100%;font-size:16px!important;min-height:48px!important}
+body.playing #card-focus .focus-loan .loan-flow{flex:none!important}
+body.playing #card-focus .focus-loan .loan-confirm{margin-top:6px!important}
+body.playing #card-focus.readable-hand .hand-peek strong{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;max-height:26px;flex:none}
+body.playing #card-focus .career-doctor,body.playing #card-focus .career-sales{clip-path:inset(14px 0 0);transform:translateY(-14px)}
+body.playing #card-focus .focus-invest-grid{height:auto!important;min-height:0!important}
+
+/* Keep full source text reachable without expanding the compact card. */
+body.playing #card-focus .card-illustration{position:relative}
+body.playing #card-focus .card-original-button{position:absolute;right:6px;bottom:6px;min-width:84px;min-height:44px;margin:0;padding:6px 10px;font-size:13px;line-height:18px;background:#fff8e8;color:#24495a;border:1px solid #ad955e;border-radius:10px;z-index:2}
+.fate-original-dialog{max-width:min(560px,calc(100vw - 48px));max-height:80vh;box-sizing:border-box;overflow:auto}
+.fate-original-dialog p{white-space:pre-wrap;line-height:1.6}
+
+/* R24: keep market results inside the portrait frame, independent of old tray basis. */
+body.playing #card-focus .market-event-card .market-grid{flex:1 1 0!important;min-height:0!important;margin:0!important;grid-template-rows:repeat(3,minmax(0,1fr));gap:6px!important}
+body.playing #card-focus .market-event-card .market-metric{min-height:0!important;gap:2px!important;padding:6px!important}
+/* The original-text control belongs in the header, never over the illustration. */
+body.playing #card-focus.readable-hand .fate-card-stamp{height:44px!important;gap:5px!important}
+body.playing #card-focus .card-original-button{position:static!important;min-width:48px!important;width:48px!important;min-height:44px!important;height:44px!important;padding:4px!important;flex:none;order:3}
+body.playing #card-focus .fate-card-stamp .effect-badge{margin-left:auto}
+body.playing #card-focus.readable-hand .hand-focus-card.resolved:not(.co-invest-card)>.card-illustration{width:188px!important;height:188px!important;min-height:188px!important;flex-basis:188px!important}
+body.playing #card-focus.readable-hand .hand-focus-card:not(.resolved)>.card-illustration{width:64px!important;height:64px!important;min-height:64px!important;flex-basis:64px!important}
+body.playing #card-focus .effect-part{display:inline;white-space:normal}
+body.playing #card-focus .effect-part+.effect-part:before{content:' · ';color:#526674}
+body.playing #card-focus .effect-part.positive,body.playing #card-focus .cash-result.positive{color:#176347!important}
+body.playing #card-focus .effect-part.negative,body.playing #card-focus .cash-result.negative{color:#a3312b!important}
+body.playing #card-focus .effect-part.neutral,body.playing #card-focus .cash-result.neutral{color:#24495a!important}
+body.playing #card-focus.readable-hand .choice-option.financial-choice{display:grid!important;grid-template-columns:64px minmax(0,1fr);align-items:center;gap:8px!important}
+body.playing #card-focus .choice-impact .effect-part{display:block}
+body.playing #card-focus .choice-impact .effect-part+.effect-part:before{content:none}
+
+body.playing #card-focus.readable-hand .choice-option.company-choice{grid-template-columns:48px minmax(0,1fr)}
+body.playing #card-focus.readable-hand .hand-focus-card:not(.resolved) .fate-state{display:none}
+
+/* R24 income ceremony: portrait backs, centered shuffle, pull and face reveal. */
+body.playing #card-focus .income-drawing{position:relative}
+body.playing #card-focus .income-card-stack{position:absolute;inset:90px 20px;height:auto;margin:0;overflow:visible;perspective:700px;display:grid;place-items:center}
+body.playing #card-focus .income-card-back{left:calc(50% - 64px);top:calc(50% - 96px);width:128px;height:192px;aspect-ratio:2/3;border:5px double #ffe4a3;border-radius:13px;background:repeating-linear-gradient(45deg,#143e61 0 12px,#215879 12px 24px);font-size:22px;letter-spacing:.1em;backface-visibility:hidden;animation-duration:var(--income-duration,1500ms);animation-timing-function:ease-in-out;animation-fill-mode:both}
+body.playing #card-focus .income-card-back:nth-child(1){animation-name:r24IncomeLeft}
+body.playing #card-focus .income-card-back:nth-child(2){animation-name:r24IncomeRight}
+body.playing #card-focus .income-card-back:nth-child(3){animation-name:r24IncomeDraw}
+@keyframes r24IncomeLeft{0%,15%{transform:translateX(-32px) rotate(-10deg)}45%{transform:translateX(30px) rotate(10deg)}75%,100%{transform:translateX(-17px) rotate(-7deg)}}
+@keyframes r24IncomeRight{0%,15%{transform:translateX(32px) rotate(10deg)}45%{transform:translateX(-30px) rotate(-10deg)}75%,100%{transform:translateX(17px) rotate(7deg)}}
+@keyframes r24IncomeDraw{0%{transform:translateY(12px) scale(.94)}45%{transform:translateY(-12px)}72%{transform:translateY(-32px) rotateY(0deg) scale(1.04)}100%{transform:translateY(-32px) rotateY(88deg) scale(1.04)}}
+body.playing #card-focus .income-reveal-animating{animation:r24IncomeReveal .6s ease-out both!important;backface-visibility:hidden;transform-origin:center}
+@keyframes r24IncomeReveal{0%{transform:rotateY(-88deg);opacity:.5}100%{transform:rotateY(0deg);opacity:1}}
+@media(prefers-reduced-motion:reduce){body.playing #card-focus .income-card-back,body.playing #card-focus .income-reveal-animating{animation:none!important}body.playing #card-focus .income-card-back:nth-child(1){transform:translateX(-17px) rotate(-7deg)}body.playing #card-focus .income-card-back:nth-child(2){transform:translateX(17px) rotate(7deg)}}
+
+body.playing #card-focus .fate-effect.mixed .effect-part{display:block}
+body.playing #card-focus .fate-effect.mixed .effect-part+.effect-part:before{content:none}
+
+/* Leave the lower-left map control its own hit area beside hand continuation. */
+body.playing #card-focus.readable-hand>.primary-button{width:min(360px,calc(100% - 116px))!important;align-self:flex-end!important}
+
+/* R25: empty landings retain their visible action; the career fan fits its frame. */
+body.playing #card-focus .focus-card-frame>.empty-fate-card{height:auto!important;min-height:156px!important}
+body:has(#action-panel[data-phase="setup"]) #card-focus .deck-fan{width:calc(100% - 40px);align-self:center}
+body.final-awards .main-action-tray[data-phase="summary"]>.summary-wait{flex:0 0 auto!important;min-height:44px!important;height:auto!important;max-height:none!important;overflow:visible!important}
+.metals-atlas{background-image:url('/fufu-duel/assets/city/cards/metals-r26.webp')!important;background-size:200% 200%!important}
+.topic-financeapp{background-image:url('/fufu-duel/assets/city/cards/finance-app-r29.webp')!important;background-size:100% 100%!important;background-position:center!important}
+.topic-sharedsoftware{background-image:url('/fufu-duel/assets/city/cards/shared-software-r29.webp')!important;background-size:100% 100%!important;background-position:center!important}
+body.playing #card-focus .role-portrait .career-updated{width:110px!important;height:164px!important;max-height:164px!important;min-height:0!important;object-fit:contain!important;object-position:center!important;align-self:center!important;transform:none!important;clip-path:none!important}
+body.playing #card-focus.readable-hand .hand-focus-card.resolved:not(.co-invest-card)>.card-illustration{width:164px!important;height:164px!important;min-height:164px!important;flex-basis:164px!important}
+body.playing #card-focus.readable-hand .hand-focus-card.resolved .fate-state{flex-shrink:0!important;min-height:24px!important}
+
+/* R27: make fractional balances explicit without changing stored money. */
+body.playing #card-focus .focus-loan .loan-metrics strong{font-size:15px!important;white-space:nowrap}
+body.playing #card-focus .loan-precision-note{font-size:12px!important;line-height:17px!important;margin:4px 0!important;color:#47616b;white-space:pre-line}
+body.playing #card-focus .focus-loan>.loan-card{max-height:none!important;overflow:visible!important}
+body.playing #card-focus .loan-metrics,body.playing #card-focus .loan-precision-note{flex-shrink:0!important}
+body.playing #card-focus .focus-loan .loan-mode-row{display:grid!important;grid-template-columns:1fr 1fr!important}
+body.playing #card-focus .loan-mode-row>.skip{grid-column:1/-1}
+body.final-awards .pawn-label,body.final-awards .showcase-label{display:none!important}
+@media(max-width:800px){body.final-awards .main-action-tray[data-phase="summary"]{height:auto!important;min-height:0!important;top:var(--awards-ranking-top,54dvh)!important;bottom:auto!important;max-height:none!important}}
+
+/* R30: source-specific software and cybersecurity illustrations. */
+.topic-cyberattack{background-image:url('/fufu-duel/assets/city/cards/cyberattack-r30.webp')!important;background-size:100% 100%!important;background-position:center!important}
+.topic-softwarelicense{background-image:url('/fufu-duel/assets/city/cards/softwarelicense-r30.webp')!important;background-size:100% 100%!important;background-position:center!important}
+.topic-softwareventure{background-image:url('/fufu-duel/assets/city/cards/softwareventure-r30.webp')!important;background-size:100% 100%!important;background-position:center!important}
+.topic-codeerror{background-image:url('/fufu-duel/assets/city/cards/codeerror-r30.webp')!important;background-size:100% 100%!important;background-position:center!important}
+.topic-dataloss{background-image:url('/fufu-duel/assets/city/cards/dataloss-r30.webp')!important;background-size:100% 100%!important;background-position:center!important}
+.topic-aireplacement{background-image:url('/fufu-duel/assets/city/cards/aireplacement-r30.webp')!important;background-size:100% 100%!important;background-position:center!important}
+
+/* Keep the moving card back opaque so city geometry cannot ghost through it. */
+body.playing #card-focus .focus-draw-card.drawing{opacity:1!important}
+
+
+/* R35: concise visible label, accessible name remains 完整卡文. */
+body.playing #card-focus .card-original-button{white-space:nowrap!important}
+
+/* R36: keep money signs attached; cash is a separate semantic result row. */
+body.playing #card-focus .money-token{display:inline-block;white-space:nowrap}
+body.playing #card-focus .fate-effect .cash-effect-part{display:block;white-space:nowrap}
+body.playing #card-focus .fate-effect .cash-effect-part:before{content:none}
+
+/* R41: complete monetary values; display precision does not change balances. */
+body.playing #card-focus .focus-loan .loan-metrics{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+body.playing #card-focus .focus-loan .loan-metrics strong{max-width:100%;overflow:visible!important;text-overflow:clip!important;font-variant-numeric:tabular-nums}
+body.playing #card-focus .focus-loan .loan-metrics>.wide-money{grid-column:1/-1;flex-direction:row!important;align-items:center!important;justify-content:space-between;min-height:32px!important;gap:6px}
+body.playing:has(#action-panel[data-phase="loanDecision"]) .live-values strong{overflow:visible!important;text-overflow:clip!important;white-space:normal!important;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+body.playing:has(#action-panel[data-phase="loanDecision"]) .live-values>.wide-money{grid-column:1/-1}
+body.playing:has(#action-panel[data-phase="loanDecision"]) .holding-formula{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;overflow-wrap:anywhere;font-size:12px!important;line-height:1.5!important}
+body.playing:has(#action-panel[data-phase="loanDecision"]) #player-info-dialog .live-values{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+body.playing:has(#action-panel[data-phase="loanDecision"]) #player-info-dialog .live-values small{font-size:12px!important;line-height:1.4!important}
+body.playing:has(#action-panel[data-phase="loanDecision"]) #player-info-dialog .live-values strong{font-size:14px!important;line-height:1.4!important}
+body.playing .finance-precision-note{display:block;font-size:11px;line-height:1.4;color:#f4e1bb}
+body.playing #card-focus .loan-confirm-summary{overflow-wrap:anywhere}
+@media(max-width:800px){body.playing:not(.finance-expanded) #players-live .finance-precision-note{display:none}body.playing #players-live .live-values>.wide-money{grid-column:auto}body.playing.finance-expanded #players-live .live-values>.wide-money{grid-column:1/-1}}
+
+body.playing #card-focus.readable-hand .hand-focus-card.resolved.many-effects>.card-illustration{width:144px!important;height:144px!important;min-height:144px!important;flex-basis:144px!important}
+body.playing #card-focus .many-effects .fate-effect .effect-part{display:block}
+body.playing #card-focus .many-effects .fate-effect .effect-part:before{content:none}
+
+/* R38: concise market heading with complete source text on demand. */
+body.playing #card-focus .market-card-heading{display:flex;align-items:center;gap:8px;flex-shrink:0}
+body.playing #card-focus .market-card-heading h3{flex:1;min-width:0;margin:0!important;font-size:20px!important;line-height:1.3!important;text-wrap:balance}
+body.playing #card-focus .market-card-heading .card-original-button{position:static!important;flex:0 0 48px;width:48px;min-height:44px;white-space:nowrap}
+
+/* R43: two illustration-quality samples, with the same portrait card and text sizes. */
+body.playing #card-focus.readable-hand .hand-focus-card.resolved:not(.co-invest-card):is([data-card-id="DA029"],[data-card-id="DA058"])>.card-illustration{width:236px!important;height:236px!important;min-height:236px!important;flex-basis:236px!important;border-radius:12px}
+
+/* R44: reserve a consistent bottom inset; illustration yields before text does. */
+body.playing #card-focus.readable-hand .hand-focus-card.resolved:not(.co-invest-card){box-sizing:border-box!important;padding-bottom:16px!important}
+body.playing #card-focus.readable-hand .hand-focus-card.resolved:not(.co-invest-card):is([data-card-id="DA029"],[data-card-id="DA058"])>.card-illustration{width:220px!important;height:220px!important;min-height:144px!important;flex:0 1 220px!important}
+body.playing #card-focus.readable-hand .hand-focus-card.resolved:not(.co-invest-card)>.fate-effect{flex-shrink:0!important}
+body.playing #card-focus.readable-hand .hand-focus-card[data-card-id^="DA003"] .choice-option.financial-choice{grid-template-columns:48px minmax(0,1fr)!important}
+
+/* R45: six exact event pictures share the accepted frame and text-safe flex sizing. */
+body.playing #card-focus.readable-hand .hand-focus-card.resolved:not(.co-invest-card):is([data-card-id="DA036"],[data-card-id="DA011"],[data-card-id="DA012"],[data-card-id="DA015"],[data-card-id="DA016"],[data-card-id="DA057"])>.card-illustration{width:220px!important;height:220px!important;min-height:144px!important;flex:0 1 220px!important;border-radius:12px}
+
+/* R72: purchase facts remain visible beside the original three cash rows. */
+body.playing #card-focus .focus-card-frame>.action-card.investment:not(.hand-focus-card){height:540px!important;min-height:540px!important;gap:4px!important}
+.investment-facts{flex:none;display:grid;gap:3px;font-size:13px;line-height:16px;color:#304e5b;padding:4px 2px;border-top:1px solid #cab889}
+.investment-fact{display:flex;gap:5px;align-items:flex-start}
+.investment-fact-icon{flex:0 0 15px;text-align:center;color:#577d79;font-weight:700}
+
+.investment-fact-copy{display:grid;gap:0}.investment-fact-copy strong{font-size:13px;line-height:16px}.investment-fact-copy small{font-size:12px;line-height:16px;color:#526b74}
+
+/* R84: one holding at a time, with a separate explicit sale confirmation. */
+body.playing #card-focus.holdings-focus{height:auto!important;max-height:none!important}
+body.playing #card-focus.holdings-focus .focus-invest-grid{gap:8px!important}
+body.playing #card-focus.holdings-focus .focus-sale-toggle{margin-top:0!important;min-height:44px!important}
+body.playing #card-focus .sale-actions.holding-manager{display:flex;flex-direction:column;gap:8px;padding:0!important;max-height:none!important;height:auto!important;overflow:visible!important;border:0;flex:none}
+body.playing #card-focus .holding-navigation{display:grid;grid-template-columns:80px minmax(0,1fr) 80px;align-items:center;gap:6px}
+body.playing #card-focus .holding-navigation button{min-height:44px!important;padding:4px!important;font-size:14px!important}
+body.playing #card-focus .holding-position{font-size:14px;line-height:20px;text-align:center;white-space:nowrap}
+body.playing #card-focus .holding-detail{display:flex;flex-direction:column;gap:8px;padding:10px;border:1px solid #cbb781;border-radius:12px;background:#fff9e8}
+body.playing #card-focus .holding-name{font-size:20px!important;line-height:24px!important;white-space:normal;overflow-wrap:anywhere;max-height:none!important;overflow:visible!important;margin:0!important;color:#21425a}
+body.playing #card-focus .holding-amounts{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 8px;margin:0;font-variant-numeric:tabular-nums}
+body.playing #card-focus .holding-amounts dt{font-size:13px;line-height:24px;margin:0;color:#526674}
+body.playing #card-focus .holding-amounts dd{font-size:16px;line-height:24px;margin:0;text-align:right;white-space:nowrap;color:#21425a}
+body.playing #card-focus .holding-controls{display:grid;grid-template-columns:1fr;gap:8px}
+body.playing #card-focus .holding-controls.confirming{grid-template-columns:1fr 1fr}
+body.playing #card-focus .holding-controls button{min-height:44px!important;margin:0!important;font-size:15px!important;padding:5px!important}
+body.playing #card-focus .holding-note,body.playing #card-focus .holding-cash,body.playing #card-focus .holding-empty{font-size:13px!important;line-height:20px!important;margin:0!important;color:#526674}
+body.playing #card-focus .investment-exit{display:flex;flex-direction:column;gap:4px;margin-top:auto;padding-top:8px;border-top:1px solid #cbb781;flex:none}
+body.playing #card-focus .investment-exit>small{font-size:12px;line-height:16px;text-align:center;color:#526674}
+body.playing #card-focus .investment-exit>button{min-height:44px!important;width:100%;font-size:15px!important;margin:0!important}
+@media(max-width:800px){body.playing #card-focus.holdings-focus{left:50%!important;top:auto!important;bottom:max(86px,var(--game-safe-bottom,12px))!important;transform:translateX(-50%)!important;width:320px!important}}
+
+/* R93: reuse the purchase-card asset image beside the selected holding name. */
+body.playing #card-focus .holding-heading{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:center;gap:10px}
+body.playing #card-focus .holding-heading>.holding-art{width:64px!important;height:64px!important;min-height:64px!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important;flex:none;overflow:hidden;border-radius:8px}
+body.playing #card-focus .holding-art>.topic-art{width:64px!important;height:64px!important}
+body.playing #card-focus .holding-art>svg,body.playing #card-focus .holding-art>small{display:none!important}
+
+/* R97: market-ready information uses its content height, without changing other cards. */
+body.playing #card-focus.market-ready-focus .focus-card-frame>.action-card:not(.hand-focus-card){height:auto!important;min-height:0!important}
+body.playing #card-focus.market-ready-focus .focus-card-frame>.action-card>.primary-button{margin-top:8px!important}
+
+/* R99: resolved joint investment keeps the same 300 x 450 portrait frame. */
+body.playing #card-focus.readable-hand .hand-focus-card.co-invest-card.resolved{gap:7px!important}
+body.playing #card-focus.readable-hand .co-invest-card.resolved>.fate-card-stamp{order:0}
+body.playing #card-focus.readable-hand .co-invest-card.resolved>h3{order:1;font-size:21px!important;line-height:27px!important}
+body.playing #card-focus.readable-hand .co-invest-card.resolved>.card-illustration{display:grid!important;order:2;width:148px!important;height:148px!important;min-height:116px!important;flex:1 1 148px!important;max-height:172px!important;margin:0 auto!important;padding:0!important;border:0!important;box-shadow:none!important;border-radius:12px}
+body.playing #card-focus.readable-hand .co-invest-card.resolved>.card-illustration .topic-art{width:100%!important;height:100%!important}
+body.playing #card-focus.readable-hand .co-invest-card.resolved>.fate-effect{order:3;margin:0!important;padding:8px 10px!important;flex:none}
+body.playing #card-focus.readable-hand .co-invest-card.resolved>.fate-effect strong{font-size:18px!important;line-height:25px!important;margin:3px 0!important}
+body.playing #card-focus.readable-hand .co-invest-card.resolved>.co-invest-response{order:4;display:grid;gap:3px;flex:none;margin:0;padding:8px 10px;font-size:14px!important;line-height:19px!important;border:1px solid #b6c9ab;background:#e8eedf;border-radius:9px;color:#315b49}
+body.playing #card-focus.readable-hand .co-invest-card.resolved .co-invest-player{font-size:15px!important;line-height:20px!important;white-space:normal;overflow-wrap:anywhere}
+body.playing #card-focus.readable-hand .co-invest-card.resolved .co-invest-invested,body.playing #card-focus.readable-hand .co-invest-card.resolved .co-invest-return{white-space:nowrap}
+body.playing #card-focus.readable-hand .co-invest-card.resolved>.fate-state{display:none!important}
+
+/* R99: only the joint-investment original-text dialog avoids the visible pawn. */
+.joint-original-dialog{position:fixed;inset:80px auto auto 24px;margin:0;width:360px;max-width:calc(100vw - 48px);max-height:calc(100dvh - 92px)}
+@media(max-width:800px){.joint-original-dialog{top:var(--joint-safe-top,200px);left:24px;width:calc(100vw - 48px);max-height:calc(100dvh - var(--joint-safe-top,200px) - 12px)}}
+
+/* R114: retain full holding names and wrap complete phrases. */
+body.playing #card-focus .holding-name{text-wrap:balance}
+body.playing #card-focus .holding-name .holding-title-part{display:inline-block;max-width:100%;overflow-wrap:anywhere}
+
+/* R122: keep the existing income metric row while exposing its components. */
+body.playing #card-focus .income-revealed .decision-metrics .income-impact-link{display:inline;min-height:0;height:auto;width:auto;margin:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;font:inherit;line-height:inherit;color:inherit;text-decoration:underline;cursor:pointer}
+
+/* R123: words and symbols identify the effect even without color perception. */
+#board-info-dialog .board-info-list li.card-impact-favorable{background:#e6f3e8;color:#215a38}
+#board-info-dialog .board-info-list li.card-impact-adverse{background:#fbe9e3;color:#863e29}
+body.playing #card-focus .income-revealed .decision-metrics b.card-impact-favorable{color:#215a38}
+body.playing #card-focus .income-revealed .decision-metrics b.card-impact-adverse{color:#863e29}

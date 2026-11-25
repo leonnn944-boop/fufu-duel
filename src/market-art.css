@@ -1,0 +1,177 @@
+@import url("./town-card-print.css");
+
+/* The market reveal uses one frame for the image, source text and six outcomes. */
+body.playing #world-stage > #card-focus:not(.readable-hand):has(> .focus-card-frame > .market-event-card) {
+  --market-top: clamp(108px, 20dvh, 155px);
+  --market-bottom: max(64px, calc(env(safe-area-inset-bottom) + 56px));
+  top: var(--market-top) !important;
+  bottom: auto !important;
+  width: min(406px, calc(100dvw - 24px)) !important;
+  height: auto !important;
+  max-height: none !important;
+}
+
+body.playing #world-stage > #card-focus:not(.readable-hand) > .focus-card-frame > .market-event-card.action-card {
+  display: grid !important;
+  grid-template:
+    "category" auto
+    "heading" auto
+    "art" auto
+    "caption" auto
+    "metrics" auto
+    / minmax(0, 1fr);
+  align-content: start;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: calc(100dvh - var(--market-top) - var(--market-bottom)) !important;
+  padding: 13px !important;
+  gap: 7px !important;
+  overflow: hidden auto !important;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  background: linear-gradient(150deg, #fff7e5, #eadbc1) !important;
+  border: 1px solid #d2aa6d;
+  border-radius: 17px;
+  box-shadow: 0 12px 32px #02182073, inset 0 1px #fffef1;
+}
+
+body.playing #world-stage #card-focus .market-event-card > small {
+  grid-area: category;
+  color: #634520 !important;
+  font-size: 13px !important;
+  line-height: 18px !important;
+  font-weight: 750;
+  letter-spacing: .04em;
+}
+
+body.playing #world-stage #card-focus .market-event-card > .market-card-heading {
+  grid-area: heading;
+}
+
+body.playing #world-stage #card-focus .market-event-card .market-card-heading h3 {
+  color: #182e38;
+  font-size: clamp(17px, 4.35vw, 22px) !important;
+  line-height: 1.25 !important;
+  text-wrap: pretty;
+}
+
+body.playing #world-stage #card-focus .market-card-heading .card-original-button {
+  color: #213b43;
+  background: #fffaf0;
+  border: 1px solid #b09977;
+  border-radius: 9px;
+}
+
+body.playing #world-stage #card-focus .market-event-card > .card-illustration {
+  grid-area: art;
+  width: 100% !important;
+  height: clamp(113px, 20dvh, 172px) !important;
+  min-height: 0 !important;
+  box-sizing: border-box;
+  border: 1px solid #c7aa80;
+  border-radius: 10px;
+}
+
+body.playing #world-stage #card-focus .market-event-card .topic-art {
+  position: absolute;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.delivery-art[data-delivery-key^="studio-market-"] > img,
+.delivery-art[data-delivery-key^="studio-commodity-"] > img {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+}
+
+body.playing #world-stage #card-focus .market-event-card > p {
+  grid-area: caption;
+  color: #3e5257;
+  font-size: 13px !important;
+  line-height: 1.35 !important;
+}
+
+body.playing #world-stage #card-focus .market-event-card > .market-grid {
+  grid-area: metrics;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 5px !important;
+  margin: 0 !important;
+}
+
+body.playing #world-stage #card-focus .market-event-card .market-metric {
+  min-width: 0;
+  min-height: 0 !important;
+  gap: 1px !important;
+  padding: 5px 7px !important;
+  border-color: #527784;
+  border-radius: 8px;
+  background: #193745 !important;
+  justify-content: center !important;
+}
+
+body.playing #world-stage #card-focus .market-event-card .market-metric :is(small, em, strong) {
+  font-size: clamp(11px, 3.35vw, 14px) !important;
+  line-height: 1.25 !important;
+}
+
+body.playing #world-stage #card-focus .market-event-card .market-metric strong {
+  font-weight: 800;
+  color: #b9f5db;
+}
+body.playing #world-stage #card-focus .market-event-card .market-metric.down strong { color: #ffc6b1; }
+body.playing #world-stage #card-focus .market-event-card .market-metric.flat strong { color: #ffeab4; }
+
+@media (orientation: portrait) and (max-width: 800px) {
+  body.playing #world-stage > #card-focus:not(.readable-hand):has(> .focus-card-frame > .market-event-card) {
+    --market-top: clamp(118px, 23dvh, 194px);
+  }
+}
+
+@media (orientation: landscape) and (max-height: 620px) {
+  body.playing #world-stage > #card-focus:not(.readable-hand):has(> .focus-card-frame > .market-event-card) {
+    --market-top: max(54px, calc(env(safe-area-inset-top) + 38px));
+    --market-bottom: max(62px, calc(env(safe-area-inset-bottom) + 56px));
+    left: max(12px, env(safe-area-inset-left)) !important;
+    right: auto !important;
+    transform: none !important;
+    width: min(550px, calc(100dvw - 32px)) !important;
+    z-index: 10;
+  }
+
+  body.playing #world-stage > #card-focus:not(.readable-hand) > .focus-card-frame > .market-event-card.action-card {
+    grid-template:
+      "category heading" auto
+      "art caption" auto
+      "art metrics" auto
+      / minmax(116px, 36%) minmax(0, 1fr);
+    padding: 10px !important;
+    gap: 6px 9px !important;
+  }
+
+  body.playing #world-stage #card-focus .market-event-card > small {
+    align-self: center;
+  }
+
+  body.playing #world-stage #card-focus .market-event-card > .card-illustration {
+    height: 100% !important;
+    min-height: 94px !important;
+  }
+
+  body.playing #world-stage #card-focus .market-event-card > p {
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+
+  body.playing #world-stage #card-focus .market-event-card .market-metric {
+    padding: 3px 6px !important;
+  }
+
+  body.playing #world-stage #card-focus .market-event-card .market-metric :is(small, em, strong) {
+    font-size: 12px !important;
+    line-height: 14px !important;
+  }
+}

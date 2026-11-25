@@ -1,0 +1,43 @@
+{
+  "generated": {
+    "DA052": "event-r34-friend-loan-unreturned",
+    "DB043": "event-r34-friend-loan-unreturned",
+    "JC026": "event-r34-engineering-project-stopped",
+    "JC032": "event-r34-project-taken",
+    "JE022": "event-r34-sales-target-missed",
+    "JC036": "event-r34-software-security-flaw",
+    "JC021": "event-r34-engineer-overwork",
+    "JB015": "event-r34-patent-license",
+    "JC011": "event-r34-patent-license",
+    "JA029": "event-r34-recession",
+    "JA040": "event-r34-recession",
+    "JB032": "event-r34-recession",
+    "JB037": "event-r34-recession",
+    "JC039": "event-r34-recession",
+    "JE038": "event-r34-recession",
+    "JF030": "event-r34-recession",
+    "JF040": "event-r34-recession",
+    "DA051": "event-r34-promotion-ended",
+    "DB042": "event-r34-promotion-ended",
+    "DA020": "event-r34-sports-award",
+    "M406": "event-r34-financial-company-collapse"
+  },
+  "reuse": {
+    "DA022": "lucky-L001",
+    "DB016": "lucky-L001"
+  },
+  "generatedPresent": [
+    "event-r34-friend-loan-unreturned",
+    "event-r34-engineering-project-stopped",
+    "event-r34-project-taken",
+    "event-r34-sales-target-missed",
+    "event-r34-software-security-flaw",
+    "event-r34-engineer-overwork",
+    "event-r34-patent-license",
+    "event-r34-recession",
+    "event-r34-promotion-ended",
+    "event-r34-sports-award",
+    "event-r34-financial-company-collapse"
+  ],
+  "scope": "exact IDs only; 11 new images/21 source IDs, plus2 IDs reusing lucky-L001. No main mapping changed."
+}

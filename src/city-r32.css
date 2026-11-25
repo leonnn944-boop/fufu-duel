@@ -1,0 +1,200 @@
+/* R32: readable salary preview and a centered card / character composition. */
+.board-info-dialog{position:fixed;margin:0;padding:10px 12px;border:2px solid #cba667;border-radius:16px;background:#fff8e6;color:#21425a;max-width:none;max-height:none;overflow:hidden;box-shadow:0 6px 22px #06172855}
+.board-info-dialog[open]{display:flex;flex-direction:column;gap:6px}
+.board-info-dialog::backdrop{background:#0617280a}
+.board-info-header{display:flex;align-items:center;gap:8px;flex:none;min-height:44px}
+.board-info-header h3{font-size:18px;line-height:23px;margin:0;flex:1;min-width:0}
+.board-info-header .dialog-countdown{width:66px;min-height:36px;flex:none;padding:2px 4px;margin:0;font-size:14px;line-height:20px}
+.board-info-close{flex:0 0 44px;width:44px;height:44px;border:1px solid #bba777;border-radius:10px;background:#fff0c6;color:#24546b;font-size:26px}
+.board-info-body{overflow:auto;min-height:0;flex:1;overscroll-behavior:contain;touch-action:pan-y;scrollbar-width:thin;font-size:15px;line-height:23px}
+.board-info-body p{font-size:15px;line-height:21px;margin:0 0 5px}
+.board-info-scroll-hint{flex:none;border-top:1px solid #d4c6a0;font-size:14px;line-height:18px;text-align:center;color:#786132}
+.board-info-list{margin:0;padding:0;list-style:none;display:grid;gap:5px}.board-info-list li{font-size:15px;line-height:21px;padding:3px 8px;border-radius:7px;background:#eadfbd55;overflow-wrap:anywhere}
+body.board-info-open .main-action-tray>.waiting-card{opacity:0}
+.tile-label.compact.occupied{min-width:26px;max-width:36px;font-size:8px}
+.tile-label.compact.occupied .tile-face-name{white-space:pre-line;line-height:1.1}
+body.playing #card-focus .income-preview-amount{padding:12px 8px;text-align:center;border:1px solid #bfa46c;border-radius:12px;background:#fff8df;color:#276a65}
+body.playing #card-focus .income-preview-amount small{display:block;font-size:13px;line-height:19px;letter-spacing:.04em;color:#616c59}
+body.playing #card-focus .income-preview-amount strong{display:block;font-size:32px;line-height:39px;font-weight:850}
+body.playing #card-focus .income-preview-context{display:grid;gap:0;border-top:1px solid #d5c69f}
+body.playing #card-focus .income-preview-context>div{display:flex;justify-content:space-between;gap:12px;min-height:30px;padding:5px 2px;border-bottom:1px solid #dfd1ad;font-size:13px;line-height:20px;color:#55605b}
+body.playing #card-focus .income-preview-context b{font-size:15px;color:#314f58}
+body.playing #card-focus .income-preview-note{margin-top:auto!important;font-size:13px!important;line-height:19px!important;color:#616f64}
+body.playing #card-focus .income-card:not(.income-revealed):not(.income-drawing)>.card-illustration{height:112px!important;min-height:112px!important;flex-basis:112px!important}
+body.playing #card-focus .income-card:not(.income-revealed)>.card-illustration .topic-art{width:122px;height:122px}
+body.playing #card-focus.readable-hand .hand-focus-card.two-choice-card:not(.resolved)>.card-illustration{width:112px!important;height:112px!important;min-height:112px!important;flex-basis:112px!important}
+@media(min-width:801px){
+ body.playing #world-stage #card-focus:not(.readable-hand){left:max(24px,calc(var(--scene-center-x,420px) - 260px))!important;transform:none!important}
+ body.playing #world-stage #card-focus.readable-hand{left:max(24px,calc(var(--scene-center-x,420px) - 300px))!important;transform:none!important}
+ body.playing .world-toolbar .legend{font-size:12px!important;gap:8px!important;line-height:19px!important;padding:4px 8px!important;background:#15364be8;border:1px solid #6f9ca4;border-radius:10px}
+ body.playing .live-player-head b{font-size:15px}body.playing .live-player-head span{font-size:13px}
+}
+
+/* One reserved HUD slot. Cards, modal dialogs and action buttons keep separate space. */
+body.playing #world-stage #stage-timer:not([hidden]){display:flex!important;align-items:center;justify-content:center;gap:6px;top:9px!important;left:var(--scene-center-x,50%)!important;transform:translateX(-50%)!important;min-width:108px;height:40px;box-sizing:border-box;padding:3px 9px!important;border:1px solid #e7ca83!important;border-radius:14px!important;background:#12374aeb!important;color:#fff1b3!important;font-size:14px!important;line-height:1!important;box-shadow:0 3px 0 #092233!important;z-index:20;animation:none!important;white-space:nowrap}
+body.playing #world-stage #stage-timer .timer-value{display:block;min-width:2ch;text-align:center;font-family:'Arial Rounded MT Bold','Trebuchet MS',monospace;font-variant-numeric:tabular-nums;font-size:29px;font-weight:900;letter-spacing:-.04em;-webkit-text-stroke:.35px #fff3bf;text-shadow:0 2px 0 #836027,0 4px 0 #061e2d}
+body.playing #world-stage #stage-timer .timer-unit{font-size:11px;line-height:14px;white-space:pre-line;text-align:left;color:#f7e5b7}
+body.playing #world-stage #stage-timer.urgent{border-color:#ffbf83!important;background:#663d29f5!important}
+body.playing #world-stage #stage-timer.urgent .timer-value{animation:r32TimerBeat 1s ease-in-out infinite}
+@keyframes r32TimerBeat{0%,100%{transform:scale(1)}25%{transform:scale(1.055)}}
+@media(max-width:800px){body.playing #world-stage #stage-timer:not([hidden]){top:5px!important;height:36px;min-width:104px;padding:2px 6px!important}body.playing #world-stage #stage-timer .timer-value{font-size:26px}}
+.dialog-countdown{display:flex;align-items:center;justify-content:center;gap:8px;flex:none;min-height:36px;margin:0 0 10px;padding:4px 10px;border:1px solid #bea16a;border-radius:10px;background:#183e53;color:#ffecba;font-size:14px;line-height:22px;font-variant-numeric:tabular-nums}
+.dialog-countdown.urgent{background:#663d29;color:#fff1bc}
+@media(prefers-reduced-motion:reduce){body.playing #world-stage #stage-timer.urgent .timer-value{animation:none}}
+
+/* Card illustrations use the very same figures as the board. Preserve their full framing. */
+.topic-art.r32-native{background-repeat:no-repeat!important;background-color:#f2ebd9!important;border-radius:10px}
+.delivery-art{position:relative;overflow:hidden;display:grid!important;place-items:center}
+.delivery-art>img{display:block;width:100%;height:100%;object-fit:contain;grid-area:1/1;opacity:0;pointer-events:none}
+.delivery-art[data-delivery-state="loaded"]>img{opacity:1}
+/* Keep the four square investment scenes inside the existing offer banner. */
+body.playing #card-focus .investment .card-illustration:has([data-delivery-key^="investment-r61-"]),
+body.playing #card-focus .investment [data-delivery-key^="investment-r61-"]{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+body.playing #card-focus .investment [data-delivery-key^="investment-r61-"]>img{min-width:0;min-height:0;max-width:100%;max-height:100%;object-fit:contain}
+.delivery-status{grid-area:1/1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;font:600 14px/1.5 system-ui;color:#604b35;text-align:center;padding:10px}
+.delivery-art[data-delivery-state="loading"]{background:linear-gradient(135deg,#ece1cd,#faf6ed)!important}
+.delivery-art[data-delivery-state="error"]{background:#f0e7d7!important}
+.delivery-art[data-delivery-state="loaded"]>.delivery-status{display:none}
+.delivery-retry{pointer-events:auto;min-height:44px;padding:8px 14px;border:1px solid #96785b;border-radius:8px;background:#fffaf0;color:#49331e;font:600 14px/1.4 system-ui;cursor:pointer}
+.hand-event-art>.delivery-status{font-size:12px;padding:0}
+body.playing #card-focus .native-card-art{padding:0!important;background:#f2ebd9!important;overflow:hidden}
+body.playing #card-focus .native-card-art>.topic-art{width:100%!important;height:100%!important;max-width:none!important;min-height:0!important}
+body.playing #card-focus .native-card-art>svg,body.playing #card-focus .native-card-art>small{display:none!important}
+body.playing #card-focus .role-portrait .career-native{width:100%!important;height:164px!important;max-height:164px!important;min-height:0!important;align-self:center!important;object-fit:contain!important;object-position:center!important;transform:none!important;clip-path:none!important}
+body.playing #card-focus .crafted-career-card .role-portrait:has(.career-native){background:#f2ebd9!important;border-radius:14px}
+
+/* Unselected cards live in the source tray but are shown only through the hand. */
+body.playing #card-focus.readable-hand .card-hand-fan{height:86px!important;gap:5px!important;padding:3px!important}
+body.playing #card-focus.readable-hand .hand-peek{flex:0 0 52px!important;width:52px!important;max-width:52px!important;height:78px!important;min-height:78px!important;padding:0!important;gap:0!important;overflow:hidden;border:2px solid #617c8b;border-radius:7px;background:#e8f0ed;transform:translateY(2px);box-shadow:0 3px 5px #0018}
+body.playing #card-focus.readable-hand .hand-peek[data-kind="career"]{background:#e2edf6;--kind-band:#305f83}
+body.playing #card-focus.readable-hand .hand-peek[data-kind="general"]{background:#f0e6f3;--kind-band:#745182}
+body.playing #card-focus.readable-hand .hand-peek[data-kind="lucky"]{background:#e6f3dc;--kind-band:#477044}
+body.playing #card-focus.readable-hand .hand-peek .hand-kind{width:100%;padding:2px 0;background:var(--kind-band);color:#fff;font-size:11px!important;line-height:14px!important}
+body.playing #card-focus.readable-hand .hand-peek .hand-title{display:block!important;width:2em;max-height:none!important;overflow:visible!important;white-space:normal;word-break:break-all;font-size:14px!important;line-height:16px!important;color:#203d50;letter-spacing:0}
+body.playing #card-focus.readable-hand .hand-peek .hand-effect{width:100%;padding:1px 0;font-size:10px!important;line-height:13px!important;background:#dbe6e7;color:#304f58}
+body.playing #card-focus.readable-hand .hand-peek[data-tone="negative"].resolved .hand-effect{background:#f4d8cf;color:#8e392d}
+body.playing #card-focus.readable-hand .hand-peek[data-tone="positive"].resolved .hand-effect{background:#d6eadb;color:#25573d}
+body.playing #card-focus.readable-hand .hand-peek.pending .hand-effect{background:#ffe6ad;color:#624613}
+body.playing #card-focus.readable-hand .hand-peek.selected{border-color:#ffce65;outline:2px solid #fff5ce;transform:translateY(-3px);box-shadow:0 3px 10px #ffbc4855}
+/* Keep the 2:3 miniature card, all six visible, and the existing 14px title. */
+body.playing #card-focus.readable-hand .hand-peek .hand-kind{padding:0;line-height:14px!important}
+body.playing #card-focus.readable-hand .hand-peek .hand-event-art{display:block;flex:0 0 20px;width:28px!important;height:20px!important;min-height:20px;max-height:20px;border-radius:3px!important;margin:0;background-color:transparent!important}
+body.playing #card-focus.readable-hand .hand-peek .hand-title{line-height:14px!important}
+body.playing #card-focus.readable-hand .hand-peek .hand-effect{padding:0;line-height:12px!important}
+/* One readable title baseline; shorter authored names leave room for the event art. */
+body.playing #card-focus.readable-hand .hand-peek{display:grid!important;grid-template-rows:14px 28px 18px 14px;place-items:center;align-content:start;justify-content:stretch}
+body.playing #card-focus.readable-hand .hand-peek .hand-title{width:100%;height:18px;line-height:18px!important;white-space:nowrap;word-break:normal;font-size:14px!important}
+body.playing #card-focus.readable-hand .hand-peek .hand-effect{height:14px;line-height:14px!important}
+body.playing #card-focus.readable-hand .hand-focus-card.two-choice-card:not(.resolved)>.card-illustration{width:144px!important;height:144px!important;min-height:144px!important;flex-basis:144px!important}
+#world-stage #stage-message:not([hidden]){top:clamp(200px,30dvh,280px)!important;left:var(--scene-center-x,50%)!important;transform:translate(-50%,-50%)!important;width:max-content;max-width:calc(100% - 32px);z-index:50;padding:14px 18px;background:#173e53f5;border:1px solid #adcdce;border-radius:14px;color:#fff2cc;text-align:center;font-size:15px;line-height:22px}
+.stage-message.loading-active{display:flex;align-items:center;gap:12px}
+.loading-orbit{display:block;flex:none;width:24px;height:24px;border:3px solid #759ba7;border-top-color:#ffce65;border-radius:50%;animation:r32LoadingOrbit .85s linear infinite}
+@keyframes r32LoadingOrbit{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.loading-orbit{animation:none;border-top-color:#ffce65}}
+body.playing #action-panel[data-card-focus="true"]>.fate-card-game{display:none!important}
+@media(max-width:800px) and (orientation:portrait){
+ body{--game-safe-bottom:env(safe-area-inset-bottom,0px)}
+ body.playing #card-focus.readable-hand{top:calc(206px - max(0px,calc(var(--game-safe-bottom) - 12px)))!important;bottom:max(12px,var(--game-safe-bottom))!important}
+ body.playing #card-focus.readable-hand>.primary-button{width:calc(100% - 124px)!important}
+ body.playing #camera-button{bottom:max(12px,var(--game-safe-bottom))!important}
+ body.playing:not(.card-focus-active) .play-panel{top:52px!important}
+ body.playing:not(.finance-expanded):not(:has(#action-panel[data-phase="loanDecision"])):not(.card-focus-active) .play-panel{top:52px!important}
+ body.playing:not(.card-focus-active):not(.board-overview) .world-toolbar{top:144px!important}
+ body.playing:not(.card-focus-active).finance-expanded .world-toolbar{top:calc(min(31dvh,290px) + 140px)!important}
+}
+
+/* R55: keep the explicit four-character telecom cost label at the existing font size. */
+body.playing #card-focus.readable-hand .hand-peek[data-card-id="DA039"]{flex-basis:60px!important;width:60px!important;max-width:60px!important}
+/* Keep continuation next to the reading card instead of stretching its empty stage. */
+@media(max-width:800px) and (orientation:portrait){
+ body.playing #card-focus.readable-hand>.card-hand-stage{flex:0 0 auto}
+}
+
+.fate-original-dialog .source-card-name{display:block;margin:0 0 12px;font-size:14px;line-height:22px}
+
+/* R59: complete square thumbnails inside their own row; no overflow into text. */
+body.playing #card-focus.readable-hand>.focus-hand-count{padding-top:1px!important;padding-bottom:1px!important}
+body.playing #card-focus.readable-hand .card-hand-fan{height:90px!important;padding:3px!important}
+body.playing #card-focus.readable-hand .hand-peek{height:84px!important;min-height:84px!important;grid-template-rows:14px 32px 18px 14px}
+body.playing #card-focus.readable-hand .hand-peek .hand-event-art{width:32px!important;height:32px!important;min-height:32px!important;max-height:32px!important;overflow:hidden;grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+body.playing #card-focus.readable-hand .hand-event-art>img{min-width:0;min-height:0;max-width:100%;max-height:100%;object-fit:contain}
+
+/* Passive roll status stays below the board subjects; active dice controls keep their layout. */
+body.playing #action-panel[data-phase="roll"]:has(>.roll-waiting){left:calc((100% - 440px)/2)!important;right:auto!important;top:auto!important;bottom:24px!important;transform:translateX(-50%)!important;width:min(340px,calc(100% - 32px))!important;height:auto!important;min-height:0!important}
+body.playing #action-panel>.roll-waiting{display:flex!important;align-items:center;gap:8px!important;padding:9px 14px!important;min-height:44px!important;height:44px!important;border-radius:22px;box-shadow:0 3px 10px #0015}
+body.playing #action-panel>.roll-waiting:before{flex:0 0 auto;font-size:18px;line-height:20px;animation:none}
+body.playing #action-panel>.roll-waiting strong{display:flex;align-items:center;justify-content:center;gap:8px;min-width:0;flex:1;font-size:14px;line-height:20px;white-space:nowrap}
+.roll-wait-player{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.roll-wait-action{flex:none}
+@media(max-width:1100px){body.playing #action-panel[data-phase="roll"]:has(>.roll-waiting){bottom:76px!important}}
+@media(max-width:800px){body.playing #action-panel[data-phase="roll"]:has(>.roll-waiting){left:50%!important;bottom:76px!important;width:min(320px,calc(100% - 24px))!important}}
+
+/* The selected-player identity remains readable below the crowd, above roll status. */
+body.playing #world-stage .crowd-selection{top:auto;bottom:80px;max-width:min(calc(100% - 24px),calc(var(--scene-center-x,50%) + var(--scene-center-x,50%) - 24px));font-size:14px;line-height:20px;padding:7px 12px}
+@media(max-width:1100px){body.playing #world-stage .crowd-selection{bottom:132px}}
+
+
+/* R69: career and income cards reserve a single identity line. */
+body.playing #card-focus .card-owner{display:flex!important;align-items:center;justify-content:space-between;gap:10px;min-width:0;max-width:100%;line-height:18px!important;font-size:13px!important;letter-spacing:0!important}
+body.playing #card-focus .card-owner-status{flex:none;white-space:nowrap}
+body.playing #card-focus .card-owner-name{flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:right}
+body.playing #card-focus button.card-owner-name{display:block;height:18px;min-height:18px;margin:0;padding:0;border:0;border-radius:0;background:none;box-shadow:none;color:inherit;font:inherit;line-height:18px;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+body.playing #card-focus button.card-owner-name:focus-visible{outline:2px solid #236b80;outline-offset:2px}
+
+/* R70: reserve one full financial row for returned principal. */
+body.playing #card-focus .income-revealed>.card-illustration{height:108px!important;min-height:108px!important;flex-basis:108px!important}
+body.playing #card-focus .income-revealed>.card-illustration .topic-art{width:108px;height:108px}
+/* R76: passive waiting text must not inherit the dark loan-card foreground. */
+body.playing .waiting-card>strong{color:#f6f4eb}
+body.playing .waiting-card::before{color:#ffdc7e;animation:none;opacity:1;transform:none}
+
+/* R77: keep round rankings above the 44px overview/return control in both modes. */
+@media(max-width:800px) and (orientation:portrait){
+ body.playing:not(.final-awards) #action-panel[data-phase="summary"]{bottom:calc(max(12px,var(--game-safe-bottom,env(safe-area-inset-bottom,0px))) + 52px)!important}
+}
+
+/* R92: income cards remain solid during reveal; ledger values are unchanged. */
+body.playing #card-focus .income-card{
+  opacity:1!important;
+  background:linear-gradient(155deg,#fff9e8,#eee2c2)!important;
+  color:#173d54;
+}
+body.playing #card-focus .income-card.income-revealed{
+  animation:r92IncomeReveal .45s ease-out both!important;
+  transform-origin:center;
+}
+@keyframes r92IncomeReveal{
+  from{transform:translateY(10px) scale(.98)}
+  to{transform:translateY(0) scale(1)}
+}
+body.playing #card-focus .income-card>small,
+body.playing #card-focus .income-card .card-owner{
+  color:#405869!important;
+}
+body.playing #card-focus .income-revealed .decision-metrics{
+  border:1px solid #c8b78d;
+  border-radius:8px;
+  background:#fff8e7;
+  overflow:hidden;
+}
+body.playing #card-focus .income-revealed .decision-metrics>span{
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  column-gap:10px;
+  background:#fff8e7;
+  border-color:#d8c9a2!important;
+}
+body.playing #card-focus .income-revealed .decision-metrics small{color:#405869!important}
+body.playing #card-focus .income-revealed .decision-metrics b{
+  color:#173d54!important;
+  text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+@media(prefers-reduced-motion:reduce){
+  body.playing #card-focus .income-card.income-revealed{animation:none!important}
+}
+/* R113: retain the full four targeted investment scenes in the offer banner. */
+body.playing #card-focus .investment .card-illustration:has([data-delivery-key^="investment-r113-"]),
+body.playing #card-focus .investment [data-delivery-key^="investment-r113-"]{grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+body.playing #card-focus .investment [data-delivery-key^="investment-r113-"]>img{min-width:0;min-height:0;max-width:100%;max-height:100%;object-fit:contain}

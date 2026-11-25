@@ -1,0 +1,398 @@
+{
+  "scope": "R35 selected native PNG assets and 112/140/164px image-only inspection; not whole-build or gameplay validation.",
+  "passed": true,
+  "metrics": [
+    {
+      "key": "event-r35-coat-forgotten-cash",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3795153299967448,
+      "bounds": {
+        "left": 99,
+        "top": 124,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r35-school-fee-refund",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3999430338541667,
+      "bounds": {
+        "left": 99,
+        "top": 112,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r35-client-contract-terminated",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3542060852050781,
+      "bounds": {
+        "left": 99,
+        "top": 127,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r35-competitor-takes-market",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3952789306640625,
+      "bounds": {
+        "left": 99,
+        "top": 215,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r35-founder-staff-layoffs",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.38425954182942706,
+      "bounds": {
+        "left": 99,
+        "top": 147,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r35-engineer-laid-off",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3373260498046875,
+      "bounds": {
+        "left": 99,
+        "top": 152,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r35-assistant-budget-cut",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.34030405680338544,
+      "bounds": {
+        "left": 99,
+        "top": 156,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r35-assistant-no-bonus",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3386739095052083,
+      "bounds": {
+        "left": 99,
+        "top": 156,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r35-founder-product-defects",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3645172119140625,
+      "bounds": {
+        "left": 99,
+        "top": 150,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r35-founder-financing-rejected",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3716837565104167,
+      "bounds": {
+        "left": 99,
+        "top": 152,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r35-partner-independent-company",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.4166399637858073,
+      "bounds": {
+        "left": 99,
+        "top": 205,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r35-founder-no-current-income",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.37029266357421875,
+      "bounds": {
+        "left": 99,
+        "top": 152,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    }
+  ],
+  "hashMismatch": [],
+  "preservedFileCount": 59,
+  "preservedFilesUnchanged": true,
+  "exactIdCount": 14,
+  "manualReviewed": [
+    {
+      "key": "event-r35-coat-forgotten-cash",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    },
+    {
+      "key": "event-r35-school-fee-refund",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    },
+    {
+      "key": "event-r35-client-contract-terminated",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    },
+    {
+      "key": "event-r35-competitor-takes-market",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    },
+    {
+      "key": "event-r35-founder-staff-layoffs",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    },
+    {
+      "key": "event-r35-engineer-laid-off",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    },
+    {
+      "key": "event-r35-assistant-budget-cut",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    },
+    {
+      "key": "event-r35-assistant-no-bonus",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    },
+    {
+      "key": "event-r35-founder-product-defects",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    },
+    {
+      "key": "event-r35-founder-financing-rejected",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    },
+    {
+      "key": "event-r35-partner-independent-company",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    },
+    {
+      "key": "event-r35-founder-no-current-income",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體、事件方向與職業辨識已目視；共圖不內嵌金額或效果期間。"
+    }
+  ],
+  "mapping": [
+    {
+      "key": "event-r35-coat-forgotten-cash",
+      "ids": [
+        "L002"
+      ]
+    },
+    {
+      "key": "event-r35-school-fee-refund",
+      "ids": [
+        "L005"
+      ]
+    },
+    {
+      "key": "event-r35-client-contract-terminated",
+      "ids": [
+        "JB039",
+        "JE029"
+      ]
+    },
+    {
+      "key": "event-r35-competitor-takes-market",
+      "ids": [
+        "JA032",
+        "JB035"
+      ]
+    },
+    {
+      "key": "event-r35-founder-staff-layoffs",
+      "ids": [
+        "JA024"
+      ]
+    },
+    {
+      "key": "event-r35-engineer-laid-off",
+      "ids": [
+        "JC029"
+      ]
+    },
+    {
+      "key": "event-r35-assistant-budget-cut",
+      "ids": [
+        "JF022"
+      ]
+    },
+    {
+      "key": "event-r35-assistant-no-bonus",
+      "ids": [
+        "JF026"
+      ]
+    },
+    {
+      "key": "event-r35-founder-product-defects",
+      "ids": [
+        "JA027"
+      ]
+    },
+    {
+      "key": "event-r35-founder-financing-rejected",
+      "ids": [
+        "JA039"
+      ]
+    },
+    {
+      "key": "event-r35-partner-independent-company",
+      "ids": [
+        "JA035"
+      ]
+    },
+    {
+      "key": "event-r35-founder-no-current-income",
+      "ids": [
+        "JA030"
+      ]
+    }
+  ],
+  "reviewedSheets": [
+    "evidence/r35-card-verify-1792990667163/small-frame-1.png",
+    "evidence/r35-card-verify-1792990694961/small-frame-2.png",
+    "evidence/r35-card-verify-1792990694961/small-frame-3.png",
+    "evidence/r35-card-verify-1792990694961/small-frame-4.png",
+    "evidence/r35-card-verify-1792990751263/small-frame-4.png"
+  ],
+  "finalSheets": [
+    "evidence/r35-card-verify-1792990751263/small-frame-1.png",
+    "evidence/r35-card-verify-1792990751263/small-frame-2.png",
+    "evidence/r35-card-verify-1792990751263/small-frame-3.png",
+    "evidence/r35-card-verify-1792990751263/small-frame-4.png"
+  ],
+  "characterSourceHash": "3ff362b77316d97a171c1d566a32edcd8cb865d3a64257ee3ceae94ce88fd001",
+  "characterSourceUnchanged": true,
+  "protectedR34ScriptsUnchanged": true,
+  "sourceHashes": {
+    "qa-r35-card-assets.mjs": "762dbb51ad81cfeea18b570f3a2eb568a1040a3acf4e1d9f33d741caeb76ed66",
+    "qa-r35-card-scenes.mjs": "c2ad0ee7e4b03bed2bc4bc0a7c9ed3c4d4a6bbc65acb673ed586e96a4d922a0a",
+    "qa-r35-card-specs.mjs": "6caef6dcdbb9bc443a8f2bd3878c5fe1ad81210770045ac0d9992fafc59f8333",
+    "qa-r35-card-assets-verify.mjs": "e5c3df1fbc1155d772ab93beb9335ce06bc8d0ba5a197b2e99e9e8ecb7aa6074",
+    "public/cards-snapshot.mjs": "52e11336844d790e6e28557cc6b0e824e898f9470723abe96303faca40a6bc45",
+    "public/src/card-impact.mjs": "433ff4adb135d401d02f0288eea9621e598709eb1f9402d0d8c6de168ed9e4f9",
+    "R34_DELIVERY.json": "e63696f2230646bb445120a94b705bdb07544b2cfe3fc63a9a17cf59ae5a7970",
+    "evidence/r35-proposal.json": "53a15212647f30df34f429d64f7275deb3c31b158cc92a3db8ad7c9f5517d2a3"
+  },
+  "assetBytes": 956691,
+  "limits": [
+    "僅 12 張素材與 112/140/164 縮圖目視，不代表主卡／手牌整合或全遊戲驗證。",
+    "原 59 圖、10 個 R34 腳本與角色來源維持同雜湊。未修改 public/src、主持人表或快照。",
+    "JA024 依卡文與現行 impactText 呈現老闆裁員支出；未變更來源欄位或金額。",
+    "JB039／JE029 共圖僅表達終止合約，未混入當回合／下回合時點；兩商家共圖亦無期間或數值。",
+    "JA030 只呈現當期無收入，沒有永久破產標誌。"
+  ]
+}

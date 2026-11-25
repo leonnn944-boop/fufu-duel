@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="加密貨幣"><title>加密貨幣</title>
+ <defs>
+  <radialGradient id="blue" cx=".48" cy=".38" r=".73"><stop stop-color="#266366"/><stop offset=".64" stop-color="#112b3b"/><stop offset="1" stop-color="#0c1526"/></radialGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff2ae"/><stop offset=".32" stop-color="#c06425"/><stop offset=".65" stop-color="#69341e"/><stop offset=".83" stop-color="#f6ae53"/><stop offset="1" stop-color="#8c421e"/></linearGradient>
+  <linearGradient id="face" x1="0" y1="0" x2=".86" y2="1"><stop stop-color="#fff0ab"/><stop offset=".26" stop-color="#eab468"/><stop offset=".54" stop-color="#c87b35"/><stop offset=".74" stop-color="#ffdb8b"/><stop offset="1" stop-color="#9d4b25"/></linearGradient>
+  <linearGradient id="stamp" x1="0" y1="0" x2=".35" y2="1"><stop stop-color="#fff5c5"/><stop offset=".44" stop-color="#efb66a"/><stop offset="1" stop-color="#ab5128"/></linearGradient>
+  <radialGradient id="shade"><stop stop-color="#020914" stop-opacity=".8"/><stop offset="1" stop-color="#020914" stop-opacity="0"/></radialGradient>
+ </defs>
+ <rect width="256" height="256" rx="16" fill="url(#blue)"/>
+ <path d="M0 51h20l22 20h19M0 199h35l14-14h19m188-134h-20l-22 20h-19m61 128h-35l-14-14h-19" fill="none" stroke="#6bbfc1" stroke-opacity=".43"/>
+ <path d="M18 18h38m-38 0v38m220-38h-38m38 0v38M18 238h38m-38 0v-38m220 38h-38m38 0v-38" fill="none" stroke="#92cccc" stroke-opacity=".48"/>
+ <path d="M128 14v18m0 192v18M14 128h18m192 0h18" fill="none" stroke="#94e2db" stroke-opacity=".4"/>
+ <circle cx="128" cy="128" r="106" fill="none" stroke="#80d6cd" stroke-opacity=".25" stroke-dasharray="1 5"/>
+ <ellipse cx="125" cy="209" rx="112" ry="27" fill="url(#shade)"/>
+ <g transform="rotate(-17 128 128) translate(-4 -2)">
+  <ellipse cx="136" cy="134" rx="75" ry="87" fill="url(#edge)" stroke="#502b1d" stroke-width="3"/>
+  <g fill="none" stroke="#ffce7d" stroke-opacity=".48" stroke-width="1.6"><path d="M195 86l9 5m-5 2 9 5m-6 2 9 5m-7 3 9 4m-8 4 9 4m-8 4 9 4m-9 5 9 3m-10 6 9 3m-12 6 9 3m-12 6 9 3m-14 6 9 3m-15 5 9 3m-15 5 9 3m-16 5 9 3m-18 5 9 3"/></g>
+  <g transform="translate(18 0) scale(.86 1)">
+   <circle cx="128" cy="128" r="88" fill="url(#face)" stroke="#ffd886" stroke-width="1.6"/>
+   <circle cx="128" cy="128" r="79" fill="none" stroke="#5a2719" stroke-width="2.1" opacity=".76"/>
+   <circle cx="128" cy="128" r="75" fill="none" stroke="#fff0ad" stroke-opacity=".69" stroke-dasharray="1.6 2.1"/>
+   <circle cx="128" cy="128" r="66" fill="none" stroke="#905022" stroke-width="2.2" opacity=".65"/>
+   <g stroke="#714021" stroke-opacity=".83" stroke-width="2"><path d="M128 42v8" transform="rotate(27 128 128)"/><path d="M128 42v8" transform="rotate(54 128 128)"/><path d="M128 42v8" transform="rotate(81 128 128)"/><path d="M128 42v8" transform="rotate(108 128 128)"/><path d="M128 42v8" transform="rotate(135 128 128)"/><path d="M128 42v8" transform="rotate(162 128 128)"/><path d="M128 42v8" transform="rotate(189 128 128)"/><path d="M128 42v8" transform="rotate(216 128 128)"/><path d="M128 42v8" transform="rotate(243 128 128)"/><path d="M128 42v8" transform="rotate(270 128 128)"/><path d="M128 42v8" transform="rotate(297 128 128)"/><path d="M128 42v8" transform="rotate(324 128 128)"/><path d="M128 42v8" transform="rotate(351 128 128)"/></g>
+   <path d="M111 94V79h8v15h9V79h8v15c22 1 31 10 31 23 0 11-6 17-14 20 10 4 17 12 17 23 0 16-13 25-34 26v15h-8v-15h-9v15h-8v-15H87v-14h11V108H87V94Zm8 14v22h14c10 0 16-4 16-11s-6-11-16-11Zm0 35v29h16c10 0 17-6 17-15s-7-14-17-14Z" transform="translate(0 -8)" fill="#57311f" opacity=".86"/>
+   <path d="M111 94V79h8v15h9V79h8v15c22 1 31 10 31 23 0 11-6 17-14 20 10 4 17 12 17 23 0 16-13 25-34 26v15h-8v-15h-9v15h-8v-15H87v-14h11V108H87V94Zm8 14v22h14c10 0 16-4 16-11s-6-11-16-11Zm0 35v29h16c10 0 17-6 17-15s-7-14-17-14Z" transform="translate(0 -12)" fill="url(#stamp)" stroke="#fff0ad" stroke-width="1.35" fill-rule="evenodd"/>
+   <path d="M62 91a77 77 0 0 1 89-36m37 121a76 76 0 0 1-79 25" fill="none" stroke="#fff0b2" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/>
+  </g>
+ </g>
+ </svg>

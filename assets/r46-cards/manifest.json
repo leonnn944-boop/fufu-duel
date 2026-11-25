@@ -1,0 +1,2283 @@
+{
+  "version": "R46",
+  "generatedAt": "2026-10-26T08:40:56.317Z",
+  "purpose": "Same-composition delivery derivatives for eight exact cards; originals retained.",
+  "format": "webp",
+  "quality": 92,
+  "methodology": {
+    "resize": "Lanczos3, aspect preserved, exact square source; no sharpening",
+    "color": "8-bit sRGB RGB; originals are 3-channel sRGB without alpha",
+    "codec": "WebP lossy; effort=6, smartSubsample=true; qualities 88 and 92",
+    "sameSizeMetric": "Source PNG is resized once losslessly to the target width. RGB PSNR/MAE compare the decoded WebP against that exact same-size RGB reference. Metrics measure codec loss, not loss from resizing.",
+    "dprMetric": "Separately compare source resized directly to 220*DPR with the selected-size WebP decoded and resized to the same 220*DPR physical pixels. This includes codec and two-stage resampling effects.",
+    "psnrFormula": "10*log10(255^2 / mean((referenceRGB-decodedRGB)^2)); no universal pass threshold inferred."
+  },
+  "selection": {
+    "quality": 92,
+    "reason": "q92 improves RGB PSNR over q88 for every one of the 32 same-size comparisons. CPU visual review of all 8 at 96 and 256 plus representative 512/768 magnified detail confirms maintained content/edge readability. q92 retains more fine detail at modest per-card cost.",
+    "reviewed": [
+      "evidence/r46-assets-1793003823963/comparisons/quality-256-contact-1.png",
+      "evidence/r46-assets-1793003823963/comparisons/quality-256-contact-2.png",
+      "evidence/r46-assets-1793003823963/comparisons/quality-96-contact.png",
+      "evidence/r46-assets-1793003823963/comparisons/high-dpr-crops-x2.png"
+    ],
+    "reviewBoundary": "Static local decoded-image comparisons only. No browser, GPU, on-device, network timing or in-game loading verification."
+  },
+  "entries": [
+    {
+      "id": "DA029",
+      "sourceKey": "event-r43-free-gym-membership",
+      "source": {
+        "file": "public/assets/r32-cards/event-r43-free-gym-membership.png",
+        "publicUrl": "/fufu-duel/assets/r32-cards/event-r43-free-gym-membership.png",
+        "sha256": "84659c58aaba8f01e0a7f847cd902ddca401b5a6ceb9f3d89fc9adf02bff7d6d",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 2569895,
+        "space": "srgb",
+        "channels": 3
+      },
+      "variants": [
+        {
+          "width": 96,
+          "height": 96,
+          "url": "/fufu-duel/assets/r46-cards/DA029-7b5cad27-96.webp",
+          "bytes": 5444,
+          "sha256": "7b5cad270605cf70f5ebfc6be78f7669baebad9c7f8cfd85323f6cfcc8bec76a",
+          "quality": 92,
+          "metrics": {
+            "mse": 45.07968,
+            "psnrDb": 31.591,
+            "mae": 4.364981,
+            "p95AbsoluteChannelError": 15,
+            "maxAbsoluteChannelError": 56,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "url": "/fufu-duel/assets/r46-cards/DA029-4c4cbfe0-256.webp",
+          "bytes": 26764,
+          "sha256": "4c4cbfe0a293af37f0a8a1755491287905de28cb0cba2eb26794cf086ea4ab19",
+          "quality": 92,
+          "metrics": {
+            "mse": 22.436208,
+            "psnrDb": 34.6213,
+            "mae": 2.977366,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 64,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "url": "/fufu-duel/assets/r46-cards/DA029-47cbb962-512.webp",
+          "bytes": 82040,
+          "sha256": "47cbb962f9639b9c3edc565eb4b90f4f15f0c9907aa8cb4db831c6c4890e31e7",
+          "quality": 92,
+          "metrics": {
+            "mse": 14.458714,
+            "psnrDb": 36.5295,
+            "mae": 2.3518,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 86,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "url": "/fufu-duel/assets/r46-cards/DA029-a4df5a3f-768.webp",
+          "bytes": 167410,
+          "sha256": "a4df5a3f14a9d5cf15dcec1b3328dc81dc84b87e307b77f270a0237a174eab38",
+          "quality": 92,
+          "metrics": {
+            "mse": 11.243312,
+            "psnrDb": 37.6219,
+            "mae": 2.052605,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 76,
+            "samples": 1769472
+          }
+        }
+      ],
+      "qualityComparison": [
+        {
+          "width": 96,
+          "quality": 88,
+          "bytes": 4668,
+          "metrics": {
+            "mse": 50.598307,
+            "psnrDb": 31.0894,
+            "mae": 4.751447,
+            "p95AbsoluteChannelError": 15,
+            "maxAbsoluteChannelError": 59,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 96,
+          "quality": 92,
+          "bytes": 5444,
+          "metrics": {
+            "mse": 45.07968,
+            "psnrDb": 31.591,
+            "mae": 4.364981,
+            "p95AbsoluteChannelError": 15,
+            "maxAbsoluteChannelError": 56,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "quality": 88,
+          "bytes": 21856,
+          "metrics": {
+            "mse": 27.203217,
+            "psnrDb": 33.7846,
+            "mae": 3.391897,
+            "p95AbsoluteChannelError": 11,
+            "maxAbsoluteChannelError": 70,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 256,
+          "quality": 92,
+          "bytes": 26764,
+          "metrics": {
+            "mse": 22.436208,
+            "psnrDb": 34.6213,
+            "mae": 2.977366,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 64,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "quality": 88,
+          "bytes": 66588,
+          "metrics": {
+            "mse": 17.558769,
+            "psnrDb": 35.6859,
+            "mae": 2.685768,
+            "p95AbsoluteChannelError": 9,
+            "maxAbsoluteChannelError": 81,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 512,
+          "quality": 92,
+          "bytes": 82040,
+          "metrics": {
+            "mse": 14.458714,
+            "psnrDb": 36.5295,
+            "mae": 2.3518,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 86,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "quality": 88,
+          "bytes": 133682,
+          "metrics": {
+            "mse": 13.849951,
+            "psnrDb": 36.7163,
+            "mae": 2.362935,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 73,
+            "samples": 1769472
+          }
+        },
+        {
+          "width": 768,
+          "quality": 92,
+          "bytes": 167410,
+          "metrics": {
+            "mse": 11.243312,
+            "psnrDb": 37.6219,
+            "mae": 2.052605,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 76,
+            "samples": 1769472
+          }
+        }
+      ],
+      "dprComparisons": [
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 88,
+          "metrics": {
+            "mse": 44.061921,
+            "psnrDb": 31.6902,
+            "mae": 4.282858,
+            "p95AbsoluteChannelError": 14,
+            "maxAbsoluteChannelError": 72,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 92,
+          "metrics": {
+            "mse": 40.257486,
+            "psnrDb": 32.0823,
+            "mae": 4.030172,
+            "p95AbsoluteChannelError": 14,
+            "maxAbsoluteChannelError": 71,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 88,
+          "metrics": {
+            "mse": 30.906706,
+            "psnrDb": 33.2303,
+            "mae": 3.37108,
+            "p95AbsoluteChannelError": 12,
+            "maxAbsoluteChannelError": 92,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 92,
+          "metrics": {
+            "mse": 28.69859,
+            "psnrDb": 33.5522,
+            "mae": 3.166775,
+            "p95AbsoluteChannelError": 12,
+            "maxAbsoluteChannelError": 97,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 88,
+          "metrics": {
+            "mse": 25.171638,
+            "psnrDb": 34.1217,
+            "mae": 2.949187,
+            "p95AbsoluteChannelError": 11,
+            "maxAbsoluteChannelError": 82,
+            "samples": 1306800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 92,
+          "metrics": {
+            "mse": 23.308752,
+            "psnrDb": 34.4556,
+            "mae": 2.758715,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 88,
+            "samples": 1306800
+          }
+        }
+      ]
+    },
+    {
+      "id": "DA036",
+      "sourceKey": "event-r45-gym-membership-fee-increase",
+      "source": {
+        "file": "public/assets/r32-cards/event-r45-gym-membership-fee-increase.png",
+        "publicUrl": "/fufu-duel/assets/r32-cards/event-r45-gym-membership-fee-increase.png",
+        "sha256": "9fcffa448da47293fdddde785be48b9fc45bfd8bcb22afa01e4bfc53516588bf",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 2281450,
+        "space": "srgb",
+        "channels": 3
+      },
+      "variants": [
+        {
+          "width": 96,
+          "height": 96,
+          "url": "/fufu-duel/assets/r46-cards/DA036-ff4d3993-96.webp",
+          "bytes": 5916,
+          "sha256": "ff4d39937064965e91e5660f0c24d8b38d3e14e1db73f08f76f7ca948d21c407",
+          "quality": 92,
+          "metrics": {
+            "mse": 64.685258,
+            "psnrDb": 30.0228,
+            "mae": 5.129413,
+            "p95AbsoluteChannelError": 17,
+            "maxAbsoluteChannelError": 75,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "url": "/fufu-duel/assets/r46-cards/DA036-69f65a98-256.webp",
+          "bytes": 25584,
+          "sha256": "69f65a987a730a5c0fd3dcdb0d568f4618f1887e0d2c7510d6bc289990230a60",
+          "quality": 92,
+          "metrics": {
+            "mse": 27.250137,
+            "psnrDb": 33.7771,
+            "mae": 3.27623,
+            "p95AbsoluteChannelError": 11,
+            "maxAbsoluteChannelError": 81,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "url": "/fufu-duel/assets/r46-cards/DA036-3195983d-512.webp",
+          "bytes": 74116,
+          "sha256": "3195983de72b41055b27d6cd3627c27815e3bb5dd9ddea42d2f3453895b3f762",
+          "quality": 92,
+          "metrics": {
+            "mse": 16.604815,
+            "psnrDb": 35.9285,
+            "mae": 2.424263,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 96,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "url": "/fufu-duel/assets/r46-cards/DA036-40e9a4de-768.webp",
+          "bytes": 138130,
+          "sha256": "40e9a4dea77ff7e522521d8347b2a00540d111c1e818c342770338b9fc4cb711",
+          "quality": 92,
+          "metrics": {
+            "mse": 11.927271,
+            "psnrDb": 37.3654,
+            "mae": 2.056653,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 95,
+            "samples": 1769472
+          }
+        }
+      ],
+      "qualityComparison": [
+        {
+          "width": 96,
+          "quality": 88,
+          "bytes": 5158,
+          "metrics": {
+            "mse": 69.703885,
+            "psnrDb": 29.6982,
+            "mae": 5.489258,
+            "p95AbsoluteChannelError": 18,
+            "maxAbsoluteChannelError": 77,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 96,
+          "quality": 92,
+          "bytes": 5916,
+          "metrics": {
+            "mse": 64.685258,
+            "psnrDb": 30.0228,
+            "mae": 5.129413,
+            "p95AbsoluteChannelError": 17,
+            "maxAbsoluteChannelError": 75,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "quality": 88,
+          "bytes": 21970,
+          "metrics": {
+            "mse": 31.041601,
+            "psnrDb": 33.2114,
+            "mae": 3.593267,
+            "p95AbsoluteChannelError": 12,
+            "maxAbsoluteChannelError": 81,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 256,
+          "quality": 92,
+          "bytes": 25584,
+          "metrics": {
+            "mse": 27.250137,
+            "psnrDb": 33.7771,
+            "mae": 3.27623,
+            "p95AbsoluteChannelError": 11,
+            "maxAbsoluteChannelError": 81,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "quality": 88,
+          "bytes": 60422,
+          "metrics": {
+            "mse": 20.032232,
+            "psnrDb": 35.1135,
+            "mae": 2.764086,
+            "p95AbsoluteChannelError": 9,
+            "maxAbsoluteChannelError": 94,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 512,
+          "quality": 92,
+          "bytes": 74116,
+          "metrics": {
+            "mse": 16.604815,
+            "psnrDb": 35.9285,
+            "mae": 2.424263,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 96,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "quality": 88,
+          "bytes": 108624,
+          "metrics": {
+            "mse": 14.331636,
+            "psnrDb": 36.5678,
+            "mae": 2.348413,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 87,
+            "samples": 1769472
+          }
+        },
+        {
+          "width": 768,
+          "quality": 92,
+          "bytes": 138130,
+          "metrics": {
+            "mse": 11.927271,
+            "psnrDb": 37.3654,
+            "mae": 2.056653,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 95,
+            "samples": 1769472
+          }
+        }
+      ],
+      "dprComparisons": [
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 88,
+          "metrics": {
+            "mse": 47.7373,
+            "psnrDb": 31.3422,
+            "mae": 4.433747,
+            "p95AbsoluteChannelError": 15,
+            "maxAbsoluteChannelError": 82,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 92,
+          "metrics": {
+            "mse": 44.762858,
+            "psnrDb": 31.6216,
+            "mae": 4.214773,
+            "p95AbsoluteChannelError": 14,
+            "maxAbsoluteChannelError": 83,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 88,
+          "metrics": {
+            "mse": 28.961923,
+            "psnrDb": 33.5125,
+            "mae": 3.222051,
+            "p95AbsoluteChannelError": 11,
+            "maxAbsoluteChannelError": 85,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 92,
+          "metrics": {
+            "mse": 26.126143,
+            "psnrDb": 33.9601,
+            "mae": 2.96781,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 88,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 88,
+          "metrics": {
+            "mse": 21.07862,
+            "psnrDb": 34.8924,
+            "mae": 2.693476,
+            "p95AbsoluteChannelError": 9,
+            "maxAbsoluteChannelError": 89,
+            "samples": 1306800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 92,
+          "metrics": {
+            "mse": 19.092824,
+            "psnrDb": 35.3221,
+            "mae": 2.47193,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 88,
+            "samples": 1306800
+          }
+        }
+      ]
+    },
+    {
+      "id": "DA011",
+      "sourceKey": "event-r45-home-cooking-savings",
+      "source": {
+        "file": "public/assets/r32-cards/event-r45-home-cooking-savings.png",
+        "publicUrl": "/fufu-duel/assets/r32-cards/event-r45-home-cooking-savings.png",
+        "sha256": "7b0741cd1398a9ea49dd839fb4142c411d01efb1e1d4d5ffce02d4bbf6e02d57",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 2171406,
+        "space": "srgb",
+        "channels": 3
+      },
+      "variants": [
+        {
+          "width": 96,
+          "height": 96,
+          "url": "/fufu-duel/assets/r46-cards/DA011-4ae156dd-96.webp",
+          "bytes": 5810,
+          "sha256": "4ae156dd8ede8056bfacf13f66bb95eb446d7458d5c6b26d1153217088559feb",
+          "quality": 92,
+          "metrics": {
+            "mse": 56.43967,
+            "psnrDb": 30.615,
+            "mae": 4.864294,
+            "p95AbsoluteChannelError": 16,
+            "maxAbsoluteChannelError": 64,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "url": "/fufu-duel/assets/r46-cards/DA011-bdbf9948-256.webp",
+          "bytes": 26082,
+          "sha256": "bdbf9948b7242d83e86bcec0dc49f09ab9c292d741abe8419cb78990fc117c20",
+          "quality": 92,
+          "metrics": {
+            "mse": 26.963084,
+            "psnrDb": 33.8231,
+            "mae": 3.223704,
+            "p95AbsoluteChannelError": 11,
+            "maxAbsoluteChannelError": 77,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "url": "/fufu-duel/assets/r46-cards/DA011-543bc244-512.webp",
+          "bytes": 73208,
+          "sha256": "543bc24411431d480d5f476ab59497ffe73250338e35d6c1765545e6d7a0410a",
+          "quality": 92,
+          "metrics": {
+            "mse": 16.375904,
+            "psnrDb": 35.9888,
+            "mae": 2.366728,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 109,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "url": "/fufu-duel/assets/r46-cards/DA011-c9426b59-768.webp",
+          "bytes": 131802,
+          "sha256": "c9426b59450a2ec879afcfbe1d017a22db4c29d74bc7e3f8ed49bf34f141e3fa",
+          "quality": 92,
+          "metrics": {
+            "mse": 10.919688,
+            "psnrDb": 37.7487,
+            "mae": 1.949299,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 86,
+            "samples": 1769472
+          }
+        }
+      ],
+      "qualityComparison": [
+        {
+          "width": 96,
+          "quality": 88,
+          "bytes": 5006,
+          "metrics": {
+            "mse": 61.70128,
+            "psnrDb": 30.2279,
+            "mae": 5.225586,
+            "p95AbsoluteChannelError": 16,
+            "maxAbsoluteChannelError": 66,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 96,
+          "quality": 92,
+          "bytes": 5810,
+          "metrics": {
+            "mse": 56.43967,
+            "psnrDb": 30.615,
+            "mae": 4.864294,
+            "p95AbsoluteChannelError": 16,
+            "maxAbsoluteChannelError": 64,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "quality": 88,
+          "bytes": 21894,
+          "metrics": {
+            "mse": 30.72614,
+            "psnrDb": 33.2557,
+            "mae": 3.559504,
+            "p95AbsoluteChannelError": 11,
+            "maxAbsoluteChannelError": 81,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 256,
+          "quality": 92,
+          "bytes": 26082,
+          "metrics": {
+            "mse": 26.963084,
+            "psnrDb": 33.8231,
+            "mae": 3.223704,
+            "p95AbsoluteChannelError": 11,
+            "maxAbsoluteChannelError": 77,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "quality": 88,
+          "bytes": 60000,
+          "metrics": {
+            "mse": 19.234084,
+            "psnrDb": 35.2901,
+            "mae": 2.650127,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 114,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 512,
+          "quality": 92,
+          "bytes": 73208,
+          "metrics": {
+            "mse": 16.375904,
+            "psnrDb": 35.9888,
+            "mae": 2.366728,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 109,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "quality": 88,
+          "bytes": 105474,
+          "metrics": {
+            "mse": 13.588898,
+            "psnrDb": 36.799,
+            "mae": 2.254643,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 86,
+            "samples": 1769472
+          }
+        },
+        {
+          "width": 768,
+          "quality": 92,
+          "bytes": 131802,
+          "metrics": {
+            "mse": 10.919688,
+            "psnrDb": 37.7487,
+            "mae": 1.949299,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 86,
+            "samples": 1769472
+          }
+        }
+      ],
+      "dprComparisons": [
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 88,
+          "metrics": {
+            "mse": 44.860565,
+            "psnrDb": 31.6122,
+            "mae": 4.273636,
+            "p95AbsoluteChannelError": 14,
+            "maxAbsoluteChannelError": 86,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 92,
+          "metrics": {
+            "mse": 41.828705,
+            "psnrDb": 31.9161,
+            "mae": 4.044945,
+            "p95AbsoluteChannelError": 14,
+            "maxAbsoluteChannelError": 81,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 88,
+          "metrics": {
+            "mse": 27.476758,
+            "psnrDb": 33.7411,
+            "mae": 3.056531,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 129,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 92,
+          "metrics": {
+            "mse": 25.198998,
+            "psnrDb": 34.117,
+            "mae": 2.855513,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 125,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 88,
+          "metrics": {
+            "mse": 19.656575,
+            "psnrDb": 35.1957,
+            "mae": 2.550603,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 96,
+            "samples": 1306800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 92,
+          "metrics": {
+            "mse": 17.426519,
+            "psnrDb": 35.7187,
+            "mae": 2.310339,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 97,
+            "samples": 1306800
+          }
+        }
+      ]
+    },
+    {
+      "id": "DA012",
+      "sourceKey": "event-r45-streaming-subscription-cancelled",
+      "source": {
+        "file": "public/assets/r32-cards/event-r45-streaming-subscription-cancelled.png",
+        "publicUrl": "/fufu-duel/assets/r32-cards/event-r45-streaming-subscription-cancelled.png",
+        "sha256": "1930c281c51414a732f0b4e3a982a70a73188d440c39d2b81ee23773fe740acc",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 1950508,
+        "space": "srgb",
+        "channels": 3
+      },
+      "variants": [
+        {
+          "width": 96,
+          "height": 96,
+          "url": "/fufu-duel/assets/r46-cards/DA012-56cbd9fa-96.webp",
+          "bytes": 5522,
+          "sha256": "56cbd9fa2bf01287b56050d74030b3648cb0ea7184a02d2deb8939cca2752c18",
+          "quality": 92,
+          "metrics": {
+            "mse": 59.959201,
+            "psnrDb": 30.3522,
+            "mae": 5.01114,
+            "p95AbsoluteChannelError": 17,
+            "maxAbsoluteChannelError": 87,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "url": "/fufu-duel/assets/r46-cards/DA012-15d8abc3-256.webp",
+          "bytes": 24244,
+          "sha256": "15d8abc3da50aa0cb2782f2a8c79fa9210230690540de487328902f1a036926c",
+          "quality": 92,
+          "metrics": {
+            "mse": 23.955958,
+            "psnrDb": 34.3367,
+            "mae": 3.110001,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 80,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "url": "/fufu-duel/assets/r46-cards/DA012-afda6ae5-512.webp",
+          "bytes": 63298,
+          "sha256": "afda6ae566b2b95e863e7983366cc5e96ed47037dfa414a6ef63e562a41fe83e",
+          "quality": 92,
+          "metrics": {
+            "mse": 11.154897,
+            "psnrDb": 37.6561,
+            "mae": 2.11038,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 75,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "url": "/fufu-duel/assets/r46-cards/DA012-a825c32e-768.webp",
+          "bytes": 112046,
+          "sha256": "a825c32ec5a69ab249dfc6cdae65fea6aa5639c7a8987a7d21170d0d5c7a1165",
+          "quality": 92,
+          "metrics": {
+            "mse": 6.69621,
+            "psnrDb": 39.8725,
+            "mae": 1.639966,
+            "p95AbsoluteChannelError": 5,
+            "maxAbsoluteChannelError": 68,
+            "samples": 1769472
+          }
+        }
+      ],
+      "qualityComparison": [
+        {
+          "width": 96,
+          "quality": 88,
+          "bytes": 4750,
+          "metrics": {
+            "mse": 65.692925,
+            "psnrDb": 29.9556,
+            "mae": 5.339771,
+            "p95AbsoluteChannelError": 17,
+            "maxAbsoluteChannelError": 86,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 96,
+          "quality": 92,
+          "bytes": 5522,
+          "metrics": {
+            "mse": 59.959201,
+            "psnrDb": 30.3522,
+            "mae": 5.01114,
+            "p95AbsoluteChannelError": 17,
+            "maxAbsoluteChannelError": 87,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "quality": 88,
+          "bytes": 20372,
+          "metrics": {
+            "mse": 27.661168,
+            "psnrDb": 33.7121,
+            "mae": 3.430944,
+            "p95AbsoluteChannelError": 11,
+            "maxAbsoluteChannelError": 81,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 256,
+          "quality": 92,
+          "bytes": 24244,
+          "metrics": {
+            "mse": 23.955958,
+            "psnrDb": 34.3367,
+            "mae": 3.110001,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 80,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "quality": 88,
+          "bytes": 52126,
+          "metrics": {
+            "mse": 13.445894,
+            "psnrDb": 36.8449,
+            "mae": 2.353301,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 88,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 512,
+          "quality": 92,
+          "bytes": 63298,
+          "metrics": {
+            "mse": 11.154897,
+            "psnrDb": 37.6561,
+            "mae": 2.11038,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 75,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "quality": 88,
+          "bytes": 87636,
+          "metrics": {
+            "mse": 8.417929,
+            "psnrDb": 38.8788,
+            "mae": 1.88504,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 68,
+            "samples": 1769472
+          }
+        },
+        {
+          "width": 768,
+          "quality": 92,
+          "bytes": 112046,
+          "metrics": {
+            "mse": 6.69621,
+            "psnrDb": 39.8725,
+            "mae": 1.639966,
+            "p95AbsoluteChannelError": 5,
+            "maxAbsoluteChannelError": 68,
+            "samples": 1769472
+          }
+        }
+      ],
+      "dprComparisons": [
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 88,
+          "metrics": {
+            "mse": 37.307183,
+            "psnrDb": 32.4129,
+            "mae": 3.968574,
+            "p95AbsoluteChannelError": 13,
+            "maxAbsoluteChannelError": 96,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 92,
+          "metrics": {
+            "mse": 34.28832,
+            "psnrDb": 32.7793,
+            "mae": 3.73365,
+            "p95AbsoluteChannelError": 12,
+            "maxAbsoluteChannelError": 96,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 88,
+          "metrics": {
+            "mse": 18.311253,
+            "psnrDb": 35.5036,
+            "mae": 2.643767,
+            "p95AbsoluteChannelError": 9,
+            "maxAbsoluteChannelError": 85,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 92,
+          "metrics": {
+            "mse": 16.414556,
+            "psnrDb": 35.9785,
+            "mae": 2.457125,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 80,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 88,
+          "metrics": {
+            "mse": 11.561165,
+            "psnrDb": 37.5008,
+            "mae": 2.073475,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 90,
+            "samples": 1306800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 92,
+          "metrics": {
+            "mse": 10.09938,
+            "psnrDb": 38.0879,
+            "mae": 1.878264,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 83,
+            "samples": 1306800
+          }
+        }
+      ]
+    },
+    {
+      "id": "DA015",
+      "sourceKey": "event-r45-cheaper-telecom-plan",
+      "source": {
+        "file": "public/assets/r32-cards/event-r45-cheaper-telecom-plan.png",
+        "publicUrl": "/fufu-duel/assets/r32-cards/event-r45-cheaper-telecom-plan.png",
+        "sha256": "82a1ad414036e748d5c9a30a31273e6dfed754288cb7c94b432e25cc39319047",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 1932732,
+        "space": "srgb",
+        "channels": 3
+      },
+      "variants": [
+        {
+          "width": 96,
+          "height": 96,
+          "url": "/fufu-duel/assets/r46-cards/DA015-9e81c1b3-96.webp",
+          "bytes": 5292,
+          "sha256": "9e81c1b3102df1e2bd8ef6557b1a69e9dc0f145255cf3c875fb79f478d4769ea",
+          "quality": 92,
+          "metrics": {
+            "mse": 56.318793,
+            "psnrDb": 30.6243,
+            "mae": 4.775029,
+            "p95AbsoluteChannelError": 16,
+            "maxAbsoluteChannelError": 68,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "url": "/fufu-duel/assets/r46-cards/DA015-aa92bb0b-256.webp",
+          "bytes": 22384,
+          "sha256": "aa92bb0b73f244cf00e6c614ba39e4c65422ee6f2b01f3218e83c5a87d9c1043",
+          "quality": 92,
+          "metrics": {
+            "mse": 23.075007,
+            "psnrDb": 34.4994,
+            "mae": 2.962713,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 80,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "url": "/fufu-duel/assets/r46-cards/DA015-cbc1c013-512.webp",
+          "bytes": 57716,
+          "sha256": "cbc1c0138ffca14df439e25e12851802e6d697dc11d32f65a792a08e4a076aff",
+          "quality": 92,
+          "metrics": {
+            "mse": 11.119991,
+            "psnrDb": 37.6698,
+            "mae": 2.029502,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 72,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "url": "/fufu-duel/assets/r46-cards/DA015-5dc6748b-768.webp",
+          "bytes": 99256,
+          "sha256": "5dc6748b5db98c7ba3c33009b431ef3f78a79b1b6d347acb142d68a64b8a6376",
+          "quality": 92,
+          "metrics": {
+            "mse": 6.685401,
+            "psnrDb": 39.8795,
+            "mae": 1.593027,
+            "p95AbsoluteChannelError": 5,
+            "maxAbsoluteChannelError": 61,
+            "samples": 1769472
+          }
+        }
+      ],
+      "qualityComparison": [
+        {
+          "width": 96,
+          "quality": 88,
+          "bytes": 4486,
+          "metrics": {
+            "mse": 61.938983,
+            "psnrDb": 30.2112,
+            "mae": 5.156359,
+            "p95AbsoluteChannelError": 17,
+            "maxAbsoluteChannelError": 68,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 96,
+          "quality": 92,
+          "bytes": 5292,
+          "metrics": {
+            "mse": 56.318793,
+            "psnrDb": 30.6243,
+            "mae": 4.775029,
+            "p95AbsoluteChannelError": 16,
+            "maxAbsoluteChannelError": 68,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "quality": 88,
+          "bytes": 18670,
+          "metrics": {
+            "mse": 26.909887,
+            "psnrDb": 33.8317,
+            "mae": 3.286311,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 82,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 256,
+          "quality": 92,
+          "bytes": 22384,
+          "metrics": {
+            "mse": 23.075007,
+            "psnrDb": 34.4994,
+            "mae": 2.962713,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 80,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "quality": 88,
+          "bytes": 46328,
+          "metrics": {
+            "mse": 13.327138,
+            "psnrDb": 36.8834,
+            "mae": 2.282949,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 73,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 512,
+          "quality": 92,
+          "bytes": 57716,
+          "metrics": {
+            "mse": 11.119991,
+            "psnrDb": 37.6698,
+            "mae": 2.029502,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 72,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "quality": 88,
+          "bytes": 78612,
+          "metrics": {
+            "mse": 8.227506,
+            "psnrDb": 38.9781,
+            "mae": 1.813366,
+            "p95AbsoluteChannelError": 5,
+            "maxAbsoluteChannelError": 62,
+            "samples": 1769472
+          }
+        },
+        {
+          "width": 768,
+          "quality": 92,
+          "bytes": 99256,
+          "metrics": {
+            "mse": 6.685401,
+            "psnrDb": 39.8795,
+            "mae": 1.593027,
+            "p95AbsoluteChannelError": 5,
+            "maxAbsoluteChannelError": 61,
+            "samples": 1769472
+          }
+        }
+      ],
+      "dprComparisons": [
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 88,
+          "metrics": {
+            "mse": 35.542218,
+            "psnrDb": 32.6234,
+            "mae": 3.735937,
+            "p95AbsoluteChannelError": 13,
+            "maxAbsoluteChannelError": 73,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 92,
+          "metrics": {
+            "mse": 32.281791,
+            "psnrDb": 33.0412,
+            "mae": 3.493154,
+            "p95AbsoluteChannelError": 12,
+            "maxAbsoluteChannelError": 70,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 88,
+          "metrics": {
+            "mse": 18.627696,
+            "psnrDb": 35.4292,
+            "mae": 2.549986,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 82,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 92,
+          "metrics": {
+            "mse": 16.811267,
+            "psnrDb": 35.8748,
+            "mae": 2.352696,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 80,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 88,
+          "metrics": {
+            "mse": 11.7092,
+            "psnrDb": 37.4455,
+            "mae": 2.00084,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 63,
+            "samples": 1306800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 92,
+          "metrics": {
+            "mse": 10.351214,
+            "psnrDb": 37.9809,
+            "mae": 1.817704,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 68,
+            "samples": 1306800
+          }
+        }
+      ]
+    },
+    {
+      "id": "DA016",
+      "sourceKey": "event-r45-energy-saving-air-conditioner",
+      "source": {
+        "file": "public/assets/r32-cards/event-r45-energy-saving-air-conditioner.png",
+        "publicUrl": "/fufu-duel/assets/r32-cards/event-r45-energy-saving-air-conditioner.png",
+        "sha256": "df10467fecd628eef833667e4c3570ef9417ff1748535b0448246ddd0f114e02",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 1897539,
+        "space": "srgb",
+        "channels": 3
+      },
+      "variants": [
+        {
+          "width": 96,
+          "height": 96,
+          "url": "/fufu-duel/assets/r46-cards/DA016-9a6fba35-96.webp",
+          "bytes": 4706,
+          "sha256": "9a6fba359b1814d33ea23eebd0b8dbaadb75058bbea92c392d3dbc64c020666a",
+          "quality": 92,
+          "metrics": {
+            "mse": 58.960793,
+            "psnrDb": 30.4252,
+            "mae": 4.746745,
+            "p95AbsoluteChannelError": 16,
+            "maxAbsoluteChannelError": 68,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "url": "/fufu-duel/assets/r46-cards/DA016-cf259650-256.webp",
+          "bytes": 19532,
+          "sha256": "cf259650f237d90df98774ed7d6af99bb114553eb2525350709ca221229c9e31",
+          "quality": 92,
+          "metrics": {
+            "mse": 22.526047,
+            "psnrDb": 34.604,
+            "mae": 2.864466,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 66,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "url": "/fufu-duel/assets/r46-cards/DA016-70ce49ed-512.webp",
+          "bytes": 55190,
+          "sha256": "70ce49ed9d46f0202ad49d431f7b54bf99d89016c7e27264c53eedaa21bd6504",
+          "quality": 92,
+          "metrics": {
+            "mse": 11.092239,
+            "psnrDb": 37.6806,
+            "mae": 1.956238,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 60,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "url": "/fufu-duel/assets/r46-cards/DA016-a322ab40-768.webp",
+          "bytes": 98996,
+          "sha256": "a322ab40ee42ccb9f570942c7ed10fcceb429fe0dc4e288661f9b6c99a4d4113",
+          "quality": 92,
+          "metrics": {
+            "mse": 6.934878,
+            "psnrDb": 39.7204,
+            "mae": 1.587632,
+            "p95AbsoluteChannelError": 5,
+            "maxAbsoluteChannelError": 62,
+            "samples": 1769472
+          }
+        }
+      ],
+      "qualityComparison": [
+        {
+          "width": 96,
+          "quality": 88,
+          "bytes": 4126,
+          "metrics": {
+            "mse": 63.638419,
+            "psnrDb": 30.0936,
+            "mae": 5.037652,
+            "p95AbsoluteChannelError": 17,
+            "maxAbsoluteChannelError": 78,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 96,
+          "quality": 92,
+          "bytes": 4706,
+          "metrics": {
+            "mse": 58.960793,
+            "psnrDb": 30.4252,
+            "mae": 4.746745,
+            "p95AbsoluteChannelError": 16,
+            "maxAbsoluteChannelError": 68,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "quality": 88,
+          "bytes": 16120,
+          "metrics": {
+            "mse": 25.785365,
+            "psnrDb": 34.0171,
+            "mae": 3.154485,
+            "p95AbsoluteChannelError": 11,
+            "maxAbsoluteChannelError": 68,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 256,
+          "quality": 92,
+          "bytes": 19532,
+          "metrics": {
+            "mse": 22.526047,
+            "psnrDb": 34.604,
+            "mae": 2.864466,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 66,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "quality": 88,
+          "bytes": 44428,
+          "metrics": {
+            "mse": 13.143471,
+            "psnrDb": 36.9437,
+            "mae": 2.199178,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 68,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 512,
+          "quality": 92,
+          "bytes": 55190,
+          "metrics": {
+            "mse": 11.092239,
+            "psnrDb": 37.6806,
+            "mae": 1.956238,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 60,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "quality": 88,
+          "bytes": 79128,
+          "metrics": {
+            "mse": 8.534839,
+            "psnrDb": 38.8189,
+            "mae": 1.805222,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 63,
+            "samples": 1769472
+          }
+        },
+        {
+          "width": 768,
+          "quality": 92,
+          "bytes": 98996,
+          "metrics": {
+            "mse": 6.934878,
+            "psnrDb": 39.7204,
+            "mae": 1.587632,
+            "p95AbsoluteChannelError": 5,
+            "maxAbsoluteChannelError": 62,
+            "samples": 1769472
+          }
+        }
+      ],
+      "dprComparisons": [
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 88,
+          "metrics": {
+            "mse": 35.410262,
+            "psnrDb": 32.6395,
+            "mae": 3.598802,
+            "p95AbsoluteChannelError": 12,
+            "maxAbsoluteChannelError": 78,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 92,
+          "metrics": {
+            "mse": 32.788795,
+            "psnrDb": 32.9735,
+            "mae": 3.39115,
+            "p95AbsoluteChannelError": 12,
+            "maxAbsoluteChannelError": 77,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 88,
+          "metrics": {
+            "mse": 18.307195,
+            "psnrDb": 35.5046,
+            "mae": 2.464172,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 71,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 92,
+          "metrics": {
+            "mse": 16.633543,
+            "psnrDb": 35.921,
+            "mae": 2.279483,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 69,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 88,
+          "metrics": {
+            "mse": 12.11829,
+            "psnrDb": 37.2964,
+            "mae": 2.020458,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 66,
+            "samples": 1306800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 92,
+          "metrics": {
+            "mse": 10.79904,
+            "psnrDb": 37.797,
+            "mae": 1.854936,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 66,
+            "samples": 1306800
+          }
+        }
+      ]
+    },
+    {
+      "id": "DA057",
+      "sourceKey": "event-r45-car-breakdown-repair",
+      "source": {
+        "file": "public/assets/r32-cards/event-r45-car-breakdown-repair.png",
+        "publicUrl": "/fufu-duel/assets/r32-cards/event-r45-car-breakdown-repair.png",
+        "sha256": "751969ab3a312c4e67433c13d58d199ed7dba693a232e05e4f26085474a00194",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 2178438,
+        "space": "srgb",
+        "channels": 3
+      },
+      "variants": [
+        {
+          "width": 96,
+          "height": 96,
+          "url": "/fufu-duel/assets/r46-cards/DA057-5a870850-96.webp",
+          "bytes": 6214,
+          "sha256": "5a870850ddb34ab201ad64596a42107a928e7934dc77937c9dbb03720d22821a",
+          "quality": 92,
+          "metrics": {
+            "mse": 83.710829,
+            "psnrDb": 28.903,
+            "mae": 5.85225,
+            "p95AbsoluteChannelError": 20,
+            "maxAbsoluteChannelError": 78,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "url": "/fufu-duel/assets/r46-cards/DA057-548545d7-256.webp",
+          "bytes": 27818,
+          "sha256": "548545d7d5dfe998e4ea221e4df013eb50c31a2ab855bb61c3c0ebf6f4ca13e6",
+          "quality": 92,
+          "metrics": {
+            "mse": 35.124425,
+            "psnrDb": 32.6747,
+            "mae": 3.710495,
+            "p95AbsoluteChannelError": 12,
+            "maxAbsoluteChannelError": 88,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "url": "/fufu-duel/assets/r46-cards/DA057-fb81b21d-512.webp",
+          "bytes": 75792,
+          "sha256": "fb81b21ddbd40930b9a2841c283f97b94c3bc60f037f05d76327340d4349122f",
+          "quality": 92,
+          "metrics": {
+            "mse": 19.949601,
+            "psnrDb": 35.1315,
+            "mae": 2.691049,
+            "p95AbsoluteChannelError": 9,
+            "maxAbsoluteChannelError": 93,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "url": "/fufu-duel/assets/r46-cards/DA057-ea5acea2-768.webp",
+          "bytes": 136788,
+          "sha256": "ea5acea2a6d290057652f2dcb9fcbc817198f6adb1deb57330020b35df661274",
+          "quality": 92,
+          "metrics": {
+            "mse": 12.605307,
+            "psnrDb": 37.1253,
+            "mae": 2.14597,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 91,
+            "samples": 1769472
+          }
+        }
+      ],
+      "qualityComparison": [
+        {
+          "width": 96,
+          "quality": 88,
+          "bytes": 5318,
+          "metrics": {
+            "mse": 89.811126,
+            "psnrDb": 28.5975,
+            "mae": 6.257306,
+            "p95AbsoluteChannelError": 21,
+            "maxAbsoluteChannelError": 78,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 96,
+          "quality": 92,
+          "bytes": 6214,
+          "metrics": {
+            "mse": 83.710829,
+            "psnrDb": 28.903,
+            "mae": 5.85225,
+            "p95AbsoluteChannelError": 20,
+            "maxAbsoluteChannelError": 78,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "quality": 88,
+          "bytes": 23408,
+          "metrics": {
+            "mse": 39.652517,
+            "psnrDb": 32.1481,
+            "mae": 4.067342,
+            "p95AbsoluteChannelError": 13,
+            "maxAbsoluteChannelError": 98,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 256,
+          "quality": 92,
+          "bytes": 27818,
+          "metrics": {
+            "mse": 35.124425,
+            "psnrDb": 32.6747,
+            "mae": 3.710495,
+            "p95AbsoluteChannelError": 12,
+            "maxAbsoluteChannelError": 88,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "quality": 88,
+          "bytes": 63310,
+          "metrics": {
+            "mse": 22.903978,
+            "psnrDb": 34.5317,
+            "mae": 2.982838,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 93,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 512,
+          "quality": 92,
+          "bytes": 75792,
+          "metrics": {
+            "mse": 19.949601,
+            "psnrDb": 35.1315,
+            "mae": 2.691049,
+            "p95AbsoluteChannelError": 9,
+            "maxAbsoluteChannelError": 93,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "quality": 88,
+          "bytes": 113254,
+          "metrics": {
+            "mse": 14.628926,
+            "psnrDb": 36.4787,
+            "mae": 2.357864,
+            "p95AbsoluteChannelError": 8,
+            "maxAbsoluteChannelError": 88,
+            "samples": 1769472
+          }
+        },
+        {
+          "width": 768,
+          "quality": 92,
+          "bytes": 136788,
+          "metrics": {
+            "mse": 12.605307,
+            "psnrDb": 37.1253,
+            "mae": 2.14597,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 91,
+            "samples": 1769472
+          }
+        }
+      ],
+      "dprComparisons": [
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 88,
+          "metrics": {
+            "mse": 55.109256,
+            "psnrDb": 30.7186,
+            "mae": 4.798926,
+            "p95AbsoluteChannelError": 16,
+            "maxAbsoluteChannelError": 96,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 92,
+          "metrics": {
+            "mse": 51.465372,
+            "psnrDb": 31.0157,
+            "mae": 4.550096,
+            "p95AbsoluteChannelError": 15,
+            "maxAbsoluteChannelError": 84,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 88,
+          "metrics": {
+            "mse": 32.729452,
+            "psnrDb": 32.9814,
+            "mae": 3.464632,
+            "p95AbsoluteChannelError": 12,
+            "maxAbsoluteChannelError": 87,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 92,
+          "metrics": {
+            "mse": 30.240133,
+            "psnrDb": 33.325,
+            "mae": 3.248063,
+            "p95AbsoluteChannelError": 12,
+            "maxAbsoluteChannelError": 90,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 88,
+          "metrics": {
+            "mse": 22.453135,
+            "psnrDb": 34.618,
+            "mae": 2.75479,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 84,
+            "samples": 1306800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 92,
+          "metrics": {
+            "mse": 20.825802,
+            "psnrDb": 34.9448,
+            "mae": 2.603713,
+            "p95AbsoluteChannelError": 9,
+            "maxAbsoluteChannelError": 84,
+            "samples": 1306800
+          }
+        }
+      ]
+    },
+    {
+      "id": "DA058",
+      "sourceKey": "event-r44-car-accident-compensation",
+      "source": {
+        "file": "public/assets/r32-cards/event-r44-car-accident-compensation.png",
+        "publicUrl": "/fufu-duel/assets/r32-cards/event-r44-car-accident-compensation.png",
+        "sha256": "5f34802bbcb66322ffcf4d7453d80544bedc3b8798cc8c9c389b15961d97cb3a",
+        "width": 1254,
+        "height": 1254,
+        "bytes": 1991512,
+        "space": "srgb",
+        "channels": 3
+      },
+      "variants": [
+        {
+          "width": 96,
+          "height": 96,
+          "url": "/fufu-duel/assets/r46-cards/DA058-00b33a7c-96.webp",
+          "bytes": 5492,
+          "sha256": "00b33a7c5ddfe48ae5dd12bbf6cfb3ceea1e91a38ff47871a2e01a6511dc29e2",
+          "quality": 92,
+          "metrics": {
+            "mse": 59.437283,
+            "psnrDb": 30.3902,
+            "mae": 4.924624,
+            "p95AbsoluteChannelError": 16,
+            "maxAbsoluteChannelError": 73,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "height": 256,
+          "url": "/fufu-duel/assets/r46-cards/DA058-3ebd8a69-256.webp",
+          "bytes": 22942,
+          "sha256": "3ebd8a69e7d60584e643685c2d7727eab05e00628e429c4b52ba0d0359d649ee",
+          "quality": 92,
+          "metrics": {
+            "mse": 24.775172,
+            "psnrDb": 34.1906,
+            "mae": 3.108556,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 73,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "height": 512,
+          "url": "/fufu-duel/assets/r46-cards/DA058-557621ee-512.webp",
+          "bytes": 61302,
+          "sha256": "557621eea31c27b3a5beeb64d8be6e1ea0489f3e9138aa19c213bc63a55ca87d",
+          "quality": 92,
+          "metrics": {
+            "mse": 12.015765,
+            "psnrDb": 37.3333,
+            "mae": 2.121923,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 87,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "height": 768,
+          "url": "/fufu-duel/assets/r46-cards/DA058-7426c169-768.webp",
+          "bytes": 110328,
+          "sha256": "7426c16967286711503958177e2ab0b7402779d31ec85e762282407dd4a9cf24",
+          "quality": 92,
+          "metrics": {
+            "mse": 6.911842,
+            "psnrDb": 39.7349,
+            "mae": 1.640253,
+            "p95AbsoluteChannelError": 5,
+            "maxAbsoluteChannelError": 80,
+            "samples": 1769472
+          }
+        }
+      ],
+      "qualityComparison": [
+        {
+          "width": 96,
+          "quality": 88,
+          "bytes": 4768,
+          "metrics": {
+            "mse": 65.034939,
+            "psnrDb": 29.9993,
+            "mae": 5.3125,
+            "p95AbsoluteChannelError": 17,
+            "maxAbsoluteChannelError": 70,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 96,
+          "quality": 92,
+          "bytes": 5492,
+          "metrics": {
+            "mse": 59.437283,
+            "psnrDb": 30.3902,
+            "mae": 4.924624,
+            "p95AbsoluteChannelError": 16,
+            "maxAbsoluteChannelError": 73,
+            "samples": 27648
+          }
+        },
+        {
+          "width": 256,
+          "quality": 88,
+          "bytes": 19630,
+          "metrics": {
+            "mse": 28.366603,
+            "psnrDb": 33.6027,
+            "mae": 3.408778,
+            "p95AbsoluteChannelError": 11,
+            "maxAbsoluteChannelError": 76,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 256,
+          "quality": 92,
+          "bytes": 22942,
+          "metrics": {
+            "mse": 24.775172,
+            "psnrDb": 34.1906,
+            "mae": 3.108556,
+            "p95AbsoluteChannelError": 10,
+            "maxAbsoluteChannelError": 73,
+            "samples": 196608
+          }
+        },
+        {
+          "width": 512,
+          "quality": 88,
+          "bytes": 50558,
+          "metrics": {
+            "mse": 14.357807,
+            "psnrDb": 36.5599,
+            "mae": 2.37849,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 83,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 512,
+          "quality": 92,
+          "bytes": 61302,
+          "metrics": {
+            "mse": 12.015765,
+            "psnrDb": 37.3333,
+            "mae": 2.121923,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 87,
+            "samples": 786432
+          }
+        },
+        {
+          "width": 768,
+          "quality": 88,
+          "bytes": 86192,
+          "metrics": {
+            "mse": 8.797646,
+            "psnrDb": 38.6871,
+            "mae": 1.905663,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 73,
+            "samples": 1769472
+          }
+        },
+        {
+          "width": 768,
+          "quality": 92,
+          "bytes": 110328,
+          "metrics": {
+            "mse": 6.911842,
+            "psnrDb": 39.7349,
+            "mae": 1.640253,
+            "p95AbsoluteChannelError": 5,
+            "maxAbsoluteChannelError": 80,
+            "samples": 1769472
+          }
+        }
+      ],
+      "dprComparisons": [
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 88,
+          "metrics": {
+            "mse": 37.83064,
+            "psnrDb": 32.3524,
+            "mae": 3.942045,
+            "p95AbsoluteChannelError": 13,
+            "maxAbsoluteChannelError": 70,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 1,
+          "physicalWidth": 220,
+          "sourceWidth": 256,
+          "quality": 92,
+          "metrics": {
+            "mse": 34.924814,
+            "psnrDb": 32.6995,
+            "mae": 3.729001,
+            "p95AbsoluteChannelError": 13,
+            "maxAbsoluteChannelError": 66,
+            "samples": 145200
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 88,
+          "metrics": {
+            "mse": 20.242445,
+            "psnrDb": 35.0682,
+            "mae": 2.695107,
+            "p95AbsoluteChannelError": 9,
+            "maxAbsoluteChannelError": 85,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 2,
+          "physicalWidth": 440,
+          "sourceWidth": 512,
+          "quality": 92,
+          "metrics": {
+            "mse": 18.30193,
+            "psnrDb": 35.5058,
+            "mae": 2.5062,
+            "p95AbsoluteChannelError": 9,
+            "maxAbsoluteChannelError": 81,
+            "samples": 580800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 88,
+          "metrics": {
+            "mse": 12.800594,
+            "psnrDb": 37.0585,
+            "mae": 2.130344,
+            "p95AbsoluteChannelError": 7,
+            "maxAbsoluteChannelError": 64,
+            "samples": 1306800
+          }
+        },
+        {
+          "cssWidth": 220,
+          "dpr": 3,
+          "physicalWidth": 660,
+          "sourceWidth": 768,
+          "quality": 92,
+          "metrics": {
+            "mse": 11.205346,
+            "psnrDb": 37.6366,
+            "mae": 1.922502,
+            "p95AbsoluteChannelError": 6,
+            "maxAbsoluteChannelError": 66,
+            "samples": 1306800
+          }
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "originalPngBytes": 16973480,
+    "selectedAllSizesBytes": 1777164,
+    "byWidth": {
+      "96": 44396,
+      "256": 195350,
+      "512": 542662,
+      "768": 994756
+    },
+    "allSizesReductionPercent": 89.5298,
+    "byWidthReductionPercent": {
+      "96": 99.7384,
+      "256": 98.8491,
+      "512": 96.8029,
+      "768": 94.1394
+    }
+  },
+  "suggestedUse": {
+    "main": {
+      "cssWidth": 220,
+      "dpr1": 256,
+      "dpr2": 512,
+      "dpr3": 768
+    },
+    "thumbnail": {
+      "physicalWidth": 96,
+      "note": "96px is a physical image dimension; use a larger source when the thumbnail physical requirement exceeds 96."
+    },
+    "master": "Original PNG source URL for provenance/fallback only; normal compressed delivery uses thumb or sources."
+  },
+  "evidence": "evidence/r46-assets-1793003823963/report.json"
+}

@@ -1,0 +1,209 @@
+{
+  "scope": "Nine native PNG assets and 112/140/164px image-only inspection; not whole-build or gameplay validation.",
+  "passed": true,
+  "metrics": [
+    {
+      "key": "event-move-to-suburbs",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.4259897867838542,
+      "bounds": {
+        "left": 99,
+        "top": 177,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-secondhand-sale",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.2942822774251302,
+      "bounds": {
+        "left": 99,
+        "top": 145,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-supermarket-anniversary-sale",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.4551595052083333,
+      "bounds": {
+        "left": 99,
+        "top": 93,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-cashback-cancelled",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.36283111572265625,
+      "bounds": {
+        "left": 99,
+        "top": 173,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-building-management-fee-increase",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.4138387044270833,
+      "bounds": {
+        "left": 99,
+        "top": 47,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-fuel-price-increase",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3451334635416667,
+      "bounds": {
+        "left": 99,
+        "top": 126,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-family-emergency-support",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.36579259236653644,
+      "bounds": {
+        "left": 99,
+        "top": 176,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-mentor-opportunity",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3900299072265625,
+      "bounds": {
+        "left": 99,
+        "top": 48,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-member-cash-voucher",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.31803003946940106,
+      "bounds": {
+        "left": 99,
+        "top": 190,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    }
+  ],
+  "hashMismatch": [],
+  "preservedFileCount": 36,
+  "preservedFilesUnchanged": true,
+  "exactIdCount": 14,
+  "manualReviewed": [
+    "event-move-to-suburbs",
+    "event-secondhand-sale",
+    "event-supermarket-anniversary-sale",
+    "event-cashback-cancelled",
+    "event-building-management-fee-increase",
+    "event-fuel-price-increase",
+    "event-family-emergency-support",
+    "event-mentor-opportunity",
+    "event-member-cash-voucher"
+  ],
+  "mapping": [
+    {
+      "key": "event-move-to-suburbs",
+      "ids": [
+        "DA018",
+        "DB014"
+      ]
+    },
+    {
+      "key": "event-secondhand-sale",
+      "ids": [
+        "DA019"
+      ]
+    },
+    {
+      "key": "event-supermarket-anniversary-sale",
+      "ids": [
+        "DA028"
+      ]
+    },
+    {
+      "key": "event-cashback-cancelled",
+      "ids": [
+        "DA035",
+        "DB026"
+      ]
+    },
+    {
+      "key": "event-building-management-fee-increase",
+      "ids": [
+        "DA041",
+        "DB032"
+      ]
+    },
+    {
+      "key": "event-fuel-price-increase",
+      "ids": [
+        "DA044",
+        "DB035"
+      ]
+    },
+    {
+      "key": "event-family-emergency-support",
+      "ids": [
+        "DA060",
+        "DB051"
+      ]
+    },
+    {
+      "key": "event-mentor-opportunity",
+      "ids": [
+        "DB009"
+      ]
+    },
+    {
+      "key": "event-member-cash-voucher",
+      "ids": [
+        "L013"
+      ]
+    }
+  ],
+  "manualNote": "All9 viewed at112/140/164px in3 final sheets. Subject differences distinguish moving/resale/discount/cancelled cashback/fees/fuel/family outward support/mentor/vouchers. Family arrow moved below face. No fixed amount embedded. Not gameplay or whole-build acceptance."
+}

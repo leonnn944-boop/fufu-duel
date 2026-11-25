@@ -1,0 +1,191 @@
+{
+  "scope": "R38 selected native PNG assets and 112/140/164px image-only inspection; not whole-build or gameplay validation.",
+  "passed": true,
+  "metrics": [
+    {
+      "key": "event-r38-japan-earthquake-fukushima",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.33933766682942706,
+      "bounds": {
+        "left": 99,
+        "top": 104,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r38-brexit-referendum",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3877614339192708,
+      "bounds": {
+        "left": 99,
+        "top": 38,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r38-us-china-trade-war",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3580780029296875,
+      "bounds": {
+        "left": 99,
+        "top": 134,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r38-covid-global-pandemic",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.37372461954752606,
+      "bounds": {
+        "left": 99,
+        "top": 72,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r38-russia-ukraine-war",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.42924753824869794,
+      "bounds": {
+        "left": 99,
+        "top": 109,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    }
+  ],
+  "hashMismatch": [],
+  "preservedFileCount": 95,
+  "preservedFilesUnchanged": true,
+  "exactIdCount": 5,
+  "manualReviewed": [
+    {
+      "key": "event-r38-japan-earthquake-fukushima",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "獨立事件主體目視完成；無傷亡血腥、戰果美化或全資產漲跌圖示。"
+    },
+    {
+      "key": "event-r38-brexit-referendum",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "獨立事件主體目視完成；無傷亡血腥、戰果美化或全資產漲跌圖示。"
+    },
+    {
+      "key": "event-r38-us-china-trade-war",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "獨立事件主體目視完成；無傷亡血腥、戰果美化或全資產漲跌圖示。"
+    },
+    {
+      "key": "event-r38-covid-global-pandemic",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "獨立事件主體目視完成；無傷亡血腥、戰果美化或全資產漲跌圖示。"
+    },
+    {
+      "key": "event-r38-russia-ukraine-war",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "獨立事件主體目視完成；無傷亡血腥、戰果美化或全資產漲跌圖示。"
+    }
+  ],
+  "mapping": [
+    {
+      "key": "event-r38-japan-earthquake-fukushima",
+      "ids": [
+        "M501"
+      ]
+    },
+    {
+      "key": "event-r38-brexit-referendum",
+      "ids": [
+        "M602"
+      ]
+    },
+    {
+      "key": "event-r38-us-china-trade-war",
+      "ids": [
+        "M606"
+      ]
+    },
+    {
+      "key": "event-r38-covid-global-pandemic",
+      "ids": [
+        "M706"
+      ]
+    },
+    {
+      "key": "event-r38-russia-ukraine-war",
+      "ids": [
+        "M702"
+      ]
+    }
+  ],
+  "reviewedSheets": [
+    "evidence/r38-card-verify-1792992535450/small-frame-1.png",
+    "evidence/r38-card-verify-1792992557878/small-frame-2.png"
+  ],
+  "finalSheets": [
+    "evidence/r38-card-verify-1792992557878/small-frame-1.png",
+    "evidence/r38-card-verify-1792992557878/small-frame-2.png"
+  ],
+  "characterSourceHash": "3ff362b77316d97a171c1d566a32edcd8cb865d3a64257ee3ceae94ce88fd001",
+  "characterSourceUnchanged": true,
+  "priorScriptsUnchanged": true,
+  "marketSourceUnchanged": true,
+  "frozenSheetUnchanged": true,
+  "exactEffectValueCount": 60,
+  "exactEffectVerification": "evidence/r38-prepared.json",
+  "sixtyEffectValuesUnchanged": true,
+  "assetBytes": 320753,
+  "sourceHashes": {
+    "qa-r38-card-assets.mjs": "b2f7fe11113bcb2c802ce69db45839c4d4819960ffb29741117f1b900c7e9aa9",
+    "qa-r38-card-scenes.mjs": "a37e8fd016bb8f8b04d10b8c97f48b25b31d72caa0af7bb150250080405ce5c4",
+    "qa-r38-card-specs.mjs": "149fc3036ce53a6063fd294618e6bb9ae48e5f845aaf23c98574c1e752fb95a7",
+    "qa-r38-card-assets-verify.mjs": "67757f03dfe62499a8209123949eb9d8ebec661024cc740c447cda7eb3d657f9",
+    "public/market-data.mjs": "3ec379d67ebd91513364ff7d9d99625cdd4c4bf19333b4da260947260df889d1",
+    "evidence/r38-proposal.json": "f6f2e1e55c197b0bedad04862c6ca76ff533dcf02ea08012ea3fd11ae98ef037",
+    "evidence/r23-source-1792942240000/market-cells.json": "7412b157f2dd9016a5f9f04ecc5a7d8cb9bcfca57053b813a91ced76da2fd4e5"
+  },
+  "limits": [
+    "僅 5 張素材及 112/140/164 縮圖目視，不代表固定版三尺寸主卡、受控市場核帳或完整多人局驗收。",
+    "原 95 PNG、前批腳本、角色與原市場資料保持相同雜湊；未改 public/src 或規則。",
+    "六類市價／收益 60 原值與凍結來源表逐項一致；各卡貴金屬正向保留，圖不替代數值效果。",
+    "災難與戰爭僅克制事件示意，不描繪傷亡、戰果或領土結果。"
+  ]
+}

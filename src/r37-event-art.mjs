@@ -1,0 +1,15 @@
+// R37 exact source IDs, including distinct market events.
+export const r37EventArt={
+  "JA037": "event-r37-competitor-malicious-smear",
+  "JB030": "event-r37-freelance-service-demand-falls",
+  "JB040": "event-r37-freelance-demand-shifts-to-automation",
+  "JC038": "event-r37-company-layoff-wave-engineer-income-reduced",
+  "JE027": "event-r37-sales-product-demand-falls",
+  "JE034": "event-r37-new-product-not-yet-accepted",
+  "JE039": "event-r37-existing-product-no-longer-fits-demand",
+  "JF029": "event-r37-company-defeated-market-share-lost",
+  "M101": "event-r37-japan-asset-bubble",
+  "M106": "event-r37-taiwan-strait-missile-crisis",
+  "M201": "event-r37-asian-financial-crisis",
+  "M402": "event-r37-european-debt-crisis"
+};

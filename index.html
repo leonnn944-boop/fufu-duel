@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0B1A33">
+  <link rel="icon" href="/fufu-duel/favicon.svg" type="image/svg+xml">
+  <title>富負對決</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Huninn&family=Zen+Maru+Gothic:wght@500;700;900&display=swap">
+  <link rel="stylesheet" href="/fufu-duel/src/city-game.css?v=R200-d608f35">
+  <link rel="stylesheet" href="/fufu-duel/src/visual-refresh.css?v=R200-d608f35">
+  <link rel="stylesheet" href="/fufu-duel/src/stage-review.css?v=R200-d608f35">
+  <link rel="stylesheet" href="/fufu-duel/src/card-suite.css?v=R200-d608f35">
+  <link rel="stylesheet" href="/fufu-duel/src/city-r32.css?v=R200-d608f35">
+  <link rel="stylesheet" href="/fufu-duel/src/awards-r62.css?v=R200-d608f35">
+<link rel="stylesheet" href="/fufu-duel/src/refinement.css?v=R200-d608f35">
+  <link rel="stylesheet" href="/fufu-duel/src/character-study.css">
+  <link rel="stylesheet" href="/fufu-duel/src/in-game-layout.css?v=R200-d608f35">
+  <link rel="stylesheet" href="/fufu-duel/src/board-index.css?v=R200-d608f35">
+  <link rel="stylesheet" href="/fufu-duel/src/title-screen.css?v=R200-d608f35">
+  <link rel="stylesheet" href="/fufu-duel/src/audio-settings.css?v=R200-d608f35">
+  <link rel="stylesheet" href="/fufu-duel/src/market-art.css">
+  <link rel="stylesheet" href="/fufu-duel/src/event-prints.css">
+  <link rel="stylesheet" href="/fufu-duel/src/table-guide.css?v=R200-d608f35">
+  <link rel="stylesheet" href="/fufu-duel/src/round-results.css?v=R200-d608f35">
+</head>
+<body class="front-door" data-visual-build="R202-a19c8f1">
+  <div class="game-shell">
+    <header class="topbar">
+      <div class="brand" title="富負對決 R200-d608f35"><span class="brand-mark">富<span>負</span></span><div><strong>富負對決</strong><small>五回合・城市篇</small></div></div>
+      <div class="top-status"><a class="game-home quiet-button" href="/fufu-duel/">主選單</a><button id="title-audio-button" class="title-audio" type="button" data-open-audio-settings>聲音設定</button><span id="round-badge" class="status-pill">五回合挑戰</span><span id="room-badge" class="status-pill room-pill" hidden></span><button id="guide-button" class="icon-button" type="button" aria-label="新手玩法說明與桌上工具"><span class="guide-icon" aria-hidden="true">?</span><span class="guide-caption" aria-hidden="true">新手玩法</span></button></div>
+    </header>
+    <main class="game-layout">
+      <div class="title-backdrop" aria-hidden="true">
+        <picture>
+          <source media="(max-width: 680px)" srcset="/fufu-duel/assets/title/market-square-small.webp">
+          <img src="/fufu-duel/assets/title/market-square.webp" width="1440" height="1080" fetchpriority="high" alt="">
+        </picture>
+      </div>
+      <div class="title-hero">
+        <p class="title-series">五回合・城市篇</p>
+        <h1>富負<span>對決</span></h1>
+        <p class="title-description">抽職業、擲骰走格、選擇投資。五回合後，比誰的淨資產更高。</p>
+      </div>
+      <section class="world-card" aria-label="立體城市棋盤">
+        <div class="world-heading"><div><small>走進你的財富城市</small><h1 id="world-title">選一條路，改寫結局。</h1></div><span id="world-step">準備開局</span></div>
+        <div id="world-stage" class="world-stage"><canvas id="city-canvas" aria-label="3D 城市棋盤，可拖曳查看"></canvas><div class="world-vignette"></div><span class="touch-hint">拖曳查看棋盤</span><div id="dice-readout" class="dice-readout" hidden></div><div id="stage-message" class="stage-message" hidden>載入城市棋盤中…</div><div id="stage-timer" class="stage-timer" hidden></div><div id="award-banner" class="award-banner" hidden></div><div id="card-focus" class="card-focus" hidden></div></div>
+        <button id="camera-button" class="quiet-button" type="button">總覽棋盤</button>
+        <div class="world-toolbar"><div class="legend"><span class="legend-dot gold"></span>當前玩家 <span class="legend-dot blue"></span>我的角色 <span class="legend-star">✦</span>小確幸</div><div class="world-buttons"><button id="focus-me-button" class="quiet-button" type="button" hidden>返回我的角色</button><button id="crowd-button" class="quiet-button" type="button" hidden>同格玩家</button><button id="overview-scale" class="quiet-button" type="button" hidden>縮小整盤</button><button id="score-button" class="quiet-button" type="button">財富賽道</button><button id="sound-button" class="quiet-button" type="button">音效：開</button></div></div>
+        <div id="player-strip" class="player-strip" aria-label="玩家狀態"></div>
+      </section>
+      <aside class="play-panel" aria-label="遊戲操作">
+        <div class="panel-top"><div><small id="phase-eyebrow">準備出發</small><h2 id="phase-title">歡迎來到富負對決</h2></div><div class="panel-controls"><span id="timer-chip" class="timer-chip">等待開局</span><button id="panel-toggle" class="panel-toggle" type="button" aria-label="收合操作面板" aria-expanded="true">▾</button></div></div>
+        <p id="phase-description" class="phase-description">建立房間，邀請朋友一起踏上五回合的財富旅程。</p>
+        <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+        <section id="lobby-panel" class="lobby-panel">
+          <div class="title-solo">
+            <label id="desktop-solo-identity" class="solo-identity" hidden>玩家名稱
+              <input id="solo-nickname" maxlength="24" autocomplete="nickname" placeholder="輸入暱稱，或直接開始" enterkeyhint="go">
+            </label>
+            <button id="solo-test" class="primary-button title-play" type="button">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 11 7-11 7z" fill="currentColor"/></svg>
+              <span id="solo-label">單人遊玩</span>
+            </button>
+            <p id="solo-caption">與電腦對手對局，進度儲存在此裝置。</p>
+            <button id="new-solo" type="button" class="title-quiet" hidden>另開單人局</button>
+          </div>
+          <div class="title-room-modes" role="group" aria-label="多人房間">
+            <button id="lobby-host-mode" type="button" aria-controls="lobby-create" aria-pressed="true">建立房間</button>
+            <button id="lobby-switch" type="button" aria-controls="lobby-join" aria-pressed="false">加入房間</button>
+          </div>
+          <a id="resume-room" class="lobby-resume" hidden>返回上次的多人房間 <span aria-hidden="true">↗</span></a>
+          <div id="lobby-create" class="form-card">
+            <label for="nickname">玩家名稱</label>
+            <input id="nickname" maxlength="24" autocomplete="nickname" placeholder="輸入名稱" enterkeyhint="go" required>
+            <div class="lobby-party">
+              <div><span id="player-count-label">本局人數</span><small>2–12 人</small></div>
+              <div class="party-picker" role="group" aria-labelledby="player-count-label">
+                <button id="count-down" type="button" aria-label="減少人數">−</button>
+                <output id="player-count" aria-live="polite">2 人</output>
+                <button id="count-up" type="button" aria-label="增加人數">＋</button>
+              </div>
+            </div>
+            <div id="seat-preview" class="seat-preview" aria-hidden="true"></div>
+            <div class="lobby-actions">
+              <button id="create-room" class="primary-button" type="button">建立新房間 <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+          <div id="lobby-join" class="form-card join-card" hidden>
+            <label for="join-nickname">玩家名稱</label>
+            <input id="join-nickname" class="join-nickname" maxlength="24" autocomplete="nickname" placeholder="輸入名稱" enterkeyhint="next" required>
+            <label for="room-code-input">房間代碼</label>
+            <div class="join-line">
+              <input id="room-code-input" inputmode="text" maxlength="8" autocomplete="off" autocapitalize="characters" spellcheck="false" enterkeyhint="go" placeholder="輸入 8 碼房碼">
+              <button id="join-room" class="primary-button" type="button">加入</button>
+            </div>
+          </div>
+        </section>
+        <button id="finance-nav" class="finance-nav" type="button" aria-expanded="false" hidden>查看玩家財務</button><section id="players-live" class="players-live" aria-label="所有玩家的即時財務狀況" hidden></section>
+        <div class="panel-bottom"><span id="my-seat">你的旅程即將開始</span><button id="copy-invite" class="text-button" type="button" hidden>複製邀請連結</button></div>
+      </aside>
+      <section id="action-panel" class="action-panel main-action-tray" aria-label="目前階段的遊戲操作" hidden></section>
+    </main>
+    <dialog id="score-dialog" class="score-dialog" aria-label="財富賽道與旅程紀錄"><div class="guide-top"><strong>本局旅程</strong><button id="score-close" class="icon-button" type="button" aria-label="關閉">×</button></div><div class="deck-tabs"><button id="ranking-tab" class="deck-tab active" type="button">財富賽道</button><button id="history-tab" class="deck-tab" type="button">旅程紀錄</button></div><div id="ranking-list" class="deck-content"></div><div id="history-list" class="deck-content" hidden></div></dialog>
+  </div>
+  <dialog id="new-solo-dialog" class="title-confirm" aria-labelledby="new-solo-heading">
+    <h2 id="new-solo-heading">另開單人局？</h2>
+    <p>新的一局會取代這台裝置的單人進度。</p>
+    <label class="solo-identity">新局玩家名稱
+      <input id="new-solo-nickname" maxlength="24" autocomplete="nickname">
+    </label>
+    <form method="dialog">
+      <button class="secondary-button" value="cancel" autofocus>繼續原本這局</button>
+      <button class="primary-button" value="new">開始新局</button>
+    </form>
+  </dialog>
+  <dialog id="guide-dialog" class="guide-dialog table-guide" aria-labelledby="guide-title">
+    <div class="field-guide-heading">
+      <div><h2 id="guide-title">玩法手冊</h2><span id="guide-session" hidden></span></div>
+      <button type="button" id="guide-close" aria-label="關閉玩法手冊">×</button>
+    </div>
+    <div class="field-guide-tabs" role="tablist" aria-label="手冊章節">
+      <button type="button" id="guide-tab-goal" role="tab" aria-controls="guide-page-goal" aria-selected="true">速覽</button>
+      <button type="button" id="guide-tab-career" role="tab" aria-controls="guide-page-career" aria-selected="false" tabindex="-1">職業</button>
+      <button type="button" id="guide-tab-dice" role="tab" aria-controls="guide-page-dice" aria-selected="false" tabindex="-1">走格</button>
+      <button type="button" id="guide-tab-market" role="tab" aria-controls="guide-page-market" aria-selected="false" tabindex="-1">投資</button>
+    </div>
+    <div class="field-guide-reader">
+      <section id="guide-page-goal" role="tabpanel" tabindex="0" aria-labelledby="guide-tab-goal">
+        <h3>1 分鐘速覽：五回合比淨資產</h3>
+        <ol class="guide-quickstart" aria-label="每回合四步驟速覽">
+          <li><strong>1. 領收入</strong><span>入帳薪資，同步扣固定支出與還款</span></li>
+          <li><strong>2. 擲骰走格</strong><span>沿 20 格前進，經過 ✦ 另得小確幸</span></li>
+          <li><strong>3. 命運與投資</strong><span>解命運牌、可借貸，最多看 3 張投資</span></li>
+          <li><strong>4. 市場結算</strong><span>共同事件調市價與收益 · 共 5 回合</span></li>
+        </ol>
+        <p>每人的現金加上投資市值，再扣除負債。第五回合結束時，淨資產最高的人獲勝。</p>
+        <div class="guide-ledger" aria-label="淨資產試算">
+          <div class="guide-slip" id="guide-slip-cash"><span>現金</span><b id="guide-cash">20 萬</b></div>
+          <div class="guide-slip" id="guide-slip-invest"><span>投資市值</span><b>30 萬</b></div>
+          <div class="guide-slip" id="guide-slip-debt"><span>負債</span><b id="guide-debt">10 萬</b></div>
+          <div class="guide-total"><span>淨資產</span><b>40 萬</b></div>
+        </div>
+        <div class="guide-example"><button type="button" id="guide-example-loan" aria-pressed="false">試借 5 萬</button><span id="guide-example-result" aria-live="polite">試試看，借款後哪兩項會改變？</span></div>
+      </section>
+      <section id="guide-page-career" role="tabpanel" tabindex="0" aria-labelledby="guide-tab-career" hidden>
+        <h3>從一張職業卡起家</h3>
+        <p>開局輪到你時抽職業。卡上的起始現金和負債，就是你的第一本帳。</p>
+        <figure class="guide-art-card career">
+          <img loading="lazy" width="116" height="116" src="/fufu-duel/assets/chibi-roles/career-doctor.webp" alt="">
+          <figcaption><strong>醫生</strong><span>起始現金 <b>140 萬</b></span><span>起始負債 <b>110 萬</b></span></figcaption>
+        </figure>
+        <p>每回合先領收入。有些職業領固定薪資，有些要抽收入卡。入帳時會扣除固定支出和當期還款。</p>
+        <details class="guide-detail"><summary>途中轉職會怎樣？</summary><p>轉職從下一回合改變收入。原有固定支出、貸款利率和還款額會沿用。</p></details>
+      </section>
+      <section id="guide-page-dice" role="tabpanel" tabindex="0" aria-labelledby="guide-tab-dice" hidden>
+        <h3>沿路收牌，到站翻開</h3>
+        <p>輪到你時按「擲骰」。棋子會照點數前進，經過小確幸格也會得牌。</p>
+        <div class="guide-route" aria-label="走格示意">
+          <div><b class="guide-die" aria-hidden="true">⚄</b><span>擲骰</span></div>
+          <div><b class="guide-luck" aria-hidden="true">✦</b><span>經過小確幸</span></div>
+          <div><b class="guide-fate" aria-hidden="true">?</b><span>落格翻牌</span></div>
+        </div>
+        <p>落格後一起翻開本次命運卡。遇到待決定的牌，就讀效果、選一項；已結算的牌也能翻回去看。</p>
+        <details class="guide-detail"><summary>抽到共同投資怎麼辦？</summary><p>抽卡的人先指定一位夥伴，再由對方決定是否接受。</p></details>
+      </section>
+      <section id="guide-page-market" role="tabpanel" tabindex="0" aria-labelledby="guide-tab-market" hidden>
+        <h3>拿多少現金換投資？</h3>
+        <p>每回合最多看三張不同類別的投資卡。比較價格與手上的現金，再選擇買入或放棄。加密貨幣在第四回合開放。</p>
+        <figure class="guide-art-card market">
+          <img loading="lazy" width="116" height="116" src="/fufu-duel/assets/market-deck/ID001-256.webp" alt="">
+          <figcaption><strong>實體金條</strong><span>貴金屬投資卡</span><span>市值隨市場結算變動</span></figcaption>
+        </figure>
+        <p>全員完成投資後，共同的市場事件會調整投資市值或收益。最後一回合無法新增借款，記得留意手上現金。</p>
+      </section>
+      <div class="field-guide-tools" role="group" aria-label="遊戲工具">
+        <button type="button" id="guide-tool-board-index">棋盤索引</button>
+        <button type="button" id="guide-tool-score">財富賽道</button>
+        <button type="button" id="guide-tool-sound">音效</button>
+        <button type="button" id="guide-tool-audio">聲音設定</button>
+        <button type="button" id="guide-tool-onboarding">新手提示</button>
+        <button type="button" id="guide-tool-crowd">查看同格玩家</button>
+        <button type="button" id="guide-tool-copy">複製邀請連結</button>
+        <button type="button" id="guide-tool-home">主選單</button>
+        <span class="guide-tool-message" role="status"></span>
+      </div>
+    </div>
+    <footer class="field-guide-footer">
+      <button type="button" id="guide-previous" aria-label="上一頁">上一頁</button>
+      <span id="guide-position" aria-live="polite">1 / 4</span>
+      <button type="button" id="guide-next">下一頁</button>
+    </footer>
+  </dialog>
+  <script type="module" src="/fufu-duel/src/city-game.mjs?v=R200-d608f35"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+Fu Fu Duel character models
+The current six players are original human town residents made for Fu Fu Duel.
+Their hair, faces, uniforms, tools and expressions were modeled for this game.
+Career and income illustrations use the same six sculptures. See /CAST-CREDITS.txt.
+
+Historical credits for earlier cast editions:
+
+MakeHuman hm08 adult topology and the base hairstyles bob02, short01, short02,
+short03, short04 and ponytail01 are from MakeHuman Community, CC0.
+The silhouettes, colours, UV textures, accessories and clothing are customized.
+https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html
+
+The facial surface uses modified MediaPipe canonical face topology and vertices
+fitted to six original illustrations. Copyright The MediaPipe Authors.
+The Apache License, Version 2.0 is included in APACHE-2.0.txt.
+https://github.com/google-ai-edge/mediapipe/blob/master/mediapipe/modules/face_geometry/data/canonical_face_model.obj

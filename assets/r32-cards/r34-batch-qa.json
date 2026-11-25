@@ -1,0 +1,372 @@
+{
+  "scope": "R34 selected native PNG assets and 112/140/164px image-only inspection; not whole-build or gameplay validation.",
+  "passed": true,
+  "metrics": [
+    {
+      "key": "event-r34-friend-loan-unreturned",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.33202362060546875,
+      "bounds": {
+        "left": 99,
+        "top": 170,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-engineering-project-stopped",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.33957672119140625,
+      "bounds": {
+        "left": 99,
+        "top": 131,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-project-taken",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3687947591145833,
+      "bounds": {
+        "left": 99,
+        "top": 161,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-sales-target-missed",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.33531824747721356,
+      "bounds": {
+        "left": 99,
+        "top": 165,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-software-security-flaw",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.388092041015625,
+      "bounds": {
+        "left": 99,
+        "top": 142,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-engineer-overwork",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.4026018778483073,
+      "bounds": {
+        "left": 99,
+        "top": 74,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-patent-license",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3221181233723958,
+      "bounds": {
+        "left": 99,
+        "top": 149,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-recession",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.4588610331217448,
+      "bounds": {
+        "left": 99,
+        "top": 142,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-promotion-ended",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.440887451171875,
+      "bounds": {
+        "left": 99,
+        "top": 121,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-sports-award",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.2676506042480469,
+      "bounds": {
+        "left": 99,
+        "top": 103,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-financial-company-collapse",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.48275121053059894,
+      "bounds": {
+        "left": 99,
+        "top": 25,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 25,
+      "passed": true
+    }
+  ],
+  "hashMismatch": [],
+  "preservedFileCount": 45,
+  "preservedFilesUnchanged": true,
+  "exactIdCount": 21,
+  "manualReviewed": [
+    {
+      "key": "event-r34-friend-loan-unreturned",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體與事件方向相符；原人物風格保留。小字僅輔助，來源卡文仍需由 UI 顯示。"
+    },
+    {
+      "key": "event-r34-engineering-project-stopped",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體與事件方向相符；原人物風格保留。小字僅輔助，來源卡文仍需由 UI 顯示。"
+    },
+    {
+      "key": "event-r34-project-taken",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體與事件方向相符；原人物風格保留。小字僅輔助，來源卡文仍需由 UI 顯示。"
+    },
+    {
+      "key": "event-r34-sales-target-missed",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體與事件方向相符；原人物風格保留。小字僅輔助，來源卡文仍需由 UI 顯示。"
+    },
+    {
+      "key": "event-r34-software-security-flaw",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體與事件方向相符；原人物風格保留。小字僅輔助，來源卡文仍需由 UI 顯示。"
+    },
+    {
+      "key": "event-r34-engineer-overwork",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體與事件方向相符；原人物風格保留。小字僅輔助，來源卡文仍需由 UI 顯示。"
+    },
+    {
+      "key": "event-r34-patent-license",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體與事件方向相符；原人物風格保留。小字僅輔助，來源卡文仍需由 UI 顯示。"
+    },
+    {
+      "key": "event-r34-recession",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體與事件方向相符；原人物風格保留。小字僅輔助，來源卡文仍需由 UI 顯示。"
+    },
+    {
+      "key": "event-r34-promotion-ended",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體與事件方向相符；原人物風格保留。小字僅輔助，來源卡文仍需由 UI 顯示。"
+    },
+    {
+      "key": "event-r34-sports-award",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體與事件方向相符；原人物風格保留。小字僅輔助，來源卡文仍需由 UI 顯示。"
+    },
+    {
+      "key": "event-r34-financial-company-collapse",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "主體與事件方向相符；原人物風格保留。小字僅輔助，來源卡文仍需由 UI 顯示。"
+    }
+  ],
+  "mapping": [
+    {
+      "key": "event-r34-friend-loan-unreturned",
+      "ids": [
+        "DA052",
+        "DB043"
+      ]
+    },
+    {
+      "key": "event-r34-engineering-project-stopped",
+      "ids": [
+        "JC026"
+      ]
+    },
+    {
+      "key": "event-r34-project-taken",
+      "ids": [
+        "JC032"
+      ]
+    },
+    {
+      "key": "event-r34-sales-target-missed",
+      "ids": [
+        "JE022"
+      ]
+    },
+    {
+      "key": "event-r34-software-security-flaw",
+      "ids": [
+        "JC036"
+      ]
+    },
+    {
+      "key": "event-r34-engineer-overwork",
+      "ids": [
+        "JC021"
+      ]
+    },
+    {
+      "key": "event-r34-patent-license",
+      "ids": [
+        "JB015",
+        "JC011"
+      ]
+    },
+    {
+      "key": "event-r34-recession",
+      "ids": [
+        "JA029",
+        "JA040",
+        "JB032",
+        "JB037",
+        "JC039",
+        "JE038",
+        "JF030",
+        "JF040"
+      ]
+    },
+    {
+      "key": "event-r34-promotion-ended",
+      "ids": [
+        "DA051",
+        "DB042"
+      ]
+    },
+    {
+      "key": "event-r34-sports-award",
+      "ids": [
+        "DA020"
+      ]
+    },
+    {
+      "key": "event-r34-financial-company-collapse",
+      "ids": [
+        "M406"
+      ]
+    }
+  ],
+  "reviewedSheets": [
+    "evidence/r34-card-verify-1792988904850/small-frame-1.png",
+    "evidence/r34-card-verify-1792989034273/small-frame-2.png",
+    "evidence/r34-card-verify-1792989034273/small-frame-3.png",
+    "evidence/r34-card-verify-1792989034273/small-frame-4.png",
+    "evidence/r34-card-verify-1792989062382/small-frame-4.png"
+  ],
+  "finalSheets": [
+    "evidence/r34-card-verify-1792989062382/small-frame-1.png",
+    "evidence/r34-card-verify-1792989062382/small-frame-2.png",
+    "evidence/r34-card-verify-1792989062382/small-frame-3.png",
+    "evidence/r34-card-verify-1792989062382/small-frame-4.png"
+  ],
+  "characterSourceHash": "3ff362b77316d97a171c1d566a32edcd8cb865d3a64257ee3ceae94ce88fd001",
+  "characterSourceUnchanged": true,
+  "sourceHashes": {
+    "qa-r34-card-assets.mjs": "c02db3be601251ab2a3440a78f524143ef422d5969ced2577d2c3b99492d729d",
+    "qa-r34-card-scenes.mjs": "2c1cc239d5ff6e7df783eac0bf65c245bd434dcb4dc9abf6c5821b0cdaa6bedc",
+    "qa-r34-card-assets-verify.mjs": "54f2431c9fb84fcff54acc0a1185e62e3d53cdcc06a9ab846e0152dcab438903",
+    "public/cards-snapshot.mjs": "52e11336844d790e6e28557cc6b0e824e898f9470723abe96303faca40a6bc45",
+    "public/market-data.mjs": "3ec379d67ebd91513364ff7d9d99625cdd4c4bf19333b4da260947260df889d1",
+    "evidence/r34-art-classification.json": "a26bff36ce47bfcd5fee68ece469bae3b9505e54425e66be32852dfe61249f2c"
+  },
+  "assetBytes": 765367,
+  "limits": [
+    "僅本批 11 張素材及 112/140/164px 縮圖目視；未進行主卡、手牌、手機或完整五回合整合驗證。",
+    "圖片不內嵌固定金額、不宣稱永久效果；M406 不用單一漲跌圖示代表六類資產效果。",
+    "原 45 張 PNG 全部保留；只新增 11 張與輔助檔，未修改角色、城市、相機、規則或 public/src 對應。"
+  ]
+}

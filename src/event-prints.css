@@ -1,0 +1,83 @@
+/* Event hands keep their illustrations visible at both reading distances. */
+body.playing .game-shell #card-focus.readable-hand .hand-focus-card > .card-illustration:has([data-delivery-key^="event-print-"]) {
+  display: grid !important;
+  width: 132px !important;
+  height: 132px !important;
+  min-height: 132px !important;
+  max-height: 132px !important;
+  flex: 0 0 132px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 12px;
+  box-shadow: none !important;
+}
+body.playing .game-shell #card-focus.readable-hand .card-hand-fan:has([data-delivery-key^="event-print-"]) {
+  --print-tab-width: 112px;
+  --print-thumb: 36px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+body.playing .game-shell #card-focus.readable-hand[data-phase="revealGroup"] .card-hand-fan:has([data-delivery-key^="event-print-"]) .hand-peek[data-card-id] {
+  display: grid !important;
+  grid-template: "image kind" 14px "image title" 18px "image effect" 14px / var(--print-thumb) minmax(0, 1fr);
+  align-content: center;
+  place-items: center;
+  column-gap: 4px !important;
+  row-gap: 0 !important;
+  padding: 3px 4px !important;
+  min-width: 0 !important;
+  flex: 0 0 var(--print-tab-width) !important;
+  width: var(--print-tab-width) !important;
+  max-width: var(--print-tab-width) !important;
+}
+body.playing .game-shell #card-focus.readable-hand .card-hand-fan:has([data-delivery-key^="event-print-"]) .hand-event-art {
+  display: grid !important;
+  grid-area: image;
+  width: var(--print-thumb) !important;
+  height: var(--print-thumb) !important;
+  min-height: var(--print-thumb) !important;
+  max-height: var(--print-thumb) !important;
+  padding: 0;
+  border: 0;
+  border-radius: 4px !important;
+}
+body.playing .game-shell #card-focus.readable-hand .card-hand-fan:has([data-delivery-key^="event-print-"]) .hand-event-art > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+body.playing .game-shell #card-focus.readable-hand .card-hand-fan:has([data-delivery-key^="event-print-"]) .hand-kind { grid-area: kind; }
+body.playing .game-shell #card-focus.readable-hand .card-hand-fan:has([data-delivery-key^="event-print-"]) .hand-title { grid-area: title; }
+body.playing .game-shell #card-focus.readable-hand .card-hand-fan:has([data-delivery-key^="event-print-"]) .hand-effect { grid-area: effect; }
+
+@media (max-width: 760px) {
+  body.playing .game-shell #card-focus.readable-hand .hand-focus-card:not(.resolved) > .card-illustration:has([data-delivery-key^="event-print-"]) {
+    width: 102px !important;
+    height: 102px !important;
+    min-height: 102px !important;
+    max-height: 102px !important;
+    flex-basis: 102px !important;
+  }
+  body.playing .game-shell #card-focus.readable-hand .card-hand-fan:has([data-delivery-key^="event-print-"]) {
+    --print-tab-width: min(106px, 29vw);
+    --print-thumb: 30px;
+  }
+  body.playing .game-shell #card-focus.readable-hand[data-phase="revealGroup"] .card-hand-fan:has([data-delivery-key^="event-print-"]):has(>.hand-peek:nth-child(4)) .hand-peek[data-card-id] {
+    --print-thumb: 21px;
+    --print-tab-width: min(55px, calc((100vw - 48px) / 6));
+    grid-template: "kind" 13px "image" var(--print-thumb) "title" 16px "effect" 13px / minmax(0,1fr);
+    row-gap: 0 !important;
+    padding: 1px !important;
+  }
+}
+@media (max-height: 520px) and (orientation: landscape) {
+  body.playing .game-shell #card-focus.readable-hand[data-phase="revealGroup"] .card-hand-fan:has([data-delivery-key^="event-print-"]) .hand-peek[data-card-id] {
+    --print-thumb: 27px;
+    --print-tab-width: 90px;
+    grid-template: "image kind" 15px "image title" 17px / var(--print-thumb) minmax(0,1fr);
+    height: 44px !important;
+    min-height: 44px !important;
+  }
+}
+

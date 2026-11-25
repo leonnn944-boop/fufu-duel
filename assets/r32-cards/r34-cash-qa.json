@@ -1,0 +1,120 @@
+{
+  "scope": "R34 selected native PNG assets and 112/140/164px image-only inspection; not whole-build or gameplay validation.",
+  "passed": true,
+  "metrics": [
+    {
+      "key": "event-r34-cash-investment-received",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3546028137207031,
+      "bounds": {
+        "left": 99,
+        "top": 150,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-cash-cooperation-received",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3596458435058594,
+      "bounds": {
+        "left": 99,
+        "top": 150,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    },
+    {
+      "key": "event-r34-cash-investment-refunded",
+      "width": 1024,
+      "height": 768,
+      "coverage": 0.3546651204427083,
+      "bounds": {
+        "left": 99,
+        "top": 150,
+        "right": 924,
+        "bottom": 730
+      },
+      "margin": 37,
+      "passed": true
+    }
+  ],
+  "hashMismatch": [],
+  "preservedFileCount": 56,
+  "preservedFilesUnchanged": true,
+  "exactIdCount": 3,
+  "manualReviewed": [
+    {
+      "key": "event-r34-cash-investment-received",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "現行創業家造型、款項流向與文件類型已目視；收入箭頭朝玩家，退還箭頭朝外。"
+    },
+    {
+      "key": "event-r34-cash-cooperation-received",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "現行創業家造型、款項流向與文件類型已目視；收入箭頭朝玩家，退還箭頭朝外。"
+    },
+    {
+      "key": "event-r34-cash-investment-refunded",
+      "sizes": [
+        112,
+        140,
+        164
+      ],
+      "result": "現行創業家造型、款項流向與文件類型已目視；收入箭頭朝玩家，退還箭頭朝外。"
+    }
+  ],
+  "mapping": [
+    {
+      "key": "event-r34-cash-investment-received",
+      "ids": [
+        "JA008"
+      ]
+    },
+    {
+      "key": "event-r34-cash-cooperation-received",
+      "ids": [
+        "JA009"
+      ]
+    },
+    {
+      "key": "event-r34-cash-investment-refunded",
+      "ids": [
+        "JA022"
+      ]
+    }
+  ],
+  "reviewedSheets": [
+    "evidence/r34-cash-verify-1792989728048/small-frame-1.png"
+  ],
+  "characterSourceHash": "3ff362b77316d97a171c1d566a32edcd8cb865d3a64257ee3ceae94ce88fd001",
+  "characterSourceUnchanged": true,
+  "sourceHashes": {
+    "qa-r34-cash-assets.mjs": "3832b839812ee01c93fbe18b5afe21edf06f117969b9c7bc07efbed109053a10",
+    "qa-r34-cash-scenes.mjs": "d58f7676db82b0d13ae9046eaaa7357b25a36dfb6fc2973d15501869348d759e",
+    "qa-r34-cash-assets-verify.mjs": "7d36ead66f69cccccc234ca67a60a841590a2dc7af53cde298ef5781ea08104f",
+    "public/cards-snapshot.mjs": "52e11336844d790e6e28557cc6b0e824e898f9470723abe96303faca40a6bc45",
+    "public/market-data.mjs": "3ec379d67ebd91513364ff7d9d99625cdd4c4bf19333b4da260947260df889d1"
+  },
+  "explicitRuling": "依主代理核實的新使用者裁定：保留現金加減，改寫卡名與敘述讓意思一致。JA008 獲得注資；JA009 收到合作款；JA022 退還投資款。",
+  "assetBytes": 260423,
+  "limits": [
+    "只驗證這三張素材及縮圖；不代表遊戲整合或全套驗收。",
+    "不改原始主持人表、卡牌快照或 public/src；卡名卡文與 UI 整合由主代理處理。",
+    "圖片無固定金額，原始 45 圖與前批 11 圖均保持相同雜湊。"
+  ]
+}
